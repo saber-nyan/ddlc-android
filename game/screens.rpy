@@ -189,7 +189,7 @@ init -1 style namebox is default
 init -1 style namebox_label is say_label
 
 
-init -1 style window:
+init -1 style window:  # TODO: или же здесь?
     xalign 0.5
     xfill True
     yalign gui.textbox_yalign
@@ -218,7 +218,7 @@ init -1 style say_label:
     yalign 0.5
     outlines [(3, "#b59", 0, 0), (1, "#b59", 1, 1)]
 
-init -1 style say_dialogue:
+init -1 style say_dialogue:  # TODO: фикс положения должен быть здесь?
     xpos gui.text_xpos
     xanchor gui.text_xalign
     xsize gui.text_width

@@ -1,6 +1,6 @@
 define persistent.demo = False
 define persistent.steam = True
-define config.developer = False
+define config.developer = True  # FIXME: set to False b4 release
 
 python early:
     import singleton
