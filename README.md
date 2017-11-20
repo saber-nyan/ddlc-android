@@ -1,4 +1,5 @@
 # Doki Doki Literature Club! для Android
+[![Latest release](https://github-release-version.herokuapp.com/github/saber-nyan/ddlc-android/release.svg?style=flat)](https://github.com/saber-nyan/ddlc-android/releases/latest)<br/>
 **ВНИМАНИЕ: в репозитории могут присутствовать спойлеры! Даже в названиях файлов!**
 
 Мои попытки портировать "[Doki Doki Literature Club!](https://vndb.org/v21905)" на Android.<br/>
