@@ -1,0 +1,1 @@
+{"layout": null, "package": "ru.saber_nyan.ddlc", "include_pil": false, "numeric_version": "1", "expansion": true, "name": "Doki Doki Literature Club!", "source": false, "icon_name": "DDLC!", "version": "0.0.1", "target_version": 14, "permissions": ["VIBRATE"], "include_sqlite": false, "store": "none", "orientation": "sensorLandscape"}
