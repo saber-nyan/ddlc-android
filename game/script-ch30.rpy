@@ -102,9 +102,9 @@ init python:
 
     def slow_nodismiss(event, interact=True, **kwargs):
         if not persistent.monika_kill:
-            try:
-                renpy.file("../characters/monika.chr")
-            except:
+            if persistent.monika is None or persistent.monika == "restored":  # TO!DONE: character fix!
+                pass
+            else:
                 persistent.tried_skip = True
                 config.allow_skipping = False
                 _window_hide(None)
@@ -847,9 +847,9 @@ label ch30_loop:
     $ waittime = renpy.random.randint(4, 8)
 label ch30_waitloop:
     python:
-        try:
-            renpy.file("../characters/monika.chr")
-        except:
+        if persistent.monika is None or persistent.monika == "restored":  # TO!DONE: character fix!
+            pass
+        else:
             persistent.tried_skip = True
             config.allow_skipping = False
             _window_hide(None)

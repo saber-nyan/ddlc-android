@@ -5,8 +5,10 @@ label ch0_main:
     play music t2
 
     python:
-        try: renpy.file("../characters/monika.chr")
-        except: renpy.jump("ch0_kill")
+        if persistent.monika is None or persistent.monika == "restored":
+            pass
+        else:
+            renpy.jump("ch0_kill")  # TO!DONE: character fix!
 
     $ restore_all_characters()
     s "Heeeeeeeyyy!!"

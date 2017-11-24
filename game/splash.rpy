@@ -218,12 +218,12 @@ label splashscreen:
 
 
     python:
-        firstrun = ""
-        try:
-            firstrun = renpy.file("firstrun").read(1)
-        except:
-            with open(config.basedir + "/game/firstrun", "wb") as f:
-                pass
+        firstrun = "1"  # TO!DONE: 'firstrun' should always contain "1"
+#        try:
+#            firstrun = renpy.file("firstrun").read(1)
+#        except:
+#            with open(config.basedir + "/game/firstrun", "wb") as f:
+#                pass
     if not firstrun:
         if persistent.first_run:
             $ quick_menu = False
@@ -246,7 +246,8 @@ label splashscreen:
                     with open(config.basedir + "/game/firstrun", "w") as f:
                         f.write("1")
                 except:
-                    renpy.jump("readonly")
+                    #renpy.jump("readonly")
+                    pass  # TO!DONE
 
     if not persistent.first_run:
         python:
@@ -273,20 +274,20 @@ label splashscreen:
     python:
         s_kill_early = None
         if persistent.playthrough == 0:
-            try: renpy.file("../characters/sayori.chr")
-            except: s_kill_early = True
+            if persistent.sayori is not None and persistent.sayori == "deleted":  # TO!DONE: character fix!
+                s_kill_early = True
         if not s_kill_early:
             if persistent.playthrough <= 2 and persistent.playthrough != 0:
-                try: renpy.file("../characters/monika.chr")
-                except: open(config.basedir + "/characters/monika.chr", "wb").write(renpy.file("monika.chr").read())
+                if persistent.monika is not None and persistent.monika == "deleted":
+                    persistent.monika = "restored"
             if persistent.playthrough <= 1 or persistent.playthrough == 4:
-                try: renpy.file("../characters/natsuki.chr")
-                except: open(config.basedir + "/characters/natsuki.chr", "wb").write(renpy.file("natsuki.chr").read())
-                try: renpy.file("../characters/yuri.chr")
-                except: open(config.basedir + "/characters/yuri.chr", "wb").write(renpy.file("yuri.chr").read())
+                if persistent.natsuki is not None and persistent.natsuki == "deleted":
+                    persistent.natsuki = "restored"
+                if persistent.yuri is not None and persistent.yuri == "deleted":
+                    persistent.yuri = "restored"
             if persistent.playthrough == 4:
-                try: renpy.file("../characters/sayori.chr")
-                except: open(config.basedir + "/characters/sayori.chr", "wb").write(renpy.file("sayori.chr").read())
+                if persistent.sayori is not None and persistent.sayori == "deleted":
+                    persistent.sayori = "restored"
 
     if not persistent.special_poems:
         python hide:
@@ -507,10 +508,10 @@ label quit:
         pause 0.01
     return
 
-label readonly:
+label readonly:  # TO!DONE: find usages!
     scene black
-    "The game cannot be run because you are trying to run it from a read-only location."
-    "Please copy the DDLC application to your desktop or other accessible location and try again."
+    "Fuck, please contact saber-nyan!"
+    "https://github.com/saber-nyan"
     $ renpy.quit()
     return
 # Decompiled by unrpyc: https://github.com/CensoredUsername/unrpyc

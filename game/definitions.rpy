@@ -20,19 +20,15 @@ init python:
     def delete_all_saves():
         for savegame in renpy.list_saved_games(fast=True):
             renpy.unlink_save(savegame)
-    def delete_character(name):
-        import os
-        try: os.remove(config.basedir + "/characters/" + name + ".chr")
-        except: pass
+    def delete_character(name):  # TO!DONE: character fix!
+        setattr(persistent, name, "deleted")
+        renpy.save_persistent()
+    def restore_character(name):  # TO!DONE: character fix!
+        setattr(persistent, name, "restored")
     def restore_all_characters():
-        try: renpy.file("../characters/monika.chr")
-        except: open(config.basedir + "/characters/monika.chr", "wb").write(renpy.file("monika.chr").read())
-        try: renpy.file("../characters/natsuki.chr")
-        except: open(config.basedir + "/characters/natsuki.chr", "wb").write(renpy.file("natsuki.chr").read())
-        try: renpy.file("../characters/yuri.chr")
-        except: open(config.basedir + "/characters/yuri.chr", "wb").write(renpy.file("yuri.chr").read())
-        try: renpy.file("../characters/sayori.chr")
-        except: open(config.basedir + "/characters/sayori.chr", "wb").write(renpy.file("sayori.chr").read())
+        for char in ("monika", "natsuki", "yuri", "sayori"):  # TO!DONE: character fix!
+            restore_character(char)
+        renpy.save_persistent()
     def pause(time=None):
         if not time:
             renpy.ui.saybehavior(afm=" ")
