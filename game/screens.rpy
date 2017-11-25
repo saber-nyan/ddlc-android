@@ -158,7 +158,7 @@ init -1 style frame:
 
 
 
-init -501 screen say(who, what):
+init -501 screen say(who, what):  # TO!DONE: screen_say!
     style_prefix "say"
 
     window:
@@ -174,8 +174,8 @@ init -501 screen say(who, what):
 
 
 
-    if not renpy.variant("small"):
-        add SideImage() xalign 0.0 yalign 1.0
+    #if not renpy.variant("small"):
+    #    add SideImage() xalign 0.0 yalign 1.0
 
     use quick_menu
 
@@ -189,7 +189,7 @@ init -1 style namebox is default
 init -1 style namebox_label is say_label
 
 
-init -1 style window:  # TODO: или же здесь?
+init -1 style window:  # TO!DONE: или же здесь?
     xalign 0.5
     xfill True
     yalign gui.textbox_yalign
@@ -218,7 +218,7 @@ init -1 style say_label:
     yalign 0.5
     outlines [(3, "#b59", 0, 0), (1, "#b59", 1, 1)]
 
-init -1 style say_dialogue:  # TODO: фикс положения должен быть здесь?
+init -1 style say_dialogue:  # TO!DONE: фикс положения должен быть здесь?
     xpos gui.text_xpos
     xanchor gui.text_xalign
     xsize gui.text_width
@@ -394,6 +394,8 @@ init -501 screen quick_menu():
 
 
             textbutton _("Settings") action ShowMenu('preferences')
+            if config.developer:
+                textbutton "Devtools" action ShowMenu('_developer')
 
 
 
@@ -478,7 +480,7 @@ init -501 screen navigation():
                 textbutton _("Help") action [Help("README.html"), Show(screen="dialog", message="The help file has been opened in your browser.", ok_action=Hide("dialog"))]
 
 
-                textbutton _("Quit") action Quit(confirm=not main_menu)
+            textbutton _("Quit") action Quit(confirm=not main_menu)  # TO!DONE: now u can exit even on Android!
         else:
             timer 1.75 action Start("autoload_yurikill")
 

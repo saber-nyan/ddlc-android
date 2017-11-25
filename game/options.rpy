@@ -1,5 +1,19 @@
 
 
+## TO!DONE: thank you, lolbot! Displays current script:line and screen, file:line
+python early:
+    def widget__info():
+        import os
+        def editoverlay():
+            fullfn, line = renpy.get_filename_line()
+            ui.button(clicked=None, xpos=1.0, xanchor=1.0, ypos=2, xpadding=0, xminimum=200)
+            ui.text(u"%s:%d" % (os.path.basename(fullfn), line), size=16)
+            ui.button(clicked=None, xpos=0.75, xanchor=1.0, ypos=2, xpadding=0, xminimum=200)
+            ui.text(u"%s, %s" % (renpy.current_screen(), str(renpy.current_screen()._location)), size=16)
+        config.overlay_functions.append(editoverlay)
+init 9000 python:
+    if config.developer:
+        widget__info()
 
 
 
