@@ -8,8 +8,12 @@ python early:
             fullfn, line = renpy.get_filename_line()
             ui.button(clicked=None, xpos=1.0, xanchor=1.0, ypos=2, xpadding=0, xminimum=200)
             ui.text(u"%s:%d" % (os.path.basename(fullfn), line), size=16)
+            if renpy.current_screen() is None:
+                return
             ui.button(clicked=None, xpos=0.75, xanchor=1.0, ypos=2, xpadding=0, xminimum=200)
             ui.text(u"%s, %s" % (renpy.current_screen(), str(renpy.current_screen()._location)), size=16)
+            out_str = "scr %s (%s), fl %s:%d" % (renpy.current_screen(), str(renpy.current_screen()._location), os.path.basename(fullfn), line)
+            print out_str.encode('utf-8')
         config.overlay_functions.append(editoverlay)
 init 9000 python:
     if config.developer:
