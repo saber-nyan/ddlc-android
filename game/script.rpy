@@ -61,8 +61,10 @@ label start:
         call ch4_main
 
         python:
-            try: renpy.file(config.basedir + "/hxppy thxughts.png")
-            except: open(config.basedir + "/hxppy thxughts.png", "wb").write(renpy.file("hxppy thxughts.png").read())
+            # try: renpy.file(config.basedir + "/hxppy thxughts.png")
+            # except: open(config.basedir + "/hxppy thxughts.png", "wb").write(renpy.file("hxppy thxughts.png").read())
+            if persistent.hxppy is None:
+                persistent.hxppy = "restored"
         $ chapter = 5
         call ch5_main
 
@@ -86,8 +88,10 @@ label start:
 
             call poem
             python:
-                try: renpy.file(config.basedir + "/CAN YOU HEAR ME.txt")
-                except: open(config.basedir + "/CAN YOU HEAR ME.txt", "wb").write(renpy.file("CAN YOU HEAR ME.txt").read())
+                # try: renpy.file(config.basedir + "/CAN YOU HEAR ME.txt")
+                # except: open(config.basedir + "/CAN YOU HEAR ME.txt", "wb").write(renpy.file("CAN YOU HEAR ME.txt").read())
+                if persistent.can_you_hear_me is None:
+                    persistent.can_you_hear_me = "restored"
 
 
             $ chapter = 1
@@ -98,8 +102,10 @@ label start:
 
             call poem (False)
             python:
-                try: renpy.file(config.basedir + "/iiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii.txt")
-                except: open(config.basedir + "/iiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii.txt", "wb").write(renpy.file("iiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii.txt").read())
+                # try: renpy.file(config.basedir + "/iiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii.txt")
+                # except: open(config.basedir + "/iiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii.txt", "wb").write(renpy.file("iiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii.txt").read())
+                if persistent.iii is None:
+                    persistent.iii = "restored"
 
 
             $ chapter = 2

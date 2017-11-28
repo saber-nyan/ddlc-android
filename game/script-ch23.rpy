@@ -496,14 +496,19 @@ label ch23_end:
     hide monika
     "Monika giggles as Yuri pushes her out the door."
     python:
-        try: renpy.file(config.basedir + "/have a nice weekend!")
-        except: open(config.basedir + "/have a nice weekend!", "w").write("G2pilVJccjJiQZ1poiM3iYZhj3I0IRbvj3wxomnoeOatVHUxZ2ozGKJgjXMzj2LgoOitBOM1dSDzHMatdRpmQZpidNehG29mkTxwmDJbGJxsjnVeQT9mTPSwSAOwnuWhSE50ByMpcuJoqGstJOCxqHCtdvG3HJV0TOGuwOIyoOGhwOHgm2GhlZpyISJik3J/")
-        try: os.remove(config.basedir + "/hxppy thxughts.png")
-        except: pass
-        try: os.remove(config.basedir + "/CAN YOU HEAR ME.txt")
-        except: pass
-        try: os.remove(config.basedir + "/iiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii.txt")
-        except: pass
+        # try: renpy.file(config.basedir + "/have a nice weekend!")  # TO!DONE: new persistent fix, see #2
+        # except: open(config.basedir + "/have a nice weekend!", "w").write("G2pilVJccjJiQZ1poiM3iYZhj3I0IRbvj3wxomnoeOatVHUxZ2ozGKJgjXMzj2LgoOitBOM1dSDzHMatdRpmQZpidNehG29mkTxwmDJbGJxsjnVeQT9mTPSwSAOwnuWhSE50ByMpcuJoqGstJOCxqHCtdvG3HJV0TOGuwOIyoOGhwOHgm2GhlZpyISJik3J/")
+        # try: os.remove(config.basedir + "/hxppy thxughts.png")
+        # except: pass
+        # try: os.remove(config.basedir + "/CAN YOU HEAR ME.txt")
+        # except: pass
+        # try: os.remove(config.basedir + "/iiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii.txt")
+        # except: pass
+        if persistent.have_a_nice_weekend is None:
+            persistent.have_a_nice_weekend = "G2pilVJccjJiQZ1poiM3iYZhj3I0IRbvj3wxomnoeOatVHUxZ2ozGKJgjXMzj2LgoOitBOM1dSDzHMatdRpmQZpidNehG29mkTxwmDJbGJxsjnVeQT9mTPSwSAOwnuWhSE50ByMpcuJoqGstJOCxqHCtdvG3HJV0TOGuwOIyoOGhwOHgm2GhlZpyISJik3J/"
+        persistent.hxppy = None
+        persistent.can_you_hear_me = None
+        persistent.iii = None
 
     play music t10y
     show yuri 2m zorder 2 at t11
@@ -643,8 +648,9 @@ label yuri_kill_2:
 
 label yuri_kill_3:
     python:
-        try: os.remove(config.basedir + "/have a nice weekend!")
-        except: pass
+        persistent.have_a_nice_weekend = None
+        #try: os.remove(config.basedir + "/have a nice weekend!")
+        #except: pass
     $ persistent.autoload = "yuri_kill_3"
     $ config.skipping = False
     $ config.allow_skipping = False
