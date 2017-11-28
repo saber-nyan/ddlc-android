@@ -165,9 +165,8 @@ define config.window_icon = "gui/window_icon.png"
 
 
 define config.allow_skipping = True
-define config.has_autosave = False
-define config.autosave_on_quit = False
-define config.autosave_slots = 0
+
+define config.autosave_slots = 8
 define config.layers = [ 'master', 'transient', 'screens', 'overlay', 'front' ]
 define config.image_cache_size = 64
 define config.predict_statements = 50
@@ -175,6 +174,12 @@ define config.rollback_enabled = config.developer
 define config.menu_clear_layers = ["front"]
 define config.gl_test_image = "white"
 
+init 65533 python:
+    config.has_autosave = True  # TO!DONE: see #1 for more details
+    config.autosave_on_quit = True
+    config.autosave_frequency = 10  # FIX!ME: lagging? Nope.
+    config.save_on_mobile_background = True
+    config.quit_on_mobile_background = False
 
 init python:
     if len(renpy.loadsave.location.locations) > 1: del(renpy.loadsave.location.locations[1])
