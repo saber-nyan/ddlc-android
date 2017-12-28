@@ -14,9 +14,10 @@ init python:
     POEM_DISLIKE_THRESHOLD = 29
     POEM_LIKE_THRESHOLD = 45
 
-
+    
+    import io
     full_wordlist = []
-    with renpy.file('poemwords.txt') as wordfile:
+    with io.open(config.basedir + '/game/poemwords.txt', 'rt', encoding='utf-8') as wordfile:
         for line in wordfile:
             
             line = line.strip()
