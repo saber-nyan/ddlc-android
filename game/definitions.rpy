@@ -1,6 +1,6 @@
 define persistent.demo = False
 define persistent.steam = True
-define config.developer = False
+define config.developer = True  # TODO: Remove b4 release!
 
 
 

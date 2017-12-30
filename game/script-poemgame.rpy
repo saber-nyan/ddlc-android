@@ -14,18 +14,17 @@ init python:
     POEM_DISLIKE_THRESHOLD = 29
     POEM_LIKE_THRESHOLD = 45
 
-    
-    import io
     full_wordlist = []
-    with io.open(config.basedir + '/game/poemwords.txt', 'rt', encoding='utf-8') as wordfile:
-        for line in wordfile:
+    with renpy.file('poemwords.txt') as wordfile:
+        tmp_lines = wordfile.read()
+        tmp_lines = tmp_lines.decode('utf-8')
+        for line in tmp_lines.splitlines():
             
             line = line.strip()
             
-            if line == '' or line[0] == '#': continue
+            if line == u'' or line[0] == u'#': continue
             
-            
-            x = line.split(',')
+            x = line.split(u',')
             full_wordlist.append(PoemWord(x[0], float(x[1]), float(x[2]), float(x[3])))
 
     seen_eyes_this_chapter = False
