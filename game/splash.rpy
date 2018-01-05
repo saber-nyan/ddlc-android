@@ -1,19 +1,19 @@
 init python:
     menu_trans_time = 1
-    splash_message_default = "This game is not suitable for children\nor those who are easily disturbed."
+    splash_message_default = "Эта игра не рекомендована для детей\nи легко впечатлительных личностей."
     splash_messages = [
-    "You are my sunshine,\nMy only sunshine",
-    "I missed you.",
-    "Play with me",
-    "It's just a game, mostly.",
-    "This game is not suitable for children\nor those who are easily disturbed?",
-    "sdfasdklfgsdfgsgoinrfoenlvbd",
+    "Ты мой свет,\nмой единственный свет",
+    "Я скучала.",
+    "Поиграй со мной",
+    "Это только игра, в основном.",
+    "Эта игра не рекомендована для детей\nи легко впечатлительных личностей?",
+    "ывафывлдапывапыпщшткащутдмив",
     "null",
-    "I have granted kids to hell",
-    "PM died for this.",
-    "It was only partially your fault.",
-    "This game is not suitable for children\nor those who are easily dismembered.",
-    "Don't forget to backup Monika's character file."
+    "Я подарила детей аду",
+    "PM умер за это.",
+    "Это была лишь частично твоя вина.",
+    "Эта игра не рекомендована для детей\nи легко расчленяемых личностей.",
+    "Не забудь создать резервную копию файла персонажа Моники."
     ]
 
 image splash_warning = ParameterizedText(style="splash_text", xalign=0.5, yalign=0.5)
@@ -218,36 +218,36 @@ label splashscreen:
 
 
     python:
-        firstrun = "1"  # TO!DONE: 'firstrun' should always contain "1"
-#        try:
-#            firstrun = renpy.file("firstrun").read(1)
-#        except:
-#            with open(config.basedir + "/game/firstrun", "wb") as f:
-#                pass
+        firstrun = ""
+        try:
+            firstrun = renpy.file("firstrun")
+        except:
+            with open(config.basedir + "/game/firstrun", "wb") as f:
+                f.write("0JIg0LvRg9GH0YjQuNGFINGC0YDQsNC00LjRhtC40Y/RhSDQtNCw0L3QvdC+0Lkg0LjQs9GA0Ysg0L7QsdGA0LDRidC10L3QuNC1INC+0YIg0LrQvtC80LDQvdC00Ysg0L/QtdGA0LXQstC+0LTRh9C40LrQvtCyLCDQvNGLINGB0L/RgNGP0YLQsNC70Lgg0LfQtNC10YHRjC4uLg0K0J3Rgywg0YDQsNC3INGD0LYg0LLRiyDRjdGC0L4g0YfQuNGC0LDQtdGC0LUsINC00YPQvNCw0Y4sINCy0Ysg0Lgg0YHQsNC80Lgg0Y3RgtC+INC/0L7QvdGP0LvQuC4NCg0K0KfRgtC+INC2LCDQvtCz0YDQvtC80L3QsNGPINCx0LvQsNCz0L7QtNCw0YDQvdC+0YHRgtGMINCy0YHQtdC8LCDRgdC+0LfQtNCw0YLQtdC70Y/QvCDQuNCz0YDRiyDQt9CwINGC0L4sINGH0YLQviDRgdC+0LfQtNCw0LvQuCDQv9C+0LTQvtCx0L3Ri9C5INGI0LXQtNC10LLRgCDQvtGCINCy0YHQtdGFLCDQutGC0L4g0YPRh9Cw0YHRgtCy0L7QstCw0Lsg0LIg0L/QtdGA0LXQstC+0LTQtSwg0LAg0LjQvNC10L3QvdC+Og0KS0JPUFlNDQpMYXp5Rm94DQrQotGD0YMt0KLQuNC60LrQuA0KTWFlbGRvbQ0KWnlhYmxpaw0K0JLQutGD0YHQvdCw0Y8g0YHQsNGA0LTQtdC70YzQutCwDQrQqNGC0L7RgNC60LANCncyYXJ5Z2FwDQpMZSBHb3VjaHF1ZQ0KZGlydHlfdHlhbg0KTWloYV9hbmRfVGVtYQ0KU2F0YW55YQ0KS2lydWtpcnUgQW1vdQ0KUm9tWmVycjANClRhc2NoZV9DaGFuDQpMb25lIEthc2F0aWsNCnRpbmVubWkNClF1YWNraWVEdWNraWUNCg0K0J7RgtC00LXQu9GM0L3QvtC1INGB0L/QsNGB0LjQsdC+IEVsbGlNYXJzaG1hbGxvdyDQuNC3INCz0YDRg9C/0L/RiyB2ay5jb20vb3VybGl0dGxlcGxhbmV0INC30LAg0L/QtdGA0LXQstC+0LQg0L/QtdGB0L3QuCAiWW91ciBSZWFsaXR5IiANCtCa0YHRgtCw0YLQuCwg0LLQvtGCINC10ZEg0L/QvtC70L3Ri9C5INGC0LXQutGB0YI6DQoNCtCa0LDQttC00YvQuSDQtNC10L3RjCwg0YfRgtC+INGBINGC0L7QsdC+0Lkg0LHRg9C00LXQvCDQstC80LXRgdGC0LUg0LzRiywg0LPRgNC10LbRgyDQvdCw0Y/QstGDLg0K0KDRg9GH0LrQvtC5INGPINC90LAg0LHRg9C80LDQs9C1INC+INC90LDRgSDQv9C+0Y3QvNGDINC/0LjRgdCw0YLRjCDQvdCw0YfQvdGDLg0KDQrQp9C10YDQvdC40LvQsCDQvtGB0YLQsNCy0LjQu9C4INC60LvRj9C60YHRi+KApg0K0KHQvNC+0LPRgyDRgtCy0L7RkSDRgdC10YDQtNGG0LUg0YHRgtGA0L7QutCw0LzQuCDQt9Cw0LTQtdGC0YwuDQrQn9C+0LvQvdC+INGDINC90LDRgSDQstC+0LfQvNC+0LbQvdC+0YHRgtC10Lkg0YDQsNC30L3Ri9GFLA0K0JrQsNC6INGA0LDRgdC/0L7Qt9C90LDRgtGMLCDRh9GC0L4g0L3QsNGB0YLQsNC7INGC0L7RgiDRgdCw0LzRi9C5INC00LXQvdGMPw0K0JrQsNC6INGA0LDRgdC/0L7Qt9C90LDRgtGMLCDRh9GC0L4g0L3QsNGB0YLQsNC7INGC0L7RgiDRgdCw0LzRi9C5INC00LXQvdGMPw0KDQrQo9C00LDQu9C+0YHRjCDQu9C4INC00LvRjyDQutCw0LbQtNC+0LPQviDQv9C+INC00YPRiNC1INC00LXQu9C+INC/0L7QtNC+0LHRgNCw0YLRjD8NCtChINC90LDQvNC4INGC0Ysg4oCTINGN0YLQviDQt9C90LDRh9C40YIsINGH0YLQviDQvNGLINGB0LXQudGH0LDRgSDQvdC1INC00L7Qu9C20L3RiyDRgdC60YPRh9Cw0YLRjCENCg0K0KHQstC+0Lgg0YfRg9Cy0YHRgtCy0LAg0L/RgNC+0YfQtdGB0YLRjCDRjyDQvdC1INCyINGB0LjQu9Cw0YUsDQrQndC+INC70YPRh9GI0LUg0YHQu9C+0LIg0LLRgdGRINGD0LvRi9Cx0LrQsCDQvtCx0YrRj9GB0L3QuNGCIQ0K0KDQsNC3INGE0LjQvdCw0Lsg0LzQvtC5LCDRg9Cy0YssINC90LUg0L3QsNC/0LjRgdCw0L0sDQrQp9GC0L4g0YHQtNC10LvQsNGC0Ywg0LzQvdC1LCDRh9GC0L7QsSDQtdCz0L4g0LfQsNC/0L7Qu9GD0YfQuNGC0Yw/DQoNCtCf0L7Rh9C10LzRgyDQsdC70LjQt9C60LjQvCDQu9GO0LTRj9C8INC80L7Qs9GDINGPINC70LjRiNGMINC+INC/0LvQvtGF0L7QvCDQv9C40YHQsNGC0Yw/DQrQkiDRh9GR0Lwg0LvRjtCx0L7QstGMIOKAkyDQvtGC0L/Rg9GB0YLQuNGC0Ywg0LjQu9C4INC20LUg0Log0YHQtdCx0LUg0LrRgNC10L/Rh9C1INC/0YDQuNCy0Y/Qt9Cw0YLRjD8NCg0K0JLQvdC+0LLRjCDRh9C10YDQvdC40LvQsCDQvtGB0YLQsNCy0LjQu9C4INC60LvRj9C60YHRi+KApg0K0JrQsNC6INC/0YDQtdGC0LLQvtGA0LjRgtGMINCyINC20LjQt9C90Ywg0L/QvtGN0LzRgyDQviDQu9GO0LHQstC4Pw0K0KLQstC+0Lkg0YHRgtGD0Log0YHQtdGA0LTRhtCwINC90LUg0YHQu9GL0YjRgyDRjyDRj9GB0L3Qvi4NCtCa0LDQutC+0Lkg0LvRjtCx0L7QstGMINCx0YvRgtGMINC00L7Qu9C20L3QsCDQsiDRgNC10LDQu9GM0L3QvtGB0YLQuD8NCtCg0LDQtyDQsiDRgtCy0L7QtdC5INGA0LXQsNC70YzQvdC+0YHRgtC4INC60LDQuiDQu9GO0LHQuNGC0YwsINGPINC90LUg0YPQt9C90LDRjiwNCtCi0L7Qs9C00LAg0YPQudC00YMu")
+                pass
     if not firstrun:
         if persistent.first_run:
             $ quick_menu = False
             scene black
             menu:
-                "A previous save file has been found. Would you like to delete your save data and start over?"
-                "Yes, delete my existing data.":
-                    "Deleting save data...{nw}"
+                "Был обнаружен прошлый файл сохранений. Вы хотите удалить ваши сохранённые данные и начать с начала?"
+                "Да, удалить существующие данные.":
+                    "Удаление сохранённых данных...{nw}"
                     python:
                         delete_all_saves()
                         renpy.loadsave.location.unlink_persistent()
                         renpy.persistent.should_save_persistent = False
                         renpy.utter_restart()
-                "No, continue where I left off.":
+                "Нет, продолжить там, где я остановился.":
                     pass
 
         python:
             if not firstrun:
                 try:
                     with open(config.basedir + "/game/firstrun", "w") as f:
-                        f.write("1")
+                        f.write("0JIg0LvRg9GH0YjQuNGFINGC0YDQsNC00LjRhtC40Y/RhSDQtNCw0L3QvdC+0Lkg0LjQs9GA0Ysg0L7QsdGA0LDRidC10L3QuNC1INC+0YIg0LrQvtC80LDQvdC00Ysg0L/QtdGA0LXQstC+0LTRh9C40LrQvtCyLCDQvNGLINGB0L/RgNGP0YLQsNC70Lgg0LfQtNC10YHRjC4uLg0K0J3Rgywg0YDQsNC3INGD0LYg0LLRiyDRjdGC0L4g0YfQuNGC0LDQtdGC0LUsINC00YPQvNCw0Y4sINCy0Ysg0Lgg0YHQsNC80Lgg0Y3RgtC+INC/0L7QvdGP0LvQuC4NCg0K0KfRgtC+INC2LCDQvtCz0YDQvtC80L3QsNGPINCx0LvQsNCz0L7QtNCw0YDQvdC+0YHRgtGMINCy0YHQtdC8LCDRgdC+0LfQtNCw0YLQtdC70Y/QvCDQuNCz0YDRiyDQt9CwINGC0L4sINGH0YLQviDRgdC+0LfQtNCw0LvQuCDQv9C+0LTQvtCx0L3Ri9C5INGI0LXQtNC10LLRgCDQvtGCINCy0YHQtdGFLCDQutGC0L4g0YPRh9Cw0YHRgtCy0L7QstCw0Lsg0LIg0L/QtdGA0LXQstC+0LTQtSwg0LAg0LjQvNC10L3QvdC+Og0KS0JPUFlNDQpMYXp5Rm94DQrQotGD0YMt0KLQuNC60LrQuA0KTWFlbGRvbQ0KWnlhYmxpaw0K0JLQutGD0YHQvdCw0Y8g0YHQsNGA0LTQtdC70YzQutCwDQrQqNGC0L7RgNC60LANCncyYXJ5Z2FwDQpMZSBHb3VjaHF1ZQ0KZGlydHlfdHlhbg0KTWloYV9hbmRfVGVtYQ0KU2F0YW55YQ0KS2lydWtpcnUgQW1vdQ0KUm9tWmVycjANClRhc2NoZV9DaGFuDQpMb25lIEthc2F0aWsNCnRpbmVubWkNClF1YWNraWVEdWNraWUNCg0K0J7RgtC00LXQu9GM0L3QvtC1INGB0L/QsNGB0LjQsdC+IEVsbGlNYXJzaG1hbGxvdyDQuNC3INCz0YDRg9C/0L/RiyB2ay5jb20vb3VybGl0dGxlcGxhbmV0INC30LAg0L/QtdGA0LXQstC+0LQg0L/QtdGB0L3QuCAiWW91ciBSZWFsaXR5IiANCtCa0YHRgtCw0YLQuCwg0LLQvtGCINC10ZEg0L/QvtC70L3Ri9C5INGC0LXQutGB0YI6DQoNCtCa0LDQttC00YvQuSDQtNC10L3RjCwg0YfRgtC+INGBINGC0L7QsdC+0Lkg0LHRg9C00LXQvCDQstC80LXRgdGC0LUg0LzRiywg0LPRgNC10LbRgyDQvdCw0Y/QstGDLg0K0KDRg9GH0LrQvtC5INGPINC90LAg0LHRg9C80LDQs9C1INC+INC90LDRgSDQv9C+0Y3QvNGDINC/0LjRgdCw0YLRjCDQvdCw0YfQvdGDLg0KDQrQp9C10YDQvdC40LvQsCDQvtGB0YLQsNCy0LjQu9C4INC60LvRj9C60YHRi+KApg0K0KHQvNC+0LPRgyDRgtCy0L7RkSDRgdC10YDQtNGG0LUg0YHRgtGA0L7QutCw0LzQuCDQt9Cw0LTQtdGC0YwuDQrQn9C+0LvQvdC+INGDINC90LDRgSDQstC+0LfQvNC+0LbQvdC+0YHRgtC10Lkg0YDQsNC30L3Ri9GFLA0K0JrQsNC6INGA0LDRgdC/0L7Qt9C90LDRgtGMLCDRh9GC0L4g0L3QsNGB0YLQsNC7INGC0L7RgiDRgdCw0LzRi9C5INC00LXQvdGMPw0K0JrQsNC6INGA0LDRgdC/0L7Qt9C90LDRgtGMLCDRh9GC0L4g0L3QsNGB0YLQsNC7INGC0L7RgiDRgdCw0LzRi9C5INC00LXQvdGMPw0KDQrQo9C00LDQu9C+0YHRjCDQu9C4INC00LvRjyDQutCw0LbQtNC+0LPQviDQv9C+INC00YPRiNC1INC00LXQu9C+INC/0L7QtNC+0LHRgNCw0YLRjD8NCtChINC90LDQvNC4INGC0Ysg4oCTINGN0YLQviDQt9C90LDRh9C40YIsINGH0YLQviDQvNGLINGB0LXQudGH0LDRgSDQvdC1INC00L7Qu9C20L3RiyDRgdC60YPRh9Cw0YLRjCENCg0K0KHQstC+0Lgg0YfRg9Cy0YHRgtCy0LAg0L/RgNC+0YfQtdGB0YLRjCDRjyDQvdC1INCyINGB0LjQu9Cw0YUsDQrQndC+INC70YPRh9GI0LUg0YHQu9C+0LIg0LLRgdGRINGD0LvRi9Cx0LrQsCDQvtCx0YrRj9GB0L3QuNGCIQ0K0KDQsNC3INGE0LjQvdCw0Lsg0LzQvtC5LCDRg9Cy0YssINC90LUg0L3QsNC/0LjRgdCw0L0sDQrQp9GC0L4g0YHQtNC10LvQsNGC0Ywg0LzQvdC1LCDRh9GC0L7QsSDQtdCz0L4g0LfQsNC/0L7Qu9GD0YfQuNGC0Yw/DQoNCtCf0L7Rh9C10LzRgyDQsdC70LjQt9C60LjQvCDQu9GO0LTRj9C8INC80L7Qs9GDINGPINC70LjRiNGMINC+INC/0LvQvtGF0L7QvCDQv9C40YHQsNGC0Yw/DQrQkiDRh9GR0Lwg0LvRjtCx0L7QstGMIOKAkyDQvtGC0L/Rg9GB0YLQuNGC0Ywg0LjQu9C4INC20LUg0Log0YHQtdCx0LUg0LrRgNC10L/Rh9C1INC/0YDQuNCy0Y/Qt9Cw0YLRjD8NCg0K0JLQvdC+0LLRjCDRh9C10YDQvdC40LvQsCDQvtGB0YLQsNCy0LjQu9C4INC60LvRj9C60YHRi+KApg0K0JrQsNC6INC/0YDQtdGC0LLQvtGA0LjRgtGMINCyINC20LjQt9C90Ywg0L/QvtGN0LzRgyDQviDQu9GO0LHQstC4Pw0K0KLQstC+0Lkg0YHRgtGD0Log0YHQtdGA0LTRhtCwINC90LUg0YHQu9GL0YjRgyDRjyDRj9GB0L3Qvi4NCtCa0LDQutC+0Lkg0LvRjtCx0L7QstGMINCx0YvRgtGMINC00L7Qu9C20L3QsCDQsiDRgNC10LDQu9GM0L3QvtGB0YLQuD8NCtCg0LDQtyDQsiDRgtCy0L7QtdC5INGA0LXQsNC70YzQvdC+0YHRgtC4INC60LDQuiDQu9GO0LHQuNGC0YwsINGPINC90LUg0YPQt9C90LDRjiwNCtCi0L7Qs9C00LAg0YPQudC00YMu")
                 except:
-                    #renpy.jump("readonly")
-                    pass  # TO!DONE
+                    renpy.jump("readonly")
 
     if not persistent.first_run:
         python:
@@ -258,11 +258,11 @@ label splashscreen:
         scene tos
         with Dissolve(1.0)
         pause 1.0
-        "This game is not suitable for children or those who are easily disturbed."
-        "Individuals suffering from anxiety or depression may not have a safe experience playing this game. For content warnings, please visit: http://ddlc.moe/warning.html"
+        "Эта игра не рекомендована для детей и легко впечатлительных личностей."
+        "Личности, страдающие от беспокойства или депрессии, могут пострадать при прохождении данной игры. Для предупреждений о содержании, пожалуйста, посетите: http://ddlc.moe/warning.html или прочтите WARNING.html в папке с игрой"
         menu:
-            "By playing Doki Doki Literature Club, you agree that you are at least 13 years of age, and you consent to your exposure of highly disturbing content."
-            "I agree.":
+            "Играя в Doki Doki Literature Club, вы подтверждаете, что вам как минимум 16 лет и вы согласны увидеть очень тревожащее содержимое."
+            "Я подтверждаю.":
                 pass
         $ persistent.first_run = True
         scene tos2
@@ -274,20 +274,20 @@ label splashscreen:
     python:
         s_kill_early = None
         if persistent.playthrough == 0:
-            if persistent.sayori is not None and persistent.sayori == "deleted":  # TO!DONE: character fix!
-                s_kill_early = True
+            try: renpy.file("../characters/sayori.chr")
+            except: s_kill_early = True
         if not s_kill_early:
             if persistent.playthrough <= 2 and persistent.playthrough != 0:
-                if persistent.monika is not None and persistent.monika == "deleted":
-                    persistent.monika = "restored"
+                try: renpy.file("../characters/monika.chr")
+                except: open(config.basedir + "/characters/monika.chr", "wb").write(renpy.file("monika.chr").read())
             if persistent.playthrough <= 1 or persistent.playthrough == 4:
-                if persistent.natsuki is not None and persistent.natsuki == "deleted":
-                    persistent.natsuki = "restored"
-                if persistent.yuri is not None and persistent.yuri == "deleted":
-                    persistent.yuri = "restored"
+                try: renpy.file("../characters/natsuki.chr")
+                except: open(config.basedir + "/characters/natsuki.chr", "wb").write(renpy.file("natsuki.chr").read())
+                try: renpy.file("../characters/yuri.chr")
+                except: open(config.basedir + "/characters/yuri.chr", "wb").write(renpy.file("yuri.chr").read())
             if persistent.playthrough == 4:
-                if persistent.sayori is not None and persistent.sayori == "deleted":
-                    persistent.sayori = "restored"
+                try: renpy.file("../characters/sayori.chr")
+                except: open(config.basedir + "/characters/sayori.chr", "wb").write(renpy.file("sayori.chr").read())
 
     if not persistent.special_poems:
         python hide:
@@ -365,7 +365,7 @@ label splashscreen:
         show noise:
             alpha 0.1
         with Dissolve(1.0)
-        show expression Text("Now everyone can be happy.", style="sayori_text"):
+        show expression Text("Теперь все могут быть счастливы.", style="sayori_text"):
             xalign 0.8
             yalign 0.5
             alpha 0.0
@@ -430,19 +430,19 @@ label after_load:
     elif anticheat != persistent.anticheat:
         stop music
         scene black
-        "The save file could not be loaded."
-        "Are you trying to cheat?"
-        $ m_name = "Monika"
+        "Файл сохранения нельзя загрузить."
+        "Ты пытаешься читерить?"
+        $ m_name = "Моника"
         show monika 1 at t11
         if persistent.playername == "":
-            m "You're so funny."
+            m "Ты такой смешной."
         else:
-            m "You're so funny, [persistent.playername]."
+            m "Ты такой смешной, [persistent.playername]."
         $ renpy.utter_restart()
     else:
         if persistent.playthrough == 0 and not persistent.first_load and not config.developer:
             $ persistent.first_load = True
-            call screen dialog("Hint: You can use the \"Skip\" button to\nfast-forward through text you've already read.", ok_action=Return())
+            call screen dialog("Подсказка: Можно использовать кнопку \"Пропуск\", чтобы пропускать виденный ранее текст.", ok_action=Return())
     return
 
 
@@ -508,10 +508,10 @@ label quit:
         pause 0.01
     return
 
-label readonly:  # TO!DONE: find usages!
+label readonly:
     scene black
-    "Fuck, please contact saber-nyan!"
-    "https://github.com/saber-nyan"
+    "Игру нельзя запустить, поскольку вы пытаетесь запустить её из места, в котором разрешено лишь чтение."
+    "Пожалуйста, скопируйте приложение DDLC на рабочий стол или любое другое доступное место и попробуйте снова."
     $ renpy.quit()
     return
 # Decompiled by unrpyc: https://github.com/CensoredUsername/unrpyc

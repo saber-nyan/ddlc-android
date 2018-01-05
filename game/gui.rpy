@@ -58,31 +58,31 @@ define -2 gui.interface_text_color = '#ffffff'
 
 
 
-define -2 gui.default_font = "gui/font/Aller_Rg.ttf"
+define -2 gui.default_font = "gui/font/GillSansT.otf"
 
 
-define -2 gui.name_font = "gui/font/RifficFree-Bold.ttf"
+define -2 gui.name_font = "gui/font/GillSansC-Bold.otf"
 
 
-define -2 gui.interface_font = "gui/font/Aller_Rg.ttf"
+define -2 gui.interface_font = "gui/font/GillSansT.otf"
 
 
-define -2 gui.text_size = 26
+define -2 gui.text_size = 24
 
 
-define -2 gui.name_text_size = 26
+define -2 gui.name_text_size = 24
 
 
-define -2 gui.interface_text_size = 26
+define -2 gui.interface_text_size = 24
 
 
-define -2 gui.label_text_size = 30
+define -2 gui.label_text_size = 28
 
 
 define -2 gui.notify_text_size = 16
 
 
-define -2 gui.title_text_size = 40
+define -2 gui.title_text_size = 38
 
 
 
@@ -134,11 +134,11 @@ define -2 gui.namebox_tile = False
 
 
 
-define -2 gui.text_xpos = 240
-define -2 gui.text_ypos = 43
+define -2 gui.text_xpos = 268
+define -2 gui.text_ypos = 62
 
 
-define -2 gui.text_width = 804
+define -2 gui.text_width = 744
 
 
 
@@ -193,7 +193,7 @@ define -2 gui.confirm_button_text_xalign = 0.5
 define -2 gui.page_button_borders = Borders(10, 4, 10, 4)
 
 
-define -2 gui.quick_button_text_size = 16
+define -2 gui.quick_button_text_size = 14
 define -2 gui.quick_button_text_idle_color = "#522"
 define -2 gui.quick_button_text_hover_color = "#fcc"
 define -2 gui.quick_button_text_selected_color = gui.accent_color
@@ -413,7 +413,7 @@ init -2 python:
 
 
 
-    if False:  # TO!DONE: problem: defaults!
+    if renpy.variant("small"):
         
         
         gui.text_size = 30

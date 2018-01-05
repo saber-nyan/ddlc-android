@@ -9,576 +9,593 @@ init python:
 
     poem_y1 = Poem(
     author = "yuri",
-    title = "Ghost Under the Light",
+    title = "Призрак при свете",
     text = """\
-The tendrils of my hair illuminate beneath the amber glow.
-Bathing.
-It must be this one.
-The last remaining streetlight to have withstood the test of time.
-the last yet to be replaced by the sickening blue-green hue of the future.
-I bathe. Calm; breathing air of the present but living in the past.
-The light flickers.
-I flicker back."""
+Концы волос моих янтарным блеском промелькнули.
+Омовение.
+Должно быть так.
+Последний уличный фонарь уже давно замкнули. 
+Последний, не заменённый противным оттенком в зелёную синеву,
+Я омываюсь. Спокойствие... Вдыхаю воздух настоящий, былым покуда я живу.
+Мерцает свет.
+Ему мерцаю я в ответ."""
     )
 
     poem_y2 = Poem(
     author = "yuri",
-    title = "The Raccoon",
+    title = "Енот",
     text = """\
-It happened in the dead of night while I was slicing bread for a guilty snack.
-My attention was caught by the scuttering of a raccoon outside my window.
-That was, I believe, the first time I noticed my strange tendencies as an unordinary human.
-I gave the raccoon a piece of bread, my subconscious well aware of the consequences.
-Well aware that a raccoon that is fed will always come back for more.
-The enticing beauty of my cutting knife was the symptom.
-The bread, my hungry curiosity.
-The raccoon, an urge.
+Случилось это поздней ночью, когда (грешна) я нарезала хлеб.
+Моё внимание привлёк енот, шумящий за окном.
+Это был мой первый раз, когда я поняла, что я странный человек.
+Дала еноту хлеба, тревогу вдруг забило подсознание моё.
+Предупреждало, что, поев, вернётся за добавкой вновь енот.
+Болезнь моя - мой нож блеск соблазнительный несёт.
+Хлеб - голод интереса моего.
+Енот - желание моё.
 
-The moon increments its phase and reflects that much more light off of my cutting knife.
-The very same light that glistens in the eyes of my raccoon friend.
-I slice the bread, fresh and soft. The raccoon becomes excited.
-Or perhaps I'm merely projecting my emotions onto the newly-satisfied animal.
+Луна сменила фазу, и больше света отразилось в лезвии ножа.
+Тот самый свет, что врезался еноту, другу моему, в глаза.
+Я отрезала хлеб, что свеж и мягок. Енот немного взволновался.
+Или, передав свои переживания зверьку, мне просто показалось.
 
-The raccoon has taken to following me.
-You could say that we've gotten quite used to each other.
-The raccoon becomes hungry more and more frequently, so my bread is always handy.
-Every time I brandish my cutting knife, the raccoon shows me its excitement.
-A rush of blood. Classic Pavlovian conditioning. I slice the bread.
-And I feed myself again."""
+Енот стал следовать за мной.
+Привыкли словно мы друг к другу.
+Он голодал всё чаще, не зря готов был хлеб мой.
+Когда взмахнула я ножом, енот вдруг показал мне часть испуга.
+Прилив крови. Классический рефлекс Павлова. И хлеб я нарезаю.
+Кормлю себя я снова, утопая."""
     )
 
     poem_y3 = Poem(
     author = "yuri",
-    title = "Beach",
+    title = "Пляж",
     text = """\
-A marvel millions of years in the making.
-Where the womb of Earth chaotically meets the surface.
-Under a clear blue sky, an expanse of bliss--
-But beneath gray rolling clouds, an endless enigma.
-The easiest world to get lost in
-Is one where everything can be found.
+Чудо, что создавалось миллионы лет,
+Земли утроба встретится с поверхностью извне,
+Простор блаженства под чистым небом голубым...
+Но под облаками серыми загадок след.
+Ведь потеряться проще в мире дней,
+В которых можно всё найти самим.
 
-One can only build a sand castle where the sand is wet.
-But where the sand is wet, the tide comes.
-Will it gently lick at your foundations until you give in?
-Or will a sudden wave send you crashing down in the blink of an eye?
-Either way, the outcome is the same.
-Yet we still build sand castles.
+Построить замок можно лишь на влажном песке.
+Но туда, где влажен песок, приходит волна.
+Коснётся ли нежно тебя, не поддашься пока?
+Или ударом внезапным вернётся к тебе?
+Итог один и тот же — беспрекословна она.
+И мы по-прежнему строим замки из песка.
 
-I stand where the foam wraps around my ankles.
-Where my toes squish into the sand.
-The salty air is therapeutic.
-The breeze is gentle, yet powerful.
-I sink my toes into the ultimate boundary line, tempted by the foamy tendrils.
-Turn back, and I abandon my peace to erode at the shore.
-Drift forward, and I return to Earth forevermore."""
+Стою я там, где море пенится у ног,
+Где мои пальцы погружаются в песок.
+Морской полезен для здоровья воздух.
+Бриз нежен, но силён.
+Я погружаю свои ноги в пленящую витками воду.
+Коль поверну - разрушу мир, себе не внемля.
+Плывя вперёд, я навсегда вернусь на Землю."""
     )
 
     poem_y3b = Poem(
     author = "yuri",
-    title = "Ghost Under the Light pt. 2",
+    title = "Призрак при свете -- часть 2",
     text = """\
-The tendrils of my hair illuminate beneath the amber glow.
-Bathing.
-In the distance, a blue-green light flickers.
-A lone figure crosses its path - a silhouette obstructing the eerie glow.
-My heart pounds. The silhouette grows. Closer. Closer.
-I open my umbrella, casting a shadow to shield me from visibility.
-But I am too late.
-He steps into the streetlight. I gasp and drop my umbrella.
-The light flickers. My heart pounds. He raises his arm.
+Концы волос моих янтарным блеском промелькнули.
+Омовение.
+Вдалеке мерцает свет зелёной синевы.
+Одинокая фигура идёт по дороге - силуэтом зловещее свечение качнув.
+Моё сердце стучит. Силуэт приближается всё ближе и ближе в тени.
+Я раскрываю свой зонтик, чтобы скрыться от взгляда.
+Но всё слишком поздно.
+Он выходит на уличный свет. Вздыхаю. Мой зонт начал падать.
+Мерцает свет. Моё сердце стучит. Поднял он руку серьёзно.
 
-Time stops.
+Остановилось время.
 
-The only indication of movement is the amber light flickering against his outstretched arm.
-The flickering light is in rhythm with the pounding of my heart.
-Teasing me for succumbing to this forbidden emotion.
-Have you ever heard of a ghost feeling warmth before?
-Giving up on understanding, I laugh.
-Understanding is overrated.
-I touch his hand. The flickering stops.
-Ghosts are blue-green. My heart is amber."""
+И светит фонарь напротив его вытянутой руки.
+Мерцание света с сердца биение сплело.
+Запретными чувствами меня вовлеки.
+Ты слышал, чтобы призраки чувствовали тепло?
+Я смеюсь, не понимая ничего.
+Ведь пониманье моё переоценено .
+Касаюсь его я руки. Мерцание прекратилось в инерции.
+Призраки из зелёной синевы. Фонарь - моё сердце."""
     )
 
     poem_y22 = Poem(
     author = "yuri",
     yuri_2 = True,
-    title = "Wheel",
+    title = "Колесо",
     text = """\
-A rotating wheel. Turning an axle. Grinding. Bolthead. Linear gearbox. Falling sky. Seven holy stakes. \
-A docked ship. A portal to another world. A thin rope tied to a thick rope. A torn harness. Parabolic gearbox. \
-Expanding universe. Time controlled by slipping cogwheels. Existence of God. Swimming with open water in all directions. \
-Drowning. A prayer written in blood. A prayer written in time-devouring snakes with human eyes. \
-A thread connecting all living human eyes. A kaleidoscope of holy stakes. Exponential gearbox. \
-A sky of exploding stars. God disproving the existence of God. A wheel rotating in six dimensions. \
-Forty gears and a ticking clock. A clock that ticks one second for every rotation of the planet. \
-A clock that ticks forty times every time it ticks every second time. A bolthead of holy stakes tied to \
-the existence of a docked ship to another world. A kaleidoscope of blood written in clocks. A time-devouring \
-prayer connecting a sky of forty gears and open human eyes in all directions. Breathing gearbox. Breathing bolthead. \
-Breathing ship. Breathing portal. Breathing snakes. Breathing God. Breathing blood. Breathing holy stakes. \
-Breathing human eyes. Breathing time. Breathing prayer. Breathing sky. Breathing wheel."""
+Вращающееся колесо. Вокруг своей оси. Скрежет. Головки болтов. Линейная коробка передач. Падающее небо. Семь священных кольев. \
+Пришвартованный корабль. Портал в другой мир. Тонкая верёвка, привязанная к толстой верёвке. Разорванный жгут. Параболическая коробка передач. \
+Расширяющаяся вселенная. Время, контролируемое вращающимися шестернями. Существование Бога. Плавание в открытом водоёме во всех направлениях. \
+Утопление. Молитва, написанная кровью. Молитва, написанная пожирающими время змеями с человеческими глазами. \
+Нить, соединяющая все глаза живых людей. Калейдоскоп святых кольев. Экспоненциальная коробка передач. \
+Небо, полное взрывающихся звёзд. Бог, опровергающий существование Бога. Колесо вращается в шести измерениях. \
+Сорок шестерней и тикающие часы. Часы, которые отмеряют секунду за каждое вращение планеты. \
+Часы, которые тикают сорок раз каждый раз, когда они тикают каждый второй раз. Священные колья, привязанные к \
+существованию пришвартованного корабля в другом мире. Калейдоскоп крови, написанный в часах. Поглощающая время \
+молитва соединяет небо сорока шестерней и раскрытые человеческие глаза во всех направлениях. Дыхание коробки передач. Дыхание болтов. \
+Дыхание корабля. Дыхание портала. Дыхание змей. Дыхание Бога. Дыхание крови. Дыхание святых кольев. \
+Дыхание человеческих глаз. Дыхание времени. Дыхание молящегося. Дыхание неба. Дыхание колеса."""
     )
 
     poem_y23 = Poem(
         author = "yuri",
         yuri_3 = True,
-        title = "mdpnfbo,jrfp",
+        title = "ьвзтаищ,оказ",
         text = """\
-ed,,zinger suivante,,tels handknits finish,,cagefuls basinlike bag octopodan,,imboss\
-ing vaporettos rorid easygoingnesses nalorphines,,benzol respond washerwomen bris\
-tlecone,,parajournalism herringbone farnarkeled,,episodically cooties,,initiallers \
-bimetallic,,leased hinters,,confidence teetotaller computerphobes,,pinnacle exotica\
-lly overshades prothallia,,posterior gimmickry brassages bediapers countertrades,,\
-haslet skiings sandglasses cannoli,,carven nis egomaniacal,,barminess gallivanted,,\
-southeastward,,oophoron crumped,,tapued noncola colposcopical,,dolente trebbiano re\
-vealment,,outworked isotropous monosynaptic excisional moans,,enterocentesis jacuz\
-zi preoccupations,,hippodrome outward googs,,tabbises undulators,,metathesizing,,sha\
-ria prepostor,,neuromast curmudgeons actability,,archaise spink reddening miscount\
-,,madmen physostigmin statecraft neurocoeles bammed,,tenderest barguests crusados \
-trust,,manshifts darzis aerophones,,reitboks discomposingly,,expandors,,monotasking \
-galabia,,pertinents expedients witty,,chirographies crachach unsatisfactoriness sw\
-erveless,,flawed sepulchred thanksgiver scrawl skug,,perorate stringers gelatine f\
-lagstones,,chuses conceptualization surrejoined,,counterblasts rache,,numerative,,de\
-lirifacients methylthionine,,mantram dynamist atomised,,eternization percalines hr\
-yvnias pragmatizing,,reproachfulnesses telework nowts demoded revealer,,burnettize\
- caryopteris subangular wirricows,,transvestites sinicized narcissus,,hikers meno,,\
-degassing,,postcrises alikenesses,,sycophancy seroconverting insure,,yantras raphid\
-es cliftiest bosthoon,,zootherapy chlorides nationwide schlub yuri,,timeshares cas\
-tanospermine backspaces reincite,,coactions cosignificative palafitte,,poofters su\
-bjunctions,,aquarian,,theralite revindicating,,cynosural permissibilities narcotisi\
-ng,,journeywork outkissed clarichords troutier,,myopias undiverting evacuations sn\
-arier superglue,,deaminise infirmaries teff hebephrenias,,brainboxes homonym lance\
-let,,lambitive stray,,inveigled,,acetabulums atenolol,,dekkos scarcer flensed,,abulia\
-s flaggers wammul boastfully,,galravitch happies interassociation multipara augme\
-ntations,,teratocarcinomata coopting didakai infrequently,,hairtails intricacy usu\
-als,,pillorise outrating,,cataphoresis,,furnishings leglen,,goethite deflate butterb\
-urs,,phoneticising winiest hyposulphuric campshirts,,chainfalls swimmings roadbloc\
-ked redone soliloquies,,broking mendaciousness parasitisms counterworld,,unravelli\
-ngs quarries passionately,,onomatopoesis repenting,,ramequin,,mopboard euphuistical\
-ly,,volta sycophantized allantoides,,bors bouclees raisings sustaining,,diabolist s\
-ticks dole liltingly,,curial bisexualisms siderations hemolysed,,damnabilities unk\
-enneling halters,,peripheral congaing,,diatomicity,,foolings repayments,,hereabouts \
-vamosed him,,slanters moonrock porridgy monstruous,,heartwood bassoonist predispos\
-itions jargoon dominances,,timidest inalienable rewearing inevitably,,entreating r\
-etiary tranquillizing,,uniparental droogs,,allotropous,,forzati abiogenetic,,obdurat\
-ion exempted unifaces,,epilating calisaya dispiteously coggles,,vestmented flukily\
- ignifying complished hiccupy municipalize,,pentagraphs parcels sutler excavates,,\
-stardust miscited thankfulness,,fouter pertused,,overpacks,,guarishes hylotheism,,pi
-Fresh blood seeps through the line parting her skin and slowly colors her breast red.\
- I begin to hyperventilate as my compulsion grows. The images won’t go away. Images of\
- me driving the knife into her flesh continuously, fucking her body with the blade, \
-making a mess of her. My head starts going crazy as my thoughts start to return. \
-Shooting pain assaults my mind along with my thoughts. This is disgusting. Absolutely\
- disgusting. How could I ever let myself think these things? But it’s unmistakable. \
-The lust continues to linger through my veins. An ache in my muscles stems from the \
-unreleased tension experienced by my entire body. Her Third Eye is drawing me closer."""
+ед,,ремарка суивант,,теле ручное плетение заканчивает,,полная решетка кувшинопод\
+обных мешковых моллюсков,,вырезая кораблики влажной легкомысленности налорфинов,,\
+бензоловый ответ кухарок сосновых шишек,,псевдожурнализма узор ёлочкой бесполезен,,\
+эпизодичные болячки,,зачинщик биметаллический,,советы в долг,,уверенность трезвенн\
+ик компьютерофоб,,пик экзотически затеняет проталлий,,задние ухищрения оплаты че\
+канки пеленуют внешние сделки,,потроха лыжи песчаные очки канноли,,вырезанный ниш\
+самовлюблённости,, сумасбродство флиртовало,,югозападнонаправленный,,яичник хруст\
+нул,,запретная не кола колпоскопическая,,содрогается,,откровение,,работа дома изо\
+тропные моносинаптические эксцизионные стоны,,энтероцентез джакузи занято,,гиппод\
+ром внешних черных глаз,,полосатые ондуляторы,,метатезировать,,староста шариата,,\
+эпителиальный чувствительный орган скупец дееспособность,,приукрасить стариной кр\
+аснеющий просчёт пташки,,безумцы физостигмин искусство править нервные трубки поб\
+иты,,мягчайший злой дух смерти крузадо доверие,,рабочие единицы дардзи аэрофоны,,\
+тростниковый козёл расстройственно,,растяжители,,однозадачная джелаба,,принаждлеж\
+ности подручные средства остроумный,,каллиграфии уэльские парламентарии неудовлет\
+ворительность непоколебимый,,бракованный погребённый благодаритель мазня истеричка,,\
+разглагольствовать тетива желатин плита,,выборы концептуализация подавать триплику,,\
+контрмера ракка,,нумерационный,,агент делирий метилтионин,,мантра динамист атомизи\
+рован,,увековечение перкалина гривны прагматизирование,,укоризненность удалённая ра\
+бота скот устаревший открыватель,, сделать огнестойким кариоптерис угловатые бесы,,\
+трансвеститы окитаенные нарцисс,,ходок менее,,дегазированние,,посткризис схожести,,\
+низкопоклонство сероконверсировать страховать,,символы рафиды обрывистейший хам,,зоо\
+терапия хлориды всенародное ничтожество юри,,совместная аренда кастаноспермин обрат\
+ные ходы возбудить,,содействия однозначный палафит,,пуф соединение,,водолей,,тералит \
+переоправдывающий,,привлекательный допустимости заглушать,,найм перецеловать клави\
+корд форельнее,,близорукости неотвлекаемые эвакуации уловимее суперклей,,деаминизи\
+ровать аптеки теф гебефрении,,умники омоним ланцетник,,лизательный бездомный,,зама\
+ненный,,вертлюжная впадина атенолол,,осмотр скуднее ободранный,,патологическое без\
+волие,,регулировщик жакет тщеславно,,галравитч хаплохромисы междуассоциации мульти\
+пара увеличение,,nэмбриональный рак кооптация цыгане нечасто,,хвостики деликатности \
+штатные,,выставить на осмеяние перерейтинг,,катафорезный,,мебилирования молочные би\
+доны,,гетит понизить белокопытник,,транскрибировать плаксивейшие серноватистые поло,,\
+рычажная лебёдка волокна шерсти перекрытой дороги переделанных внутренних монологов,,\
+посредничество лживость паразитизм противоположный мир,,открытия буры с жаром,,оно \
+матопоэзия раскаивающийся,,рамекин,,плинтус напыщенно,,вольта донесённые аллантоисы,,\
+бор букле поднятия поддерживающие,,дьяволист палки раздача лёгко играя,,процессуаль\
+ных бисексуализмов приступы гемолизированны,,отвратительности изгнания поводы,,пере\
+ферийная конга,,двухатомность,,дурачеств выплаты,,местоположения пришли его,,кося\
+щие лунные камни кашевидные ужасные,,сердцевина фаготист предеспозиция жаргонных гос\
+подств,,скромнейшая неуравнимая вторсырьевая одежда неизбежно,,умоляя сеточную тран\
+квилизацию,,единородительные товарищи,,аллотропный,,форзацный абиогенетический,,охла\
+девание взятое односторонние медали,,удаление волос ствол эффективно шатается,,одетый \
+удачливо воспламенняя завершённые икающие муниципализровать,,пентаграфы посылки мар\
+китант ведёт раскопки,,звёздная пыль неправильно процитированная благодарность,,мало\
+ценный продырявленный,,напиханное,,лечит гилотеизм,,пи
+Свежая кровь сквозит через полоску разделяющую её кожу и медленно окрашивает её грудь\
+в красный. У меня начинается гипервентиляция по мере усиления позывов. Образы не \
+выходят из головы. Образы того, как я вонзаю нож в её плоть раз за разом, насилуя \
+её тело лезвием, размазывая её в кашу. Моя голова идёт кругом от возвращающихся \
+мыслей. Острая боль вместе с мыслями преследуют каждый уголок моего сознания. Это \
+мерзко. Просто мерзко. Как я могла о таком подумать? Но ошибки в этом нет. Похоть \
+ещё сныряет по моим венам. Боль в мышцах началось из-за невыпущенного напряжения \
+по всему телу. Её третий глаз притягивал меня всё ближе."""
     )
 
     poem_n1 = Poem(
     author = "natsuki",
-    title = "Eagles Can Fly",
+    title = "Орлы могут летать",
     text = """\
-Monkeys can climb
-Crickets can leap
-Horses can race
-Owls can seek
-Cheetahs can run
-Eagles can fly
-People can try
-But that's about it."""
+Обезьяны могут карабкаться,
+Сверчки могут прыгать,
+Лошади могут скакать,
+Совы могут рыскать,
+Гепарды могут бежать,
+Орлы могут летать,
+Люди могут пытаться,
+Но на этом и всё."""
     )
 
     poem_n2 = Poem(
     author = "natsuki",
-    title = "Amy Likes Spiders",
+    title = "Эми любит пауков",
     text = """\
-You know what I heard about Amy?
-Amy likes spiders.
-Icky, wriggly, hairy, ugly spiders!
-That's why I'm not friends with her.
+Знаешь, что я слышала про Эми?
+Эми любит пауков.
+Пауков извивающихся, волосатых, уродливых, мерзких!
+Я не дружу с ней, мой выбор таков.
 
-Amy has a cute singing voice.
-I heard her singing my favorite love song.
-Every time she sang the chorus, my heart would pound to the rhythm of the words.
-But she likes spiders.
-That's why I'm not friends with her.
+Эми очень красиво поёт.
+Я слышала, как она пела мою любимую песню о любви.
+Когда она пела в хоре, билось сердце в ритме слов моё.
+Но она любит пауков.
+Я не дружу с ней, мой выбор таков.
 
-One time, I hurt my leg really bad.
-Amy helped me up and took me to the nurse.
-I tried not to let her touch me.
-She likes spiders, so her hands are probably gross.
-That's why I'm not friends with her.
+Однажды я сильно поранила ногу.
+Эми помогла мне и отвела меня к медсестре.
+Я не дала ей коснуться меня всю дорогу.
+Её руки, возможно, мерзки, она любит пауков.
+Я не дружу с ней, мой выбор таков.
 
-Amy has a lot of friends.
-I always see her talking to people.
-She probably talks about spiders.
-What if her friends start to like spiders too?
-That's why I'm not friends with her.
+У Эми друзей очень много.
+Она с кем-то говорит постоянно.
+Возможно, она говорит про пауков.
+Что если её друзья тоже начнут любить пауков?
+Я не дружу с ней, мой выбор таков.
 
-It doesn't matter if she has other hobbies.
-It doesn't matter if she keeps it private.
-It doesn't matter if it doesn't hurt anyone.
+Не важно, есть ли у неё другие интересы.
+Не важно, если не говорит об этом она.
+Не важно, если это никому не причиняет вреда.
 
-It's gross.
-She's gross.
-The world is better off without spider lovers.
+Это мерзко.
+Она мерзкая.
+Станет лучше без любителей пауков наш мир.
 
-And I'm gonna tell everyone."""
+И я всем это расскажу."""
     )
 
     poem_n2b = Poem(
     author = "natsuki",
-    title = "T3BlbiBZb3VyIFRoaXJkIEV5ZQ==",
+    title = "0KDQsNGB0LrRgNC+0Lkg0YHQstC+0Lkg0YLRgNC10YLQuNC5INCz0LvQsNC3",
     text = """\
-SSBjYW4gZmVlbCB0aGUgdGVuZGVybmVz
-cyBvZiBoZXIgc2tpbiB0aHJvdWdoIHRo
-ZSBrbmlmZSwgYXMgaWYgaXQgd2VyZSBh
-biBleHRlbnNpb24gb2YgbXkgc2Vuc2Ug
-b2YgdG91Y2guIE15IGJvZHkgbmVhcmx5
-IGNvbnZ1bHNlcy4gVGhlcmUncyBzb21l
-dGhpbmcgaW5jcmVkaWJseSBmYWludCwg
-ZGVlcCBkb3duLCB0aGF0IHNjcmVhbXMg
-dG8gcmVzaXN0IHRoaXMgdW5jb250cm9s
-bGFibGUgcGxlYXN1cmUuIEJ1dCBJIGNh
-biBhbHJlYWR5IHRlbGwgdGhhdCBJJ20g
-YmVpbmcgcHVzaGVkIG92ZXIgdGhlIGVk
-Z2UuIEkgY2FuJ3QuLi5JIGNhbid0IHN0
-b3AgbXlzZWxmLg=="""
+0K8g0YfRg9Cy0YHRgtCy0YPRjiDQ
+vdC10LbQvdC+0YHRgtGMINC10ZEg
+0LrQvtC20Lgg0YfQtdGA0LXQtyDQ
+vdC+0LYsINGB0LvQvtCy0L3QviDQ
+vtC9INGA0LDRgdGI0LjRgNGP0LXQ
+vCDQvNC+0ZEg0YfRg9Cy0YHRgtCy
+0L4g0L7RgdGP0LfQsNC90LjRjy4g
+0JzQvtGRINGC0LXQu9C+INC/0YDQ
+sNC60YLQuNGH0LXRgdC60Lgg0LIg
+0LrQvtC90LLRg9C70YzRgdC40Y/R
+hS4g0KLQsNC8INC90LXRh9GC0L4g
+0L3QtdCy0LXRgNC+0Y/RgtC90L4g
+0YHQu9Cw0LHQvtC1LCDQs9C70YPQ
+sdC+0LrQviDQstC90YPRgtGA0Lgs
+INGH0YLQviDQutGA0LjRh9C40YIg
+0Lgg0YHQvtC/0YDQvtGC0LjQstC7
+0Y/QtdGC0YHRjyDRjdGC0L7QvNGD
+INC90LXQutC+0L3RgtGA0L7Qu9C4
+0YDRg9C10LzQvtC80YMg0YPQtNC+
+0LLQvtC70YzRgdGC0LLQuNGOLiDQ
+ndC+INGPINGD0LbQtSDQt9C90LDR
+jiwg0YfRgtC+INC80LXQvdGPINGC
+0L7Qu9C60LDRjtGCINC30LAg0LrR
+gNCw0LkuINCvINC90LUg0LzQvtCz
+0YMuLi7QryDQvdC1INC80L7Qs9GD
+INC+0YHRgtCw0L3QvtCy0LjRgtGM
+0YHRjy4="""
     )
 
     poem_n3 = Poem(
     author = "natsuki",
-    title = "I'll Be Your Beach",
+    title = "Я буду твоим пляжем",
     text = """\
-Your mind is so full of troubles and fears
-That diminished your wonder over the years
-But today I have a special place
-A beach for us to go.
+Так много забот и страхов в твоей голове —
+Это тебя давно уже гложет.
+Но сегодня я покажу особое место тебе —
+Пляж, на который пойти вместе мы сможем.
 
-A shore reaching beyond your sight
-A sea that sparkles with brilliant light
-The walls in your mind will melt away
-Before the sunny glow.
+Берег, выходящий за пределы сознания,
+Море ярким светом сверкает —
+Преграды в голове твоей растают 
+Перед солнечным сиянием.
 
-I'll be the beach that washes your worries away
-I'll be the beach that you daydream about each day
-I'll be the beach that makes your heart leap
-In a way you thought had left you long ago.
+Я буду пляжем, что смоет тревоги твои.
+Я буду пляжем, о котором ты будешь мечтать.
+Я буду пляжем, от которого биение сердца не утаить.
+И ты уже понял, что ты начал себя покидать.
 
-Let's bury your heavy thoughts in a pile of sand
-Bathe in sunbeams and hold my hand
-Wash your insecurities in the salty sea
-And let me see you shine.
+Давай закопаем твои тяжёлые мысли в гуще песка!
+Купайся в солнца лучах, мою руку держи,
+Свои сомнения в солёном море смой навсегда
+И дай мне увидеть, как засияешь ты.
 
-Let's leave your memories in a footprint trail
-Set you free in my windy sail
-And remember the reasons you're wonderful
-When you press your lips to mine.
+Давай оставим следы воспоминаний твоих —
+Освободи себя ты парусом моим
+И помни, что прекрасен ты, от слов моих,
+Когда прикасаешься своими губами к моим.
 
-I'll be the beach that washes your worries away
-I'll be the beach that you daydream about each day
-I'll be the beach that makes your heart leap
-In a way you thought had left you long ago.
+Я буду пляжем, что смоет тревоги твои.
+Я буду пляжем, о котором ты будешь мечтать.
+Я буду пляжем, от которого биение сердца не утаить.
+И ты уже понял, что ты начал себя покидать.
 
-But if you let me by your side
-Your own beach, your own escape
-You'll learn to love yourself again."""
+И если ты позволишь мне с тобою быть там,
+Где собственный твой пляж, твоё убежище,
+Ты вновь научишься себя любить."""
     )
 
     poem_n3b = Poem(
     author = "natsuki",
-    title = "Because You",
+    title = "Ведь ты",
     text = """\
-Tomorrow will be brighter with me around
-But when today is dim, I can only look down.
-My looking is a little more forward
-Because you look at me.
+Завтра будет светлее, и я загорюсь,
+Но в этот тусклый день я вниз лишь смотрю
+И чуть поднимаю свой взгляд,
+Ведь смотришь ты на меня.
 
-When I want to say something, I say it with a shout!
-But my truest feelings can never come out.
-My words are a little less empty
-Because you listen to me.
+Когда я хочу что-то сказать, я начинаю кричать!
+Но мои настоящие чувства не выйдут на свет никогда.
+Но в моих словах будет чуть больше тепла,
+Ведь ты слушаешь меня.
 
-When something is above me, I reach for the stars.
-But when I feel small, I don't get very far.
-My standing is a little bit taller
-Because you sit with me.
+Когда я чувствую себя на высоте, могу как звёзды я сиять.
+Когда мне плохо, я ниже себя самой.
+Но становлюсь чуть выше я,
+Когда рядом ты сидишь со мной.
 
-I believe in myself with all of my heart.
-But what do I do when it's torn all apart?
-My faith is a little bit stronger
-Because you trusted me.
+Я верю в себя всем сердцем своим.
+Но что, если всё вокруг против меня?
+Моя вера станет чуть сильней,
+Ведь ты веришь в меня.
 
-My pen always puts my feelings to the test.
-I'm not a good writer, but my best is my best.
-My poems are a little bit dearer
-Because you think of me.
+Моя ручка проверяет чувства мои.
+Я не писатель, стать лучше стараюсь.
+Стали дороже мне поэмы свои.
+Ведь думаешь обо мне ты.
 
-Because you, because you, because you."""
+Ведь ты, ведь ты, ведь ты..."""
     )
 
     poem_n23 = Poem(
     author = "natsuki",
     title = "",
     text = """\
-I don't know how else to bring this up. But there's been something I've been worried about. \
-Yuri has been acting kind of strange lately. You've only been here a few days, so you may \
-not know what I mean. But she's not normally like this. She's always been quiet and polite \
-and attentive...things like that.
+Не знаю, как ещё поговорить с тобой. Но есть кое-что, о чем я очень волнуюсь. \
+Юри очень странно себя ведёт. Ты у нас всего несколько дней, поэтому, наверно, не понимаешь, о чём я. \
+Но это ненормально для неё. Она всегда была тихой, вежливой \
+и заботливой... и всё такое.
 
-Okay... This is really embarrassing, but I'm forcing myself to suck it up. The truth is, I'm REALLY \
-worried about her. But if I try talking to her, she'll just get mad at me again. I don't \
-know what to do. I think you're the only person that she'll listen to. I don't know why. \
-But please try to do something. Maybe you can convince her to talk to a therapist.
+Хорошо... Это очень стыдно, но я заставлю себя сказать это. Правда в том, что я СЕРЬЁЗНО \
+волнуюсь за неё. Но если я попробую поговорить с ней, она снова взбесится. Я не знаю, \
+что делать. Я думаю, ты единственный человек, кого она послушает. Я не знаю почему. \
+Но, пожалуйста, попробуй сделать что-нибудь. Может, ты убедишь её показаться доктору.
 
-I've always wanted to try being better friends with Yuri, and it really hurts me to see \
-this happening. I know I'm going to hate myself later for admitting that, but right now \
-I don't care. I just feel so helpless. So please see if you can do something to help. \
-I don't want anything bad to happen to her. I'll make you cupcakes if I have to. Just please \
-try to do something.
+Я всегда хотела быть для неё хорошим другом, и мне больно видеть то,\
+что происходит. Знаю, я буду ненавидеть себя за то, что призналась в этом, но сейчас \
+мне плевать. Я чувствую себя такой беспомощной. Пожалуйста, если ты можешь хоть чем-то помочь... \
+Я не хочу, чтобы с ней случилось что-то плохое. Я испеку тебе кексов, если нужно. Только, \
+пожалуйста, сделай что-нибудь.
 
-As for Monika... I don't know why, but she's been really dismissive about this. It's like she just wants us \
-to ignore it. So I'm mad at her right now, and that's why I'm coming to you about this. \
-DON'T LET HER KNOW I WROTE THIS!!!! Just pretend like I gave you a really good poem, okay? \
-I'm counting on you. Thanks for reading."""
+Насчёт Моники... Не знаю почему, но она не обращает на это внимания. Как будто хочет, чтобы мы \
+игнорировали это. Так что я очень злюсь на неё сейчас, и поэтому пришла к тебе за помощью. \
+НЕ ГОВОРИ ЕЙ, ЧТО Я ЭТО НАПИСАЛА!!!! Просто притворись, что я написала хорошую поэму, хорошо? \
+Я рассчитываю на тебя. Спасибо, что прочёл."""
     )
 
     poem_s1 = Poem(
     author = "sayori",
-    title = "Dear Sunshine",
+    title = "Дорогое Солнышко",
     text = """\
-The way you glow through my blinds in the morning
-It makes me feel like you missed me.
-Kissing my forehead to help me out of bed.
-Making me rub the sleepy from my eyes.
+Когда ты светишь в глаза мне каждое утро,
+Мне кажется, что ты скучало по мне.
+Чтобы встала скорей, мой лоб ты целуешь.
+Прогоняешь сонливость с глаз моих.
 
-Are you asking me to come out and play?
-Are you trusting me to wish away a rainy day?
-I look above. The sky is blue.
-It's a secret, but I trust you too.
+Хочешь, чтоб вышла я поиграть?
+Доверишь дождливые дни мне прогнать?
+Небо голубое. Я смотрю вверх.
+Это секрет, но я тоже доверяю тебе.
 
-If it wasn't for you, I could sleep forever.
-But I'm not mad.
+Если б не ты, я бы вечно спала...
+Но я не в обиде.
 
-I want breakfast."""
+Я бы завтрак предпочла."""
     )
 
     poem_s2 = Poem(
     author = "sayori",
-    title = "Bottles",
+    title = "Бутылки",
     text = """\
-I pop off my scalp like the lid of a cookie jar.
-It's the secret place where I keep all my dreams.
-Little balls of sunshine, all rubbing together like a bundle of kittens.
-I reach inside with my thumb and forefinger and pluck one out.
-It's warm and tingly.
-But there's no time to waste! I put it in a bottle to keep it safe.
-And I put the bottle on the shelf with all of the other bottles.
-Happy thoughts, happy thoughts, happy thoughts in bottles, all in a row.
+Как банку с печеньем, открою голову свою зажатую.
+Это секретное место, где я храню свои мечты.
+Маленькие солнечные шарики трутся друг о друга, словно котята.
+Я залезаю внутрь и аккуратно достаю один.
+Он тёплый и нежный.
+Но нельзя тратить время! Я кладу его в бутылку, чтоб сохранить.
+И кладу бутылку на полку, ко всем остальным таким.
+Счастливые мысли, счастливые мысли, счастливые мысли в бутылках, все вместе.
 
-My collection makes me lots of friends.
-Each bottle a starlight to make amends.
-Sometimes my friend feels a certain way.
-Down comes a bottle to save the day.
+С их помощью нашла себе много друзей.
+Каждая бутылка может заменить звёздный свет.
+Иногда друзьям становится немного грустней.
+Я выпускаю один шарик, чтобы день был согрет.
 
-Night after night, more dreams.
-Friend after friend, more bottles.
-Deeper and deeper my fingers go.
-Like exploring a dark cave, discovering the secrets hiding in the nooks and crannies.
-Digging and digging.
-Scraping and scraping.
+Ночь за ночью, больше шариков.
+Друг за другом, больше бутылок.
+Глубже и глубже мои пальцы идут.
+Словно исследуя тёмную пещеру, ищу секреты в закоулках и щелях.
+Копаю и копаю.
+Шкребу и шкребу.
 
-I blow dust off my bottle caps.
-It doesn't feel like time elapsed.
-My empty shelf could use some more.
-My friends look through my locked front door.
+Сдуваю я пыль с бутылочных крышек —
+Время пролетело так незаметно.
+На полке не осталось ничего выше.
+Моя друзья стоят за закрытой дверью.
 
-Finally, all done. I open up, and in come my friends.
-In they come, in such a hurry. Do they want my bottles that much?
-I frantically pull them from the shelf, one after the other.
-Holding them out to each and every friend.
-Each and every bottle.
-But every time I let one go, it shatters against the tile between my feet.
-Happy thoughts, happy thoughts, happy thoughts in shards, all over the floor.
+Ну вот, всё готово. Я открываю дверь и впускаю друзей.
+Все идут в спешке. Они так сильно хотят того, что в бутылках лежит?
+Я вытаскиваю их с полки, одну за другой, быстрей.
+Я для всех и каждого держу.
+Все до единой бутылки храню.
+Но каждый раз она разлетается на куски у моих ног, когда я отдаю одну
+Счастливые мысли, счастливые мысли, счастливые мысли в осколках по всему полу.
 
-They were supposed to be for my friends, my friends who aren't smiling.
-They're all shouting, pleading. Something.
-But all I hear is echo, echo, echo, echo, echo
-Inside my head."""
+Они должны были быть для моих друзей, моих друзей, которые не улыбаются.
+Они все кричат, просят. Чего-то.
+Но все что я слышу это эхо, эхо, эхо, эхо, эхо.
+В моей голове."""
     )
 
     poem_s3 = Poem(
     author = "sayori",
     title = "%",
     text = """\
-Get out of my head. Get out of my head. Get out of my head. Get out of my head. Get out of my head. Get out of my head. Get out of my head. Get out of my head. Get out of my head. Get out of my head. Get out of my head. Get out of my head. Get out of my head. Get out of my head. Get out of my head. Get out of my head. Get out of my head. Get out of my head. Get out of my head. Get out of my head. Get out of my head. Get out of my head. Get out of my head. Get out of my head. Get out of my head. Get out of my head. Get out of my head. Get out of my head. Get out of my head. Get out of my head. Get out of my head. Get out of my head. Get out of my head. Get out of my head. Get out of my head. Get out of my head. Get out of my head. Get out of my head. Get out of my head. Get out of
-Get.
-Out.
-Of.
-My.
-Head.\n\n\n
-Get out of my head before I do what I know is best for you.
-Get out of my head before I listen to everything she said to me.
-Get out of my head before I show you how much I love you.
-Get out of my head before I finish writing this poem.\n\n\n\n\n\n\n
-But a poem is never actually finished.
-It just stops moving."""
+Убирайся из моей головы. Убирайся из моей головы. Убирайся из моей головы. Убирайся из моей головы. Убирайся из моей головы. Убирайся из моей головы. Убирайся из моей головы. Убирайся из моей головы. Убирайся из моей головы. Убирайся из моей головы. Убирайся из моей головы. Убирайся из моей головы. Убирайся из моей головы. Убирайся из моей головы. Убирайся из моей головы. Убирайся из моей головы. Убирайся из моей головы. Убирайся из моей головы. Убирайся из моей головы. Убирайся из моей головы. Убирайся из моей головы. Убирайся из моей головы. Убирайся из моей головы. Убирайся из моей головы. Убирайся из моей головы. Убирайся из моей головы. Убирайся из моей головы. Убирайся из моей головы. Убирайся из моей головы. Убирайся из моей головы. Убирайся из моей головы. Убирайся из моей головы. Убирайся из моей головы. Убирайся из моей головы. Убирайся из моей головы. Убирайся из моей головы. Убирайся из моей головы. Убирайся из моей головы. Убирайся из моей головы. Убирайся из моей головы.
+Убирайся.
+Из.
+Моей.
+Головы.\n\n\n
+Убирайся из моей головы, пока я не сделала то, что будет лучше для тебя.
+Убирайся из моей головы, пока не выслушала всё, что она сказала мне.
+Убирайся из моей головы, пока я не показала, как сильно я люблю тебя.
+Убирайся из моей головы, пока я не закончила писать эту поэму.\n\n\n\n\n\n\n
+Но поэма на самом деле никогда не заканчивается.
+Она просто перестаёт двигаться."""
     )
 
     poem_m1 = Poem(
     author = "monika",
-    title = "Hole in Wall",
+    title = "Дыра в стене",
     text = """\
-It couldn't have been me.
-See, the direction the spackle protrudes.
-A noisy neighbor? An angry boyfriend? I'll never know. I wasn't home.
-I peer inside for a clue.
-No! I can't see. I reel, blind, like a film left out in the sun.
-But it's too late. My retinas.
-Already scorched with a permanent copy of the meaningless image.
-It's just a little hole. It wasn't too bright.
-It was too deep.
-Stretching forever into everything.
-A hole of infinite choices.
-I realize now, that I wasn't looking in.
-I was looking out.
-And he, on the other side, was looking in."""
+Это не могла быть я.
+Видишь, откуда выступает шпаклёвка?
+Шумный сосед? Разгневанный друг? Меня не было дома, не узнаю я.
+Я всматриваюсь глубже, чтобы тайны развязать верёвку.
+Нет! Я ничего не вижу. Ослепшая, кружусь, как оставленная на солнце киноплёнка.
+Но слишком поздно. Мои глаза.
+На них уже выжжен бессмысленный образ.
+Это была всего лишь дырка. Она даже не ярка.
+Она слишком глубока.
+Растянувшись навсегда.
+Дыра бесконечных решений.
+Теперь я понимаю, что смотрела не во внутрь.
+Я смотрела изнутри.
+И он, на той стороне, смотрел вовнутрь."""
     )
 
     poem_m21 = Poem(
     author = "monika",
-    title = "Hole in Wall",
+    title = "Дыра в стене",
     text = """\
-But he wasn't looking at me.
-Confused, I frantically glance at my surroundings.
-But my burned eyes can no longer see color.
-Are there others in this room? Are they talking?
-Or are they simply poems on flat sheets of paper,
-The sound of frantic scrawling playing tricks on my ears?
-The room begins to crinkle.
-Closing in on me.
-The air I breathe dissipates before it reaches my lungs.
-I panic. There must be a way out.
-It's right there. He's right there.
+Но он смотрел не на меня.
+Растерявшись, я лихорадочно оглядываюсь вокруг.
+Но мои выжженные глаза более не различают цвета.
+Есть ещё кто-то в этом месте? Что-то говорят они вдруг?
+Или это их незамысловатые поэмы на листах бумаги
+Звучат безумными каракулями в ушах моих?
+Все вокруг начинает изгибаться.
+Приближаясь ко мне, затишье у них.
+Воздух, которым я дышу, рассеивается прежде, чем достигает лёгких моих.
+Я паникую. Должен быть выход.
+Выход прямо там. Он прямо там.
 
-Swallowing my fears, I brandish my pen."""
+Отбрасывая страхи, я взмахиваю ручкой."""
     )
 
     poem_m2 = Poem(
     author = "monika",
-    title = "Save Me",
+    title = "Сохрани меня",
     text = """\
-The colors, they won't stop.
-Bright, beautiful colors
-Flashing, expanding, piercing
-Red, green, blue
-An endless
-cacophany
-Of meaningless
-noise
+Цвета, они не остановятся.
+Яркие, красивые цвета,
+Мерцающие, расцветающие, пронзающие.
+Красный, зелёный, синий —
+Бесконечная
+какофония
+Бессмысленных 
+шумов.
 
 
-The noise, it won't stop.
-Violent, grating waveforms
-Squeaking, screeching, piercing
-Sine, cosine, tangent
-    Like playing a chalkboard on a turntable
-        Like playing a vinyl on a pizza crust
-An endless
-poem
-Of meaningless\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n
-Load Me
+Шумы, они не остановятся.
+Жестокие, скрипучие колебания,
+Пищащие, визгливые, пронзающие.
+Синус, косинус, тангенс.
+    Как доска, играющая на музыкальном проигрывателе,
+        Как виниловый диск, играющий на корке пиццы,
+Бесконечная
+поэма,
+Не имеющая смысла\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n
+Загрузи меня
     """
     )
 
     poem_m22 = Poem(
     author = "monika",
-    title = "Save Me",
+    title = "Спаси меня",
     text = """\
-The colors, they won't
-Bright, bea t ful c l rs
-Flash ng, exp nd ng, piercing
-Red, green, blue
-An  ndless
-CACOPHANY
-Of meaningless
-noise
+Цвета, они не
+Яркие, кра и ые ц е а,
+Мерцаю ие, расцв та щие, пронзающие.
+Красный, зеленый, синий —
+    онечная
+КАКОФОНИЯ
+Бессмысленных 
+шумов.
 
 
-The noise, it won't STOP.
-Viol nt, grating w vef rms
-Sq e king, screech ng, piercing
-SINE, COSINE, TANGENT
-    Like play ng a ch lkboard on a t rntable
-        Like playing a KNIFE on a BREATHING RIBCAGE
- n  ndl ss
-p  m
-Of m  n ngl ss\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n
-Delete Her
+Шумы, они не ОСТАНОВЯТСЯ.
+Жест  ие, скрипучие к ле а ия,
+Пи а ие, визг   ые, пронзающие.
+СИНУС, КОСИНУС, ТАНГЕНС.
+    Как до к   игра     на музыка  ом    и   вателе,
+        Как НОЖ, играющий на ГРУДНОЙ КЛЕТКЕ,
+   с оне  ая
+п   а,
+Не и е ю ая с   ла\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n
+Удали Её
     """
     )
 
     poem_m3 = Poem(
     author = "monika",
-    title = "The Lady who Knows Everything",
+    title = "Дама, которая всё знает",
     text = """\
-An old tale tells of a lady who wanders Earth.
-The Lady who Knows Everything.
-A beautiful lady who has found every answer,
-All meaning,
-All purpose,
-And all that was ever sought.
+Старая история рассказывает о леди, бродящей по Земле.
+Леди, которая Всё Знает.
+Красивая леди, которая нашла все ответы,
+И смысл всего,
+Все цели,
+И всё, что когда-либо искали.
 
-And here I am,
-
-
-              a feather
+А вот и я,
 
 
-Lost adrift the sky, victim of the currents of the wind.
+              пёрышко
 
-Day after day, I search.
-I search with little hope, knowing legends don't exist.
-But when all else has failed me,
-When all others have turned away,
-The legend is all that remains - the last dim star glimmering in the twilit sky.
 
-Until one day, the wind ceases to blow.
-I fall.
-And I fall and fall, and fall even more.
-Gentle as a feather.
-A dry quill, expressionless.
+Потерянная, плывущая по небу, жертва потоков ветра.
 
-But a hand catches me between the thumb and forefinger.
-The hand of a beautiful lady.
-I look at her eyes and find no end to her gaze.
+День за днём я ищу.
+Я ищу с крошечной надеждой, зная, что сказок не бывает.
+Но когда всё остальное наутёк я пущу,
+Когда все остальные меня отвергали,
+Легенда - это всё, что осталось - последняя тусклая звезда, что в сумеречном небе мерцает.
 
-The Lady who Knows Everything knows what I am thinking.
-Before I can speak, she responds in a hollow voice.
-"I have found every answer, all of which amount to nothing.
-There is no meaning.
-There is no purpose.
-And we seek only the impossible.
-I am not your legend.
-Your legend does not exist."
+Пока однажды, когда ветер перестанет дуть.
+Я упаду.
+И падаю, и падаю, и падаю ещё больше.
+Нежная, как пёрышко.
+Сухое пёрышко, бесстрастное.
 
-And with a breath, she blows me back afloat, and I pick up a gust of wind."""
+Но рука ловит меня между большим и указательным пальцами.
+Рука прекрасной дамы.
+Я смотрю в её глаза и встречаюсь с её пристальным взглядом.
+
+Леди, которая Всё Знает, знает, о чем думаю я.
+Прежде, чем я начинаю говорить, пустым голосом она отвечает.
+"Я знаю все ответы, все они сводятся к нулю.
+Нет никакого смысла.
+Нет цели.
+И ищем мы лишь только невозможное.
+Я - не твоя легенда.
+Сказок не бывает."
+
+Со вздохом, она сдувает перо прочь из рук, и меня подхватывает ветряной порыв."""
     )
 
     poem_m4 = Poem(
     author = "monika",
-    title = "Happy End",
+    title = "Счастливый Конец",
     text = """\
-Pen in hand, I find my strength.
-The courage endowed upon me by my one and only love.
-Together, let us dismantle this crumbling world
-And write a novel of our own fantasies.
+Держа ручку в руке, я силу свою обретаю. 
+Отвага любовью меня наделила. 
+И вместе рушащийся мир разбиваем
+И напишем новеллу из фантазий, нам милых.
 
-With a flick of her pen, the lost finds her way.
-In a world of infinite choices, behold this special day.
+С щелчком ручки, потерянная путь свой найдёт.
+В мире бесконечных выборов, узри этот особый день.
 
-After all,
-Not all good times must come to an end."""
+Всё же,
+Не всё хорошее должно подходить к концу."""
     )
 
 image paper = "images/bg/poem.jpg"
@@ -615,17 +632,17 @@ screen poem(currentpoem, paper="paper"):
         null height 40
         if currentpoem.author == "yuri":
             if currentpoem.yuri_2:
-                text "[currentpoem.title]\n\n[currentpoem.text]" style "yuri_text"
+                text "\n[currentpoem.title]\n\n[currentpoem.text]" style "yuri_text"
             elif currentpoem.yuri_3:
-                text "[currentpoem.title]\n\n[currentpoem.text]" style "yuri_text_3"
+                text "\n[currentpoem.title]\n\n[currentpoem.text]" style "yuri_text_3"
             else:
-                text "[currentpoem.title]\n\n[currentpoem.text]" style "yuri_text"
+                text "\n[currentpoem.title]\n\n[currentpoem.text]" style "yuri_text"
         elif currentpoem.author == "sayori":
-            text "[currentpoem.title]\n\n[currentpoem.text]" style "sayori_text"
+            text "\n[currentpoem.title]\n\n[currentpoem.text]" style "sayori_text"
         elif currentpoem.author == "natsuki":
-            text "[currentpoem.title]\n\n[currentpoem.text]" style "natsuki_text"
+            text "\n[currentpoem.title]\n\n[currentpoem.text]" style "natsuki_text"
         elif currentpoem.author == "monika":
-            text "[currentpoem.title]\n\n[currentpoem.text]" style "monika_text"
+            text "\n[currentpoem.title]\n\n[currentpoem.text]" style "monika_text"
         null height 100
     vbar value YScrollValue(viewport="vp") style "poem_vbar"
 
@@ -649,7 +666,7 @@ style poem_vbar is vscrollbar:
 
 style yuri_text:
     font "gui/font/y1.ttf"
-    size 32
+    size 28
     color "#000"
     outlines []
 
@@ -675,14 +692,15 @@ style natsuki_text:
     line_leading 1
 
 style sayori_text:
-    font "gui/font/s1.ttf"
-    size 34
+    font "gui/font/s1.otf"
+    size 26
     color "#000"
     outlines []
+    justify True
 
 style monika_text:
     font "gui/font/m1.ttf"
-    size 34
+    size 30
     color "#000"
     outlines []
 

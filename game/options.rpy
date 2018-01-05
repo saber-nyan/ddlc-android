@@ -1,23 +1,5 @@
 
 
-## TO!DONE: thank you, lolbot! Displays current script:line and screen, file:line
-python early:
-    def widget__info():
-        import os
-        def editoverlay():
-            fullfn, line = renpy.get_filename_line()
-            ui.button(clicked=None, xpos=1.0, xanchor=1.0, ypos=2, xpadding=0, xminimum=200)
-            ui.text(u"%s:%d" % (os.path.basename(fullfn), line), size=16)
-            if renpy.current_screen() is None:
-                return
-            ui.button(clicked=None, xpos=0.75, xanchor=1.0, ypos=2, xpadding=0, xminimum=200)
-            ui.text(u"%s, %s" % (renpy.current_screen(), str(renpy.current_screen()._location)), size=16)
-            out_str = "scr %s (%s), fl %s:%d" % (renpy.current_screen(), str(renpy.current_screen()._location), os.path.basename(fullfn), line)
-            print out_str.encode('utf-8')
-        config.overlay_functions.append(editoverlay)
-init 9000 python:
-    if config.developer:
-        widget__info()
 
 
 
@@ -169,8 +151,9 @@ define config.window_icon = "gui/window_icon.png"
 
 
 define config.allow_skipping = True
-
-define config.autosave_slots = 8
+define config.has_autosave = False
+define config.autosave_on_quit = False
+define config.autosave_slots = 0
 define config.layers = [ 'master', 'transient', 'screens', 'overlay', 'front' ]
 define config.image_cache_size = 64
 define config.predict_statements = 50
@@ -178,19 +161,13 @@ define config.rollback_enabled = config.developer
 define config.menu_clear_layers = ["front"]
 define config.gl_test_image = "white"
 
-init 65533 python:
-    config.has_autosave = True  # TO!DONE: see #1 for more details
-    config.autosave_on_quit = True
-    config.autosave_frequency = 10  # FIX!ME: lagging? Nope.
-    config.save_on_mobile_background = True
-    config.quit_on_mobile_background = False
 
 init python:
     if len(renpy.loadsave.location.locations) > 1: del(renpy.loadsave.location.locations[1])
     renpy.game.preferences.pad_enabled = False
     def replace_text(s):
-        s = s.replace('--', u'\u2014') 
-        s = s.replace(' - ', u'\u2014') 
+        s = s.replace('--', u'\u2013') 
+        s = s.replace(' - ', u'\u2013') 
         return s
     config.replace_text = replace_text
 

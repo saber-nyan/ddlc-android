@@ -21,7 +21,7 @@ init -1 style default_monika is normal:
     slow_cps 30
 
 init -1 style edited is default:
-    font "gui/font/VerilySerifMono.otf"
+    font "gui/font/GillSansC.otf"
     kerning 8
     outlines [(10, "#000", 0, 0)]
     xpos gui.text_xpos
@@ -57,8 +57,8 @@ init -1 style splash_text:
 
 init -1 style poemgame_text:
     yalign 0.5
-    font "gui/font/Halogen.ttf"
-    size 30
+    font "gui/font/n1.ttf"
+    size 24
     color "#000"
     outlines []
 
@@ -158,7 +158,7 @@ init -1 style frame:
 
 
 
-init -501 screen say(who, what):  # TO!DONE: screen_say!
+init -501 screen say(who, what):
     style_prefix "say"
 
     window:
@@ -174,8 +174,8 @@ init -501 screen say(who, what):  # TO!DONE: screen_say!
 
 
 
-    #if not renpy.variant("small"):
-    #    add SideImage() xalign 0.0 yalign 1.0
+    if not renpy.variant("small"):
+        add SideImage() xalign 0.0 yalign 1.0
 
     use quick_menu
 
@@ -189,7 +189,7 @@ init -1 style namebox is default
 init -1 style namebox_label is say_label
 
 
-init -1 style window:  # TO!DONE: или же здесь?
+init -1 style window:
     xalign 0.5
     xfill True
     yalign gui.textbox_yalign
@@ -218,7 +218,7 @@ init -1 style say_label:
     yalign 0.5
     outlines [(3, "#b59", 0, 0), (1, "#b59", 1, 1)]
 
-init -1 style say_dialogue:  # TO!DONE: фикс положения должен быть здесь?
+init -1 style say_dialogue:
     xpos gui.text_xpos
     xanchor gui.text_xalign
     xsize gui.text_width
@@ -386,16 +386,14 @@ init -501 screen quick_menu():
             yalign 0.995
 
 
-            textbutton _("History") action ShowMenu('history')
-            textbutton _("Skip") action Skip() alternate Skip(fast=True, confirm=True)
-            textbutton _("Auto") action Preference("auto-forward", "toggle")
-            textbutton _("Save") action ShowMenu('save')
-            textbutton _("Load") action ShowMenu('load')
+            textbutton _("История") action ShowMenu('history')
+            textbutton _("Пропуск") action Skip() alternate Skip(fast=True, confirm=True)
+            textbutton _("Авто") action Preference("auto-forward", "toggle")
+            textbutton _("Сохранить") action ShowMenu('save')
+            textbutton _("Загрузить") action ShowMenu('load')
 
 
-            textbutton _("Settings") action ShowMenu('preferences')
-            if config.developer:
-                textbutton "Devtools" action ShowMenu('_developer')
+            textbutton _("Настройки") action ShowMenu('preferences')
 
 
 
@@ -448,39 +446,39 @@ init -501 screen navigation():
             if main_menu:
 
                 if persistent.playthrough == 1:
-                    textbutton _("ŔŗñĮ¼»ŧþŀÂŻŕěōì«") action If(persistent.playername, true=Start(), false=Show(screen="name_input", message="Please enter your name", ok_action=Function(FinishEnterName)))
+                    textbutton _("XФnI±»tbJ¤уrйoi«") action If(persistent.playername, true=Start(), false=Show(screen="name_input", message="Пожалуйста, введите своё имя", ok_action=Function(FinishEnterName)))
                 else:
-                    textbutton _("New Game") action If(persistent.playername, true=Start(), false=Show(screen="name_input", message="Please enter your name", ok_action=Function(FinishEnterName)))
+                    textbutton _("Новая игра") action If(persistent.playername, true=Start(), false=Show(screen="name_input", message="Пожалуйста, введите своё имя", ok_action=Function(FinishEnterName)))
 
             else:
 
-                textbutton _("History") action [ShowMenu("history"), SensitiveIf(renpy.get_screen("history") == None)]
+                textbutton _("История") action [ShowMenu("history"), SensitiveIf(renpy.get_screen("history") == None)]
 
-                textbutton _("Save Game") action [ShowMenu("save"), SensitiveIf(renpy.get_screen("save") == None)]
+                textbutton _("Сохранить игру") action [ShowMenu("save"), SensitiveIf(renpy.get_screen("save") == None)]
 
-            textbutton _("Load Game") action [ShowMenu("load"), SensitiveIf(renpy.get_screen("load") == None)]
+            textbutton _("Загрузить игру") action [ShowMenu("load"), SensitiveIf(renpy.get_screen("load") == None)]
 
             if _in_replay:
 
-                textbutton _("End Replay") action EndReplay(confirm=True)
+                textbutton _("Завершить реплей") action EndReplay(confirm=True)
 
             elif not main_menu:
                 if persistent.playthrough != 3:
-                    textbutton _("Main Menu") action MainMenu()
+                    textbutton _("Главное меню") action MainMenu()
                 else:
-                    textbutton _("Main Menu") action NullAction()
+                    textbutton _("Главное меню") action NullAction()
 
-            textbutton _("Settings") action [ShowMenu("preferences"), SensitiveIf(renpy.get_screen("preferences") == None)]
+            textbutton _("Настройки") action [ShowMenu("preferences"), SensitiveIf(renpy.get_screen("preferences") == None)]
 
 
 
             if renpy.variant("pc"):
 
 
-                textbutton _("Help") action [Help("README.html"), Show(screen="dialog", message="The help file has been opened in your browser.", ok_action=Hide("dialog"))]
+                textbutton _("Помощь") action [Help("README.html"), Show(screen="dialog", message="Файл помощи был открыт в вашем браузере.", ok_action=Hide("dialog"))]
 
 
-            textbutton _("Quit") action Quit(confirm=not main_menu)  # TO!DONE: now u can exit even on Android!
+                textbutton _("Выйти") action Quit(confirm=not main_menu)
         else:
             timer 1.75 action Start("autoload_yurikill")
 
@@ -496,7 +494,7 @@ init -1 style navigation_button:
 
 init -1 style navigation_button_text:
     properties gui.button_text_properties("navigation_button")
-    font "gui/font/RifficFree-Bold.ttf"
+    font "gui/font/GillSansC-Bold.otf"
     color "#fff"
     outlines [(4, "#b59", 0, 0), (2, "#b59", 2, 2)]
     hover_outlines [(4, "#fac", 0, 0), (2, "#fac", 2, 2)]
@@ -666,7 +664,7 @@ init -501 screen game_menu(title, scroll=None):
     if not main_menu and persistent.playthrough == 2 and not persistent.menu_bg_m and renpy.random.randint(0, 49) == 0:
         on "show" action Show("game_menu_m")
 
-    textbutton _("Return"):
+    textbutton _("Назад"):
         style "return_button"
 
         action Return()
@@ -719,7 +717,7 @@ init -1 style game_menu_label:
     ysize 120
 
 init -1 style game_menu_label_text:
-    font "gui/font/RifficFree-Bold.ttf"
+    font "gui/font/GillSansC-Bold.otf"
     size gui.title_text_size
     color "#fff"
     outlines [(6, "#b59", 0, 0), (3, "#b59", 2, 2)]
@@ -745,20 +743,20 @@ init -501 screen about() tag menu:
 
 
 
-    use game_menu(_("About"), scroll="viewport"):
+    use game_menu(_("Об игре"), scroll="viewport"):
 
         style_prefix "about"
 
         vbox:
 
             label "[config.name!t]"
-            text _("Version [config.version!t]\n")
+            text _("Версия [config.version!t]\n")
 
 
             if gui.about:
                 text "[gui.about!t]\n"
 
-            text _("Made with {a=https://www.renpy.org/}Ren'Py{/a} [renpy.version_only].\n\n[renpy.license!t]")
+            text _("Создано с помощью {a=https://www.renpy.org/}Ren'Py{/a} [renpy.version_only].\n\n[renpy.license!t]")
 
 
 
@@ -786,22 +784,22 @@ init -501 screen save() tag menu:
 
 
 
-    use file_slots(_("Save"))
+    use file_slots(_("Сохранить"))
 
 
 init -501 screen load() tag menu:
 
 
 
-    use file_slots(_("Load"))
+    use file_slots(_("Загрузить"))
 
 init -1 python:
     def FileActionMod(name, page=None, **kwargs):
         if persistent.playthrough == 1 and not persistent.deleted_saves and renpy.current_screen().screen_name[0] == "load" and FileLoadable(name):
-            return Show(screen="dialog", message="File error: \"characters/sayori.chr\"\n\nThe file is missing or corrupt.",
-                ok_action=Show(screen="dialog", message="The save file is corrupt. Starting a new game.", ok_action=Function(renpy.full_restart, label="start")))
+            return Show(screen="dialog", message="Ошибка файла: \"characters/sayori.chr\"\n\nФайл не найден или повреждён.",
+                ok_action=Show(screen="dialog", message="Файл сохранения повреждён. Запуск новой игры.", ok_action=Function(renpy.full_restart, label="start")))
         elif persistent.playthrough == 3 and renpy.current_screen().screen_name[0] == "save":
-            return Show(screen="dialog", message="There's no point in saving anymore.\nDon't worry, I'm not going anywhere.", ok_action=Hide("dialog"))
+            return Show(screen="dialog", message="Больше нет смысла сохраняться.\nНе волнуйся, я никуда не уйду.", ok_action=Hide("dialog"))
         else:
             return FileAction(name)
 
@@ -851,7 +849,7 @@ init -501 screen file_slots(title):
 
                         add FileScreenshot(slot) xalign 0.5
 
-                        text FileTime(slot, format=_("{#file_time}%A, %B %d %Y, %H:%M"), empty=_("empty slot")):
+                        text FileTime(slot, format=_("{#file_time}%A, %B %d %Y, %H:%M"), empty=_("пустой слот")):
                             style "slot_time_text"
 
                         text FileSaveName(slot):
@@ -934,7 +932,7 @@ init -501 screen preferences() tag menu:
     else:
         $ cols = 4
 
-    use game_menu(_("Settings"), scroll="viewport"):
+    use game_menu(_("Настройки"), scroll="viewport"):
 
         vbox:
             xoffset 50
@@ -946,22 +944,22 @@ init -501 screen preferences() tag menu:
 
                     vbox:
                         style_prefix "radio"
-                        label _("Display")
-                        textbutton _("Window") action Preference("display", "window")
-                        textbutton _("Fullscreen") action Preference("display", "fullscreen")
+                        label _("Экран")
+                        textbutton _("Оконный") action Preference("display", "window")
+                        textbutton _("Полноэкранный") action Preference("display", "fullscreen")
                 if config.developer:
                     vbox:
                         style_prefix "radio"
-                        label _("Rollback Side")
-                        textbutton _("Disable") action Preference("rollback side", "disable")
-                        textbutton _("Left") action Preference("rollback side", "left")
-                        textbutton _("Right") action Preference("rollback side", "right")
+                        label _("Сторона прокрутки")
+                        textbutton _("Отключено") action Preference("rollback side", "disable")
+                        textbutton _("Слева") action Preference("rollback side", "left")
+                        textbutton _("Справа") action Preference("rollback side", "right")
 
                 vbox:
                     style_prefix "check"
-                    label _("Skip")
-                    textbutton _("Unseen Text") action Preference("skip", "toggle")
-                    textbutton _("After Choices") action Preference("after choices", "toggle")
+                    label _("Пропуск")
+                    textbutton _("Новый текст") action Preference("skip", "toggle")
+                    textbutton _("После выборов") action Preference("after choices", "toggle")
 
 
 
@@ -975,47 +973,47 @@ init -501 screen preferences() tag menu:
 
                 vbox:
 
-                    label _("Text Speed")
+                    label _("Скорость текста")
 
 
                     bar value FieldValue(_preferences, "text_cps", range=180, max_is_zero=False, style="slider", offset=20)
 
-                    label _("Auto-Forward Time")
+                    label _("Задержка автоматического продолжения")
 
                     bar value Preference("auto-forward time")
 
                 vbox:
 
                     if config.has_music:
-                        label _("Music Volume")
+                        label _("Громкость музыки")
 
                         hbox:
                             bar value Preference("music volume")
 
                     if config.has_sound:
 
-                        label _("Sound Volume")
+                        label _("Громкость звуков")
 
                         hbox:
                             bar value Preference("sound volume")
 
                             if config.sample_sound:
-                                textbutton _("Test") action Play("sound", config.sample_sound)
+                                textbutton _("Тест") action Play("sound", config.sample_sound)
 
 
                     if config.has_voice:
-                        label _("Voice Volume")
+                        label _("Громкость голоса")
 
                         hbox:
                             bar value Preference("voice volume")
 
                             if config.sample_voice:
-                                textbutton _("Test") action Play("voice", config.sample_voice)
+                                textbutton _("Тест") action Play("voice", config.sample_voice)
 
                     if config.has_music or config.has_sound or config.has_voice:
                         null height gui.pref_spacing
 
-                        textbutton _("Mute All"):
+                        textbutton _("Заглушить всё"):
                             action Preference("all mute", "toggle")
                             style "mute_all_button"
     text "v[config.version]":
@@ -1054,7 +1052,7 @@ init -1 style pref_label:
     bottom_margin 2
 
 init -1 style pref_label_text:
-    font "gui/font/RifficFree-Bold.ttf"
+    font "gui/font/GillSansC.otf"
     size 24
     color "#fff"
     outlines [(3, "#b59", 0, 0), (1, "#b59", 1, 1)]
@@ -1072,7 +1070,7 @@ init -1 style radio_button:
 
 init -1 style radio_button_text:
     properties gui.button_text_properties("radio_button")
-    font "gui/font/Halogen.ttf"
+    font "gui/font/GillSansC.otf"
     outlines []
 
 init -1 style check_vbox:
@@ -1084,7 +1082,7 @@ init -1 style check_button:
 
 init -1 style check_button_text:
     properties gui.button_text_properties("check_button")
-    font "gui/font/Halogen.ttf"
+    font "gui/font/GillSansC.otf"
     outlines []
 
 init -1 style slider_slider:
@@ -1117,7 +1115,7 @@ init -501 screen history() tag menu:
 
     predict False
 
-    use game_menu(_("History"), scroll=("vpgrid" if gui.history_height else "viewport")):
+    use game_menu(_("История"), scroll=("vpgrid" if gui.history_height else "viewport")):
 
         style_prefix "history"
 
@@ -1142,7 +1140,7 @@ init -501 screen history() tag menu:
                 text h.what
 
         if not _history_list:
-            label _("The dialogue history is empty.")
+            label _("История диалогов пуста.")
 
 
 init -1 style history_window is empty
@@ -1379,7 +1377,7 @@ init -501 screen name_input(message, ok_action):
             style "confirm_prompt"
             xalign 0.5
 
-        input default "" value VariableInputValue("player") length 12 allow "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"
+        input default "" value VariableInputValue("player") length 18 allow "АБВГДЕЁЖЗИЙКЛМНОПРСТУФХЧШЩЬЫЪЭЮЯабвгдеёжзийклмнопрстуфхчшщьыъэюяABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"
 
 
 
@@ -1457,8 +1455,8 @@ init -501 screen confirm(message, yes_action, no_action):
             xalign 0.5
             spacing 100
 
-            textbutton _("Yes") action yes_action
-            textbutton _("No") action no_action
+            textbutton _("Да") action yes_action
+            textbutton _("Нет") action no_action
 
 
 
@@ -1510,7 +1508,7 @@ init -501 screen skip_indicator():
         has hbox:
             spacing 6
 
-        text _("Skipping")
+        text _("Пропуск")
 
         text "▸" at delayed_blink(0.0, 1.0) style "skip_triangle"
         text "▸" at delayed_blink(0.2, 1.0) style "skip_triangle"
@@ -1546,7 +1544,7 @@ init -1 style skip_text:
 init -1 style skip_triangle:
 
 
-    font "DejaVuSans.ttf"
+    font "gui/font/GillSansC.otf"
 
 
 

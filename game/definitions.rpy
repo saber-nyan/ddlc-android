@@ -1,10 +1,10 @@
 define persistent.demo = False
 define persistent.steam = True
-define config.developer = True  # FIXME: set to False b4 release
+define config.developer = True  # TODO: Remove b4 release!
 
-python early:
-    import singleton
-    me = singleton.SingleInstance()
+
+
+
 
 init python:
     config.keymap['game_menu'].remove('mouseup_3')
@@ -20,15 +20,19 @@ init python:
     def delete_all_saves():
         for savegame in renpy.list_saved_games(fast=True):
             renpy.unlink_save(savegame)
-    def delete_character(name):  # TO!DONE: character fix!
-        setattr(persistent, name, "deleted")
-        renpy.save_persistent()
-    def restore_character(name):  # TO!DONE: character fix!
-        setattr(persistent, name, "restored")
+    def delete_character(name):
+        import os
+        try: os.remove(config.basedir + "/characters/" + name + ".chr")
+        except: pass
     def restore_all_characters():
-        for char in ("monika", "natsuki", "yuri", "sayori"):  # TO!DONE: character fix!
-            restore_character(char)
-        renpy.save_persistent()
+        try: renpy.file("../characters/monika.chr")
+        except: open(config.basedir + "/characters/monika.chr", "wb").write(renpy.file("monika.chr").read())
+        try: renpy.file("../characters/natsuki.chr")
+        except: open(config.basedir + "/characters/natsuki.chr", "wb").write(renpy.file("natsuki.chr").read())
+        try: renpy.file("../characters/yuri.chr")
+        except: open(config.basedir + "/characters/yuri.chr", "wb").write(renpy.file("yuri.chr").read())
+        try: renpy.file("../characters/sayori.chr")
+        except: open(config.basedir + "/characters/sayori.chr", "wb").write(renpy.file("sayori.chr").read())
     def pause(time=None):
         if not time:
             renpy.ui.saybehavior(afm=" ")
@@ -1279,7 +1283,7 @@ define s = DynamicCharacter('s_name', image='sayori', what_prefix='"', what_suff
 define m = DynamicCharacter('m_name', image='monika', what_prefix='"', what_suffix='"', ctc="ctc", ctc_position="fixed")
 define n = DynamicCharacter('n_name', image='natsuki', what_prefix='"', what_suffix='"', ctc="ctc", ctc_position="fixed")
 define y = DynamicCharacter('y_name', image='yuri', what_prefix='"', what_suffix='"', ctc="ctc", ctc_position="fixed")
-define ny = Character('Nat & Yuri', what_prefix='"', what_suffix='"', ctc="ctc", ctc_position="fixed")
+define ny = Character('Нацуки&Юри', what_prefix='"', what_suffix='"', ctc="ctc", ctc_position="fixed")
 
 define _dismiss_pause = config.developer
 
@@ -1311,10 +1315,10 @@ default chapter = 0
 default currentpos = 0
 default faint_effect = None
 
-default s_name = "Sayori"
-default m_name = "Monika"
-default n_name = "Natsuki"
-default y_name = "Yuri"
+default s_name = "Сайори"
+default m_name = "Моника"
+default n_name = "Нацуки"
+default y_name = "Юри"
 
 
 

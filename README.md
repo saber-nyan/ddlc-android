@@ -3,7 +3,8 @@
 ![Screenshot](https://i.imgur.com/yxQ2oNV.jpg)
 **ВНИМАНИЕ: в репозитории могут присутствовать спойлеры! Даже в названиях файлов!**
 
-Мои попытки портировать "[Doki Doki Literature Club!](https://vndb.org/v21905)" на Android.
+Мои попытки портировать "[Doki Doki Literature Club!](https://vndb.org/v21905)" на Android.<br/>
+В этой ветке используется русификатор [отсюда](https://vk.com/wall-155243863_1929).
 
 Для клонирования репозитория необходим [git-lfs](https://github.com/git-lfs/git-lfs/wiki/Installation).
 
@@ -12,10 +13,9 @@
 *Спасибо, [Ren`Py](https://github.com/renpy/renpy), [unrpa](https://github.com/Lattyware/unrpa), [unrpyc](https://github.com/CensoredUsername/unrpyc)!*
 ## TODO
 - [x] Распаковать, декомпилировать, проверить работу
-- [x] Пофиксить поэму
-- [x] Пофиксить интересные вещи, связанные с `*.chr`-файлами (**spoilers!**)
-- [x] Пофиксить диалоговое окно (глючит на каждом устройстве. Нашел [причины](boxes_sizing.txt)!)
-- [x] Собрать тест
-- [ ] Решить все Issues **и**...
-- [ ] ...полностью прочитать ВН, поймать баги и вылеты
+- [ ] Пофиксить поэму
+- [ ] Пофиксить интересные вещи, связанные с `*.chr`-файлами (**spoilers!**)
+- [ ] Пофиксить диалоговое окно
+- [ ] Собрать тест
+- [ ] Решить все Issues
 - [ ] Собрать релиз

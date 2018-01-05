@@ -16,423 +16,424 @@ image sayori end-glitch:
     "sayori/end-glitch2.png"
 
 label ch40_main:
-    $ s_name = "Sayori"
+    $ s_name = "Сайори"
     stop music fadeout 2.0
     scene bg residential_day
     with dissolve_scene_full
 
     python:
         if not persistent.monika_back:
-            if persistent.monika is None or persistent.monika == "restored":  # TO!DONE: character fix!
-                renpy.call_screen("dialog", message="Please stop playing with my heart.\nI don't want to come back.", ok_action=Return())
+            try:
+                renpy.file("../characters/monika.chr")
+                renpy.call_screen("dialog", message="Пожалуйста, не играй с моим сердцем.\nЯ не хочу возвращаться.", ok_action=Return())
                 persistent.monika_back = True
-            else:
+            except:
                 pass
 
     $ delete_character("monika")
     play music t2
-    "It's an ordinary school day, like any other."
-    "As usual, I'm surrounded by couples and friend groups walking to school together."
-    "I always tell myself it's about time I meet some girls or something like that..."
+    "Сегодня обычный школьный день, точно такой же, как и все остальные."
+    "Как всегда, я окружён парочками и группами друзей, которые ходят в школу вместе."
+    "Я постоянно говорю себе, что сейчас самое время знакомиться с девушками, или вроде того..."
     show sayori 1a at t11
-    s "Hey, [player]..."
-    "...Well, there already is one girl."
-    "That girl is Sayori, my neighbor and good friend since we were children."
-    "We used to walk to school together every day..."
-    "...And recently, we've picked up that habit once again."
-    s "[player], are you proud of me?"
-    mc "Eh? For what?"
-    s 1c "You know..."
-    s "For waking up on time!"
-    mc "Well, you've been doing that for a while now..."
-    s "Uh-huh!"
-    s 4h "But you never even said anything about it!"
+    s "Хей, [player]..."
+    "...Ну, одна девушка уже есть."
+    "Это девушка -- Сайори, моя соседка и замечательный друг детства."
+    "Раньше мы каждый день ходили в школу вместе..."
+    "...И недавно мы снова взяли это в привычку."
+    s "[player], ты гордишься мной?"
+    mc "Э? С чего бы?"
+    s 1c "Ну, знаешь..."
+    s "За то, что я встала вовремя!"
+    mc "Ну, ты так уже давно..."
+    s "Угу!"
+    s 4h "Но ты об этом и слова не сказал!"
     show sayori at s11
-    s "Even though we walk to school together every day..."
-    mc "Well, yeah..."
-    mc "I always thought it was implied."
-    mc "It's embarrassing to say out loud."
-    s 1d "C'mon, please?"
-    s "It's good motivation~"
-    mc "Fine, fine..."
-    mc "I'm proud of you, Sayori."
+    s "Несмотря на то, что мы каждый день ходим в школу вместе..."
+    mc "Ну, да..."
+    mc "Я думал, что это само собой подразумевалось."
+    mc "Неловко говорить это вслух."
+    s 1d "Ну пожалуйста?"
+    s "Это хорошая мотивация~"
+    mc "Ладно, ладно..."
+    mc "Я горжусь тобой, Сайори."
     show sayori at t11
-    s 1q "Ehehe~"
+    s 1q "Эхехе~"
     show sayori zorder 1 at thide
     hide sayori
-    "We cross the street together and make our way to school."
-    "As we draw near, the streets become increasingly speckled with other students making their daily commute."
+    "Вместе мы перешли через дорогу и продолжили путь к школе."
+    "Чем ближе мы подходили, тем больше улицы пестрели другими учениками, также идущими в школу."
     show sayori 3a zorder 2 at t11
-    s "By the way, [player]..."
-    s "Have you decided on a club to join yet?"
-    mc "A club?"
-    mc "I told you already, I'm really not--"
-    "I start to say what I always do - that I'm not interested in joining any clubs."
-    "But something tells me Sayori would take more offense to that now."
-    "After all, how could I tell her that clubs are a waste of time..."
-    "...when she's starting a club of her very own?"
-    mc "...Actually, yeah."
-    mc "I think I've decided on a club."
+    s "Кстати, [player]..."
+    s "Ты решил, к какому клубу ты присоединишься?"
+    mc "Клубу?"
+    mc "Я же говорил, мне не--"
+    "Я начал объяснять в который уже раз, что я не хочу вступать в какой-либо клуб."
+    "Но что-то мне подсказывает, что Сайори может на меня обидеться."
+    "В конце концов, как я могу сказать ей, что клубы -- это бесполезная трата времени..."
+    "...после того, как она открыла свой собственный клуб?"
+    mc "...А знаешь, да."
+    mc "Я думаю, я выбрал клуб."
     show sayori at h11
-    s 1m "Really?!"
-    s 1r "Which one? Tell me!"
-    mc "Hmm..."
-    mc "I think I'll keep it a surprise."
-    s 5d "Boo..."
-    s "You meanie."
-    mc "Be patient, you'll find out soon enough."
-    "I used to ask myself why I let myself get lectured by such a carefree girl."
-    "But I started to realize that in a way, I envy her."
-    "When Sayori puts her mind to something, she can accomplish great things."
-    "So that's why I feel like I should do something special for her."
+    s 1m "Правда?!"
+    s 1r "Какой? Скажи мне!"
+    mc "Хмм..."
+    mc "Это будет сюрпризом."
+    s 5d "Буу..."
+    s "Ты злюка."
+    mc "Будь терпеливее, скоро узнаешь."
+    "Как-то я спрашивал себя, почему я слушаю нотации от такой растяпы."
+    "Но я начал понимать, что, в какой-то степени, я ей завидую."
+    "Когда Сайори бросает чему-то вызов, она может вершить великие дела."
+    "Именно поэтому я подумал о том, чтобы сделать что-то особенное для неё."
 
     scene bg class_day
     with wipeleft_scene
 
-    "The school day is as ordinary as ever, and it's over before I know it."
-    "After I pack up my things, I stand up, gathering my motivation."
-    mc "Let's see..."
+    "Очередной школьный день прошёл в мгновение ока."
+    "После того, как я собрал свои вещи, я встал, собираясь с силами."
+    mc "Посмотрим..."
     stop music fadeout 2.0
 
     scene bg corridor
     with wipeleft_scene
-    "I recall the room number of the club from a flier I saw."
-    "I walk across the school and upstairs - a section of the school I rarely visit, being generally used for third-year classes and activities."
-    "Before long, I find the room."
-    "I timidly open the door in front of me."
+    "Я вспоминаю номер класса, который я видел на флаере."
+    "Иду через всю школу и на верхний этаж -- место, в котором я редко бываю, привыкший к расписанию третьего года старшей школы."
+    "Довольно быстро я нашёл нужную комнату."
+    "Неуверенно я открываю дверь."
     scene bg club_day
     with wipeleft
     play music t3
-    mc "Hello...?"
+    mc "Здравствуйте...?"
     show sayori 1m at t32
-    s "Ah!"
+    s "Ах!"
     s "[player]...?!"
-    s 1c "W-What are you doing here?"
-    mc "Well...I just--"
-    "Eh? I glance around the room."
+    s 1c "Ч-что ты тут делаешь?"
+    mc "Ну... я просто--"
+    "Э? Я бегло осматриваю комнату."
     show natsuki 3a at f31
-    n "Huh."
-    n "So you're the [player] that Sayori's always talking about?"
+    n "Хм."
+    n "Значит ты -- [player], о котором постоянно говорит Сайори?"
     show natsuki at t31
     show yuri 2t at f33
-    y "T-Thank you for stopping by!"
-    y 2m "It's a pleasure to meet you, [player]."
-    y "We're the Literature Club."
-    y 3v "I-I hope you enjoy your visit!"
+    y "С-спасибо, что заглянули!"
+    y 2m "Рада познакомиться, [player]."
+    y "Мы -- Литературный Клуб."
+    y 3v "Н-надеюсь, вам понравится у нас!"
     show yuri at t33
     show natsuki at f31
-    n 3g "C'mon, Yuri..."
-    n "No need to be so formal."
-    n "He's gonna think we're really strict or something..."
+    n 3g "Да ладно, Юри..."
+    n "Не будь такой церемонной."
+    n "Он может подумать, что мы придирчивые или типа того..."
     show natsuki at t31
-    $ y_name = "Yuri"
-    $ n_name = "Natsuki"
+    $ y_name = "Юри"
+    $ n_name = "Нацуки"
     show yuri at f33
-    y 3q "Ah..."
-    y "Sorry, Natsuki..."
+    y 3q "Ах..."
+    y "Извини, Нацуки..."
     show yuri at t33
-    "The tall one, whose name is apparently Yuri, seems to be quite shy compared to the others."
-    "In comparison, the girl named Natsuki - despite her size - seems like the assertive one."
-    mc "Well, it's nice to meet both of you."
-    mc "I look forward to working with you."
+    "Та, что повыше, судя по всему, Юри, выглядит очень застенчивой по сравнению с остальными."
+    "Для сравнения, девушка по имени Нацуки, несмотря на её рост, похоже, более напористая."
+    mc "Что ж, рад с вами познакомиться."
+    mc "Надеюсь на плодотворную работу с вами."
     show sayori at f32
-    s 1n "W-Working...?"
-    s 1b "[player], don't tell me..."
-    s "You're..."
+    s 1n "Р-работу...?"
+    s 1b "[player], только не говори мне, что..."
+    s "Ты..."
     show sayori at t32
-    mc "That's right."
-    mc "The club I've decided to join is yours, Sayori."
-    mc "The Literature Club."
-    "Sayori's eyes light up."
+    mc "Именно."
+    mc "Я решил вступить в твой клуб, Сайори."
+    mc "Литературный Клуб."
+    "Глаза Сайори загораются."
     show sayori at f32
-    s 1n "...No way."
-    s 1s "No way!"
+    s 1n "...Не может быть."
+    s 1s "Не может быть!"
     show sayori at hf32
-    s 4s "Aaaahhhhhh!"
-    "Sayori wraps her arms around me, jumping up and down."
+    s 4s "Аааахххххх!"
+    "Сайори обнимает меня, припрыгивая."
     show sayori at t32
-    mc "H-Hey--"
+    mc "Х-хей--"
     show natsuki at f31
-    n 3y "Ehehe."
-    n "Well, if Sayori is this happy, then I'm sure it won't be so bad to have you around."
+    n 3y "Эхехе."
+    n "Что ж, раз Сайори так рада, думаю, не так уж и плохо, что ты тут."
     show natsuki 3a at t31
     show yuri at f33
-    y 1s "Not to mention there's four of us now."
-    y "That means we can become an officially-recognized club."
+    y 1s "Кроме того, нас теперь четверо."
+    y "А значит, мы можем стать официально признанным клубом."
     show yuri at t33
     show sayori at f32
-    s 1x "I don't know what to say!"
-    s "We have to celebrate!"
+    s 1x "Я не знаю, что и сказать!"
+    s "Это надо отметить!"
     show sayori at t32
     show yuri at f33
-    y 1m "Huhu."
-    y "What an appropriate day for that, isn't it?"
+    y 1m "Хех."
+    y "Какой подходящий день, не так ли?"
     show yuri 1a at t33
     show sayori at f32
-    s 1r "Yeah!"
-    s 1x "After all, Natsuki decided to--"
+    s 1r "Да!"
+    s 1x "Ведь Нацуки решила--"
     show sayori at t32
     show natsuki at f31
-    n 1w "Hey, don't ruin the surprise!"
+    n 1w "Эй, не порть сюрприз!"
     show natsuki at t31
     show sayori at f32
-    s 5a "Ehehe, sorry..."
+    s 5a "Эхехе, прости..."
     show sayori at t32
     show natsuki at f31
-    n 1k "Everyone sit down at the table, okay?"
+    n 1k "Сядьте все к столу, окей?"
     show natsuki at t31
     show yuri at f33
-    y 1a "How about I make some tea as well?"
+    y 1a "Как насчёт того, чтобы я приготовила чай?"
     hide sayori
     hide natsuki
     hide yuri
     with wipeleft
-    "The girls have a few desks arranged to form a table."
-    "Natsuki and Yuri walk over to the corner of the room, where Natsuki grabs a wrapped tray and Yuri opens the closet."
-    "Still feeling awkward, I take a seat next to Sayori."
-    "Natsuki proudly marches back to the table, tray in hand."
+    "У девушек несколько парт стоят рядом, как большой стол."
+    "Нацуки и Юри заходят за угол комнаты, где Нацуки берёт завёрнутый во что-то поднос, а Юри открывает шкаф."
+    "Всё ещё чувствуя себя неловко, я сажусь рядом с Сайори."
+    "Нацуки гордо шествует назад к столу с подносом в руках."
     show natsuki 2z zorder 2 at t22
-    n "Okaaay, are you ready?"
-    n "...Ta-daa!"
+    n "Океей, все готовы?"
+    n "...Та-даа!"
     show sayori 4m zorder 2 at t21
-    s "Uwooooah!"
-    "Natsuki lifts the foil off the tray to reveal a dozen white, fluffy cupcakes decorated to look like little cats."
-    "The whiskers are drawn with icing, and little pieces of chocolate were used to make ears."
+    s "Воооооу!"
+    "Нацуки сняла фольгу с подноса и раскрыла дюжину белых кексиков, украшенных так, чтобы походить на маленьких котиков."
+    "Усики были нарисованы глазурью, а в качестве ушек были использованы маленькие кусочки шоколада."
     show sayori at f21
-    s 4r "So cuuuute~!"
+    s 4r "Так миииило~!"
     show sayori at t21
-    mc "Wow, those look amazing."
+    mc "Вау, выглядит изумительно."
     show natsuki at f22
-    n 2d "Ehehe. Well, you know."
-    n "Just hurry and take one!"
+    n 2d "Эхехе. Ну знаешь ли."
+    n "Попробуй скорее!"
     show natsuki at t22
-    "Sayori grabs one first, then I follow."
+    "Сайори первая берёт кекс, затем я."
     show sayori at f21
-    s 4q "It's delicious!"
+    s 4q "Вкуснятина!"
     show sayori at t21
-    "Sayori talks with her mouth full and has already managed to get icing on her face."
-    "I turn the cupcake around in my fingers, looking for the best angle to take a bite."
+    "Сайори говорит с полным ртом и уже умудрилась испачкать лицо в глазури."
+    "Я покрутил кекс в своих пальцах, подыскивая наиболее удачное место для укуса."
     show sayori zorder 1 at thide
     hide sayori
     show natsuki 1c zorder 2 at t32
-    "Natsuki is quiet."
-    "I can't help but notice her sneaking glances in my direction."
-    "Is she waiting for me to take a bite?"
-    "I finally bite down."
-    "The icing is sweet and full of flavor - I wonder if she made it herself."
-    mc "This is really good."
-    mc "Thank you, Natsuki."
-    n 42c "W-Well...of course it is!"
-    n "I'm a pro, after all!"
-    n 42a "There's no need to thank me or anything..."
+    "Нацуки молчит."
+    "Я замечаю её кроткий взгляд, направленный на меня."
+    "Она ждет, пока я попробую?"
+    "Наконец, я кусаю."
+    "Глазурь сладкая и насыщенная -- интересно, неужели она сделала это сама?"
+    mc "И правда, неплохо."
+    mc "Спасибо, Нацуки."
+    n 42c "Н-ну... конечно, вкусно!"
+    n "Я же профи, в конце концов!"
+    n 42a "Не нужно меня благодарить или типа того..."
     show natsuki zorder 1 at thide
     hide natsuki
-    "As Natsuki struggles to accept the compliment, Yuri returns to the table, carrying a tea set."
-    "She carefully places a teacup in front of each of us before setting down the teapot next to the cupcake tray."
+    "Пока Нацуки изо всех сил пытается принять комплимент, Юри возвращается к столу с чайным сервизом в руках."
+    "Она осторожно расставляет чайные чашки перед каждым из нас перед тем, как поставить заварочный чайник рядом с подносом."
     show yuri 1a zorder 2 at t11
-    mc "You keep a whole tea set in this classroom?"
-    y "Don't worry, the teachers gave us permission."
-    y "After all, doesn't a hot cup of tea help you enjoy a good book?"
-    mc "Ah... I-I guess..."
+    mc "Вы что, целый чайный сервиз в этой комнате храните?"
+    y "Не переживай, учителя дали нам разрешение."
+    y "В конце концов, разве не горячая кружка чая лучше всего помогает насладиться хорошей книгой?"
+    mc "Ээ... н-наверное..."
     show natsuki 2y at f31
-    n "Ehehe. Already trying to impress our new member, Yuri?"
+    n "Эхехе. Уже пытаешься впечатлить нашего нового участника, Юри?"
     show natsuki at t31
     show yuri at f11
-    y 3n "Eh?! T-That's not..."
+    y 3n "Э?! Э-это не..."
     show yuri at t11
     show natsuki at thide
     hide natsuki
-    "Insulted, Yuri looks away."
-    y 4b "I meant that, you know..."
-    mc "I believe you."
-    mc "Well, tea and reading might not be a pastime for me, but I at least enjoy tea."
-    y 2u "I'm glad..."
-    "Yuri faintly smiles to herself in relief."
-    y 1a "So, [player], what kinds of things do you like to read?"
-    mc "Well... Ah..."
-    "Considering how little I've read these past few years, I don't really have a good way of answering that."
-    mc "...Manga..."
-    "I mutter quietly to myself, half-joking."
+    "Оскорблённая, Юри отворачивается."
+    y 4b "Знаешь, я серьёзно..."
+    mc "Я верю тебе."
+    mc "Может чай с книгой -- это и не для меня, но, по крайней мере, чаем я наслаждаюсь."
+    y 2u "Я рада..."
+    "Юри слегка улыбнулась себе с облегчением."
+    y 1a "Итак, [player], что ты любишь читать?"
+    mc "Нуу... эм..."
+    "Учитывая то, как мало я прочитал за последние пару лет, я не могу ответить на этот вопрос."
+    mc "...Мангу..."
+    "Я тихо бормочу себе под нос, полушутя."
     show natsuki 1c zorder 2 at t41
-    "Natsuki's head suddenly perks up."
-    "It looks like she wants to say something, but she keeps quiet."
+    "Нацуки резко поднимает голову."
+    "Это выглядит так, будто она что-то хочет сказать, но молчит."
     show natsuki zorder 1 at thide
     hide natsuki
-    y 3u "N-Not much of a reader, I guess..."
-    mc "...Well, that can change..."
-    "What am I saying?"
-    "I spoke without thinking after seeing Yuri's sad smile."
-    mc "Anyway, what about you, Yuri?"
-    y 1l "Well, let's see..."
-    "Yuri traces the rim of her teacup with her finger."
-    y 1a "My favorites are usually novels that build deep and complex fantasy worlds."
-    y "The level of creativity and craftsmanship behind them is amazing to me."
-    y 1f "And telling a good story in such a foreign world is equally impressive."
-    "Yuri goes on, clearly passionate about her reading."
-    "She seemed so reserved and timid since the moment I walked in, but it's obvious by the way her eyes light up that she finds her comfort in the world of books, not people."
-    y 2m "But you know, I like a lot of things."
-    y 2a "Don't feel intimidated if you don't read much, okay?"
-    y "I'm certain we can find something that we have in common."
+    y 3u "Н-не такой уж и читатель, полагаю..."
+    mc "...Нуу, это может измениться..."
+    "Что я несу?"
+    "Я сказал не подумав, после того как увидел грустную улыбку Юри."
+    mc "Кстати, а что насчёт тебя, Юри?"
+    y 1l "Что ж, если подумать..."
+    "Юри провела пальцем по краю своей чашки."
+    y 1a "Больше всего мне нравятся романы с проработанным и целостным фантастическим миром."
+    y "Уровень мастерства и креативности, сокрытый в нём, поражает меня."
+    y 1f "И способность рассказать хорошую историю в настолько чужом мире в равной степени впечатляет."
+    "Юри продолжает говорить, похоже, она очень страстно относится к чтению."
+    "Она казалась такой скромной и замкнутой, когда я пришёл, но с уверенностью можно сказать, по тому, как загорелись её глаза, что ей комфортнее среди книг, не людей."
+    y 2m "Но вообще, мне нравится много всего."
+    y 2a "Не пугайся, если ты не очень много читаешь, ладно?"
+    y "Я уверена, что мы сможем найти что-то общее."
     show yuri at t22
     show natsuki 2c at f21
-    n "Hey, Yuri..."
+    n "Хей, Юри..."
     show natsuki at t21
     show yuri at f22
-    y 2f "Eh?"
+    y 2f "Э?"
     show yuri at t22
     show natsuki at f21
-    n 2h "Well, about...you know, the first thing he said..."
+    n 2h "Ну, насчёт... знаешь, первого, что он сказал..."
     show natsuki at t21
-    mc "Manga?"
+    mc "Манга?"
     show yuri at f22
-    y 2i "That's right..."
-    y "Natsuki tends to read manga in the clubroom--"
+    y 2i "Верно..."
+    y "Нацуки, как правило, читает мангу в клубной комнате--"
     show yuri at t22
     show natsuki at f21
-    n 1r "D-Don't just say it!!"
-    "For some reason, Natsuki seems embarrassed about it."
-    n 1q "Besides..."
-    n "Manga...is literature too, you know?"
-    n 1w "So...if [player] wants to read some of my manga, then don't try to stop him or anything!"
+    n 1r "Н-не надо рассказывать об этом!!"
+    "По какой-то причине Нацуки выглядит смущённой из-за этого."
+    n 1q "Кроме того..."
+    n "Манга... это тоже литература, знаешь ли!"
+    n 1w "Так что... если [player] хочет почитать что-то из моей манги, не пытайся его останавливать или что-то такое!"
     show natsuki 1i at t21
     show yuri at f22
-    y 1l "Natsuki..."
-    y "I wouldn't do such a thing."
-    y 1i "However, it could also be nice for us to diversify ourselves a little..."
-    y "He can take this opportunity to try something new, as well."
-    y 1s "Wouldn't you agree, [player]?"
+    y 1l "Нацуки..."
+    y "Я не стала бы так делать."
+    y 1i "Однако, было бы неплохо немного расширить наш кругозор..."
+    y "Он также может воспользоваться возможностью попробовать что-то новое."
+    y 1s "Разве нет, [player]?"
     show yuri at t33
     show natsuki at t32
     show sayori 1l at f31
-    s "M-Maybe--"
-    "Sensing the tension, Sayori jumps in."
-    s 1x "Maybe we can all try something new!"
-    s 1l "I think it could be fun..."
-    s 1c "And we'll all get to know each other a little bit better, too!"
-    s 1l "I mean..."
-    s "that's the kind of thing literature clubs do...right?"
+    s "М-может--"
+    "Чувствуя напряжённость, Сайори вмешивается."
+    s 1x "Наверное, каждый из нас может попробовать что-то новое!"
+    s 1l "Я считаю, это было бы весело..."
+    s 1c "И мы все узнали бы друг друга получше!"
+    s 1l "В смысле..."
+    s "Это же то, чем и занимается Литературный Клуб... да?"
     show sayori at t31
     show yuri at f33
     y 1v "..."
-    y "I-I don't disagree or anything..."
+    y "Не отрицаю..."
     show yuri at t33
     show natsuki at f32
-    n 2j "Yeah..."
-    n "You're right as usual, President."
+    n 2j "Ага..."
+    n "Ты, как всегда, права, президент."
     show natsuki at t32
     show sayori at f31
-    s 1q "Ehehe~"
+    s 1q "Эхехе~"
     show sayori at t31
     show natsuki at f32
-    n 2c "Guess that means I should try picking up a novel or something, huh...?"
+    n 2c "Это значит, что мне нужно взять роман или вроде того, угу...?"
     show natsuki at t32
-    mc "Well, that would make two of us..."
-    mc "I wouldn't mind doing it if I'm not the only one."
+    mc "Ну, значит, будем вдвоём..."
+    mc "Я не против, если я не единственный."
     show sayori at thide
     hide sayori
     show natsuki at f21
     show yuri at t22
-    n 2y "Then as for Yuri..."
+    n 2y "Тогда, Юри..."
     show natsuki at t21
     show yuri at f22
-    y 2n "Eh...?"
-    y "I...I have to read manga...?"
+    y 2n "Э...?"
+    y "Я... я должна читать мангу...?"
     show yuri at t22
     show natsuki at f21
-    n 4i "Jeez..."
-    n 4h "You were the one who suggested we diversify!"
-    n "You should be a little more open-minded..."
-    n 4u "It's kind of hurtful..."
+    n 4i "Блин..."
+    n 4h "Ты предложила расширять кругозор!"
+    n "Ты должна быть более открытой..."
+    n 4u "Это немного обидно..."
     show natsuki at t21
     show yuri at f22
-    y 2t "Hurtful...?"
-    y 2v "I-I didn't realize..."
+    y 2t "Обидно...?"
+    y 2v "Я-я и не подумала..."
     y "..."
-    "With a guilty expression, Yuri thinks to herself."
-    y 2w "I'm sorry for disrespecting your interests, Natsuki."
-    y "If...if you're into it, then I'm sure it's a worthy form of literature."
+    "Юри задумалась с виноватым выражением лица."
+    y 2w "Прошу прощения за неуважение к твоим интересам, Нацуки."
+    y "Если... если тебе нравится, тогда я уверена, она -- достойная разновидность литературы."
     show yuri at t22
     show natsuki at f21
-    n 5q "...Are you just saying that?"
+    n 5q "...Это просто слова?"
     show natsuki at t21
     show yuri at f22
-    y "No..."
-    y "I've realized my error."
-    y 2t "So, if you're willing to consider starting a novel..."
-    y 2u "...Then I'll offer my gratitude by finding a manga to read as well."
+    y "Нет..."
+    y "Я осознала ошибку."
+    y 2t "Так что, если ты решишь начать читать роман..."
+    y 2u "...Тогда я в качестве благодарности найду мангу для чтения."
     show yuri at t22
     show natsuki at f21
-    n 1l "Really?!"
-    n 12c "I-I mean..."
-    n "It...makes me happy that you'd do that for me, Yuri."
-    n 2c "You can trust me to find something that you'll really like, okay?"
+    n 1l "Серьёзно?!"
+    n 12c "Я, в смысле..."
+    n "Мне... приятно, что ты решила сделать такое для меня, Юри."
+    n 2c "Не сомневайся, я найду что-то, что тебе по-настоящему понравится, идёт?"
     show natsuki at t21
     show yuri at f22
-    y 1m "Same here..."
-    y 1h "Perhaps I'll visit the bookstore after the club meeting."
+    y 1m "Аналогично..."
+    y 1h "Пожалуй, зайду-ка я в книжный магазин после клуба."
     show yuri at t22
     show natsuki at f21
-    n 1q "Just...just you?"
+    n 1q "Ты... ты одна?"
     show natsuki at t21
     show yuri at f22
-    y 3q "A-Ah--"
-    y 4a "Would you...like to come along with me?"
+    y 3q "А-ах--"
+    y 4a "Ты... хочешь пойти со мной?"
     show yuri at t22
     show natsuki at f21
-    n 5s "Um..."
-    n "If you don't mind..."
+    n 5s "Умм..."
+    n "Если ты не против..."
     show natsuki at t21
     show yuri at f22
-    y 3t "Not at all!"
-    y "I always go alone, so..."
+    y 3t "Совсем нет!"
+    y "Я всегда одна хожу, так что..."
     show yuri at t22
     show natsuki at f21
-    n "Yeah, me too..."
+    n "Да, я тоже..."
     show natsuki at t21
     show sayori 4s at l41
-    s "This is so cute~!"
-    mc "Sayori, shut up..."
+    s "Это так мило~!"
+    mc "Сайори, заткнись..."
     show sayori at lhide
     hide sayori
     show natsuki at f21
-    n 2j "I'll show you some manga there too, okay?"
+    n 2j "Там я покажу тебе какую-нибудь мангу, хорошо?"
     show natsuki at t21
     show yuri at f22
-    y 1a "Yes."
-    y "I look forward to it."
+    y 1a "Да."
+    y "Буду рада."
     show natsuki at thide
     show yuri at thide
     hide natsuki
     hide yuri
-    "Natsuki and Yuri start to clean up the food."
+    "Нацуки и Юри начали убирать еду."
     show sayori 1q at t11
-    s "Ehehe~"
-    s 1x "I guess the meeting's over, huh?"
-    mc "Yeah, looks like it..."
-    mc "It's nice to see everyone getting along."
-    s 1q "Isn't it?"
-    s 1d "I think everyone likes you too, [player]."
-    mc "You think so...?"
-    mc "Well, everyone always seems to get along a little better with you around, Sayori."
-    s 1y "Aww, [player]~"
-    s "Don't say something like that, it's embarrassing!"
-    mc "Well, whatever."
-    mc "I was surprised when you told me you were starting a club..."
-    mc "But I think you're pulling it off just fine."
-    s 1r "We're gonna make it the best club ever!"
-    s 1x "Now that you joined, every day is gonna be so much fun."
+    s "Эхехе~"
+    s 1x "Кажется, встреча закончена, ага?"
+    mc "Да, по всей видимости..."
+    mc "Приятно видеть, как все ладят друг с другом."
+    s 1q "Разве нет?"
+    s 1d "Я думаю, что ты тоже всем понравился, [player]."
+    mc "Ты так думаешь...?"
+    mc "Кажется, все гораздо лучше ладят, когда ты рядом, Сайори."
+    s 1y "Оуу, [player]~"
+    s "Не надо говорить такие вещи, это смущает!"
+    mc "Ну, не важно."
+    mc "Я был удивлён, когда ты сказала, что открываешь клуб..."
+    mc "Но я считаю, что у тебя отлично получается."
+    s 1r "Мы сделаем его лучшим клубом на свете!"
+    s 1x "Теперь, когда и ты вступил, каждый день будет очень весёлым."
     stop music fadeout 2.0
-    s 1a "Hey, [player]..."
-    s "I really want to thank you."
-    s "I mean, I'm really happy that you joined the club and everything..."
-    s "But the truth is, I already knew you were going to."
-    s 1q "Ehehe~"
-    s 1a "There's actually something else."
+    s 1a "Хей, [player]..."
+    s "Я очень хочу поблагодарить тебя."
+    s "В смысле, я очень рада, что ты вступил в клуб и всё такое..."
+    s "Дело в том, что я уже знала, что так и будет."
+    s 1q "Эхехе~"
+    s 1a "На самом деле, есть ещё кое-что."
     $ if all(clear for clear in persistent.clear): persistent.clearall = True
     if persistent.clearall:
-        call ch40_clearall
+        call ch40_clearall from _call_ch40_clearall
     else:
-        call ch40_clearnormal
+        call ch40_clearnormal from _call_ch40_clearnormal
     window hide(None)
     window auto
     $ quick_menu = False
@@ -440,7 +441,7 @@ label ch40_main:
 
     label ch40_clearnormal:
         show sayori 1a zorder 2 at t11
-        s "I wanted to thank you for getting rid of Monika."
+        s "Я хочу поблагодарить тебя за то, что ты избавился от Моники."
         play music hb
         show black:
             alpha 0.5
@@ -453,15 +454,15 @@ label ch40_main:
                 alpha 0.475
                 repeat
         show layer master at heartbeat
-        s 1b "That's right..."
-        s "I know everything that she did."
-        s 1x "Maybe it's because I'm the President now."
-        s "But I really know everything, [player]."
-        s 1q "Ehehe~"
-        s 1d "I know how hard you tried to make everyone happy."
-        s "I know about all of the awful things that Monika did to make everyone really sad..."
-        s 1b "But none of that matters anymore."
-        s "It's just us now.{nw}"
+        s 1b "Верно..."
+        s "Я знаю обо всём, что она сделала."
+        s 1x "Может, это потому, что я теперь президент."
+        s "Но я правда всё знаю, [player]."
+        s 1q "Эхехе~"
+        s 1d "Я знаю, как сильно ты пытался сделать всех счастливыми."
+        s "Я знаю о всех тех ужасных вещах, которые делала Моника, чтобы всех сильно расстроить..."
+        s 1b "Но всё это уже не важно."
+        s "Сейчас мы только вдвоём.{nw}"
         show screen tear(20, 0.1, 0.1, 0, 40)
         play sound "sfx/s_kill_glitch1.ogg"
         pause 0.25
@@ -476,11 +477,11 @@ label ch40_main:
             linear 0.1 alpha 0.8
             0.1
             alpha 0
-        s "It's just us now.{fast}"
+        s "Сейчас мы только вдвоём.{fast}"
         hide room_glitch
-        s 1d "And you made me the happiest girl in the whole world."
-        s "I can't wait to spend every day like this..."
-        s "With you."
+        s 1d "И ты сделал меня самой счастливой девушкой на свете."
+        s "Я не могу дождаться возможности проводить так каждый день..."
+        s "С тобой."
         play sound "sfx/s_kill_glitch1.ogg"
         show room_glitch zorder 1:
             xoffset -10
@@ -493,31 +494,31 @@ label ch40_main:
             alpha 1.0
         pause 0.3
         stop sound
-        s 1q "Forever and ever..."
+        s 1q "Навсегда..."
         hide sayori
         show sayori 1a onlayer screens zorder 101 at face
-        s "F"
-        s "o"
-        s "r"
+        s "Н"
+        s "а"
+        s "в"
         show screen tear(20, 0.1, 0.1, 0, 40)
         play sound "sfx/s_kill_glitch1.ogg"
         pause 0.25
         stop sound
         hide screen tear
-        s "e"
-        s "v"
-        s "e"
+        s "с"
+        s "е"
+        s "г"
         window show(None)
         stop music
-        call screen dialog("No...", ok_action=Return())
+        call screen dialog("Нет...", ok_action=Return())
         show layer master
         hide black
         show sayori end-glitch onlayer screens
-        s "...Eh?"
-        s "W-What's happening...?"
-        call screen dialog("I won't let you hurt him.", ok_action=Return())
-        s "Who..."
-        s "I-It hurts--"
+        s "...Э?"
+        s "Ч-что происходит...?"
+        call screen dialog("Я не позволю тебе навредить ему.", ok_action=Return())
+        s "Кто..."
+        s "Э-это больно--"
         show screen tear(20, 0.1, 0.1, 0, 40)
         window hide(None)
         play sound "sfx/s_kill_glitch1.ogg"
@@ -526,12 +527,12 @@ label ch40_main:
         stop sound
         hide screen tear
         window show(None)
-        s "Ah--"
-        call screen dialog("I'm sorry... I was wrong.", ok_action=Return())
-        call screen dialog("There's no happiness here after all...", ok_action=Return())
-        call screen dialog("Goodbye, Sayori.", ok_action=Return())
-        call screen dialog("Goodbye, [player].", ok_action=Return())
-        call screen dialog("Goodbye, Literature Club.", ok_action=Return())
+        s "Ах--"
+        call screen dialog("Прости... Я ошибалась.", ok_action=Return())
+        call screen dialog("В конце концов, здесь не может быть счастья...", ok_action=Return())
+        call screen dialog("Прощай, Сайори.", ok_action=Return())
+        call screen dialog("Прощай, [player].", ok_action=Return())
+        call screen dialog("Прощай, Литературный Клуб.", ok_action=Return())
         $ gtext = glitchtext(120)
         s "[gtext]{nw}"
         show screen tear(20, 0.1, 0.1, 0, 40)
@@ -545,32 +546,32 @@ label ch40_main:
         return
 
     label ch40_clearall:
-        s "I wanted to thank you for spending so much time with us all."
+        s "Я хотела поблагодарить тебя за то, что ты уделил нам так много времени."
         play music mend
-        s 2d "You worked so hard to make each and every one of us happy."
-        s "You comforted us through our hard times."
-        s "And you helped us all get along with each other."
-        s 1a "Do you get it, [player]?"
-        s "Because I'm President now, I understand everything."
-        s 1q "You really didn't want to miss a single thing in this game, did you?"
-        s 1a "You saved and loaded so many times, just to make sure you could spend time with everyone."
-        s "Only someone who truly cares about the Literature Club would go that far."
-        s "But..."
-        s 4d "All along, that's all I ever wanted."
-        s "For everyone to be happy and care about each other."
-        s 4q "Ahaha..."
-        s 1t "It's kind of sad, you know?"
-        s "After all you've done for us, there isn't much I can do for you in return."
-        s "We've already reached the end of the game."
-        s 1y "So..."
-        s "This is where we say goodbye."
-        s 1d "Thank you for playing {i}Doki Doki Literature Club{/i}."
-        s "I'm going to miss you, [player]."
-        s "Come visit sometime, okay?"
-        s "We'll always be here for you."
-        s 1t "We..."
+        s 2d "Ты так старался, делая каждую из нас счастливой."
+        s "Ты утешал нас в тяжёлые времена."
+        s "И ты помогал нам всем ладить друг с другом."
+        s 1a "Ты понимаешь, [player]?"
+        s "Из-за того, что теперь я президент, я всё понимаю."
+        s 1q "Ты действительно не хотел пропустить ни одной мелочи в этой игре, да?"
+        s 1a "Ты сохранялся и загружался множество раз, только для того, чтобы убедиться в том, что ты провёл достаточно времени с каждой из нас."
+        s "Лишь тот, кто действительно заботится о Литературном Клубе мог зайти так далеко."
+        s "Но..."
+        s 4d "В конце концов, это всё, чего я хотела."
+        s "Счастья для всех, и чтобы все были окружены заботой."
+        s 4q "Ахаха..."
+        s 1t "Это грустненько, знаешь ли..."
+        s "После всего того, что ты для нас сделал, нет ничего, что я могла бы сделать для тебя взамен."
+        s "Мы наконец достигли конца игры."
+        s 1y "Так что..."
+        s "Настало время прощаться."
+        s 1d "Спасибо за игру в {i}Doki Doki Literature Club{/i}."
+        s "Я буду скучать по тебе, [player]."
+        s "Заходи иногда, ладно?"
+        s "Мы всегда здесь, для тебя."
+        s 1t "Мы..."
         scene black with dissolve_cg
-        s "We all love you."
+        s "Мы все любим тебя."
         stop music fadeout 2.0
         scene black
         with Dissolve(2.0)

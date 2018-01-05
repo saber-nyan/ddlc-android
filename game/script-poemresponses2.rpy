@@ -3,35 +3,35 @@ label ch21_y_end:
 
 label ch22_y_end:
     stop music fadeout 2.0
-    call showpoem (poem_y22, music=False, paper="images/bg/poem_y1.jpg", img="yuri 2s")
-    y 2q "Ahaha..."
-    y "It doesn't really matter what it's about."
-    y "My mind has been a little hyperactive lately, so I had to take it out on your pen."
-    y 2o "Ah--"
-    y 2q "That is...a-a pen fell out of your backpack yesterday, so I took it home for safekeeping and..."
-    y "I, um..."
-    y 2y6 "I just...really like...the way...that it writes."
-    y "So I wrote this...poem...with it."
-    y "And now you're touching it..."
-    y 2y5 "Ahaha."
-    y 3p "I-I'm okay!!"
-    y 3o "What did I just..."
+    call showpoem (poem_y22, music=False, paper="images/bg/poem_y1.jpg", img="yuri 2s") from _call_showpoem_14
+    y 2q "Ахаха..."
+    y "На самом деле не важно, о чём она."
+    y "В последнее время мой мозг чрезмерно активен, поэтому я выплеснула это с помощью твоей ручки."
+    y 2o "Ах--"
+    y 2q "Эта... р-ручка упала из твоего портфеля вчера... И я решила взять её домой, для сохранности и..."
+    y "Мне, эм..."
+    y 2y6 "Мне просто... очень понравилось... то... как она пишет."
+    y "Так что я написала эту... поэму... с её помощью."
+    y "И теперь ты её трогаешь..."
+    y 2y5 "Ахаха."
+    y 3p "Я-я в порядке!!"
+    y 3o "Что я только что..."
     y "..."
-    y 4c "...Can we pretend this conversation never happened?"
-    y "You can keep the poem, though..."
+    y 4c "...Можешь притвориться, что этого разговора не было?"
+    y "Хотя... можешь оставить поэму себе..."
     return
 label ch23_y_end:
     show darkred zorder 5:
         alpha 0
         linear 2.0 alpha 1.0
-    call showpoem (poem_y23, track="bgm/5_yuri2.ogg", revert_music=False, paper="images/bg/poem_y2.jpg", img="yuri eyes", where=truecenter)
-    y "Do you like it??"
-    y "I wrote it for you!"
+    call showpoem (poem_y23, track="bgm/5_yuri2.ogg", revert_music=False, paper="images/bg/poem_y2.jpg", img="yuri eyes", where=truecenter) from _call_showpoem_15
+    y "Тебе нравится?"
+    y "Я написала её специально для тебя!!"
     $ gtext = glitchtext(80)
     show yuri 1b at i11
-    y "In case you couldn't tell, the poem is about [gtext]"
-    y 1y6 "More importantly, I've endowed it with my scent."
-    y "See, aren't I the most thoughtful person in the club?"
+    y "Если ты не понял, то эта поэма о [gtext]"
+    y 1y6 "Гораздо важнее, что я одарила её своим запахом."
+    y "Видишь, разве не я самая разумная в клубе?"
     play sound "sfx/glitch2.ogg"
     show yuri glitch
     pause 0.2
@@ -43,8 +43,8 @@ label ch23_y_end:
     $ renpy.music.stop(channel="music_poem")
     $ renpy.music.play(audio.t5c)
     y "..."
-    y 4d "I..."
-    y "I think I'm...going to vomit."
+    y 4d "Меня..."
+    y "Кажется, меня... сейчас стошнит."
     show yuri at lhide
     hide yuri
     pause 1.0
@@ -55,43 +55,43 @@ label ch22_n_end:
     if n_appeal >= 2:
         jump ch22_n_end2
     else:
-        call showpoem (poem_n2)
-        n 2a "Not bad, right?"
-        mc "It's quite a bit longer than yesterday's."
-        n 2w "Yesterday's was way too short..."
-        n "I was just warming up!"
-        n 2c "I hope you didn't think that was the best I could do."
-        mc "No, of course not..."
-        n 2a "Anyway, the message is pretty straightforward in this poem."
-        n "I doubt I have to explain it."
-        n 2g "Like, anyone would agree that the subject of this poem is an ignorant jerk..."
-        n "Everyone has some kind of weird hobby, or a guilty pleasure."
-        n 5q "Something that you're afraid if people find out, they'd make fun of you or think less of you."
-        n 1e "...But that just makes people stupid!"
-        n "Who cares what someone likes, as long as they're not hurting anyone, and it makes them happy?"
-        n 1q "I think people really need to learn to respect others for liking weird things..."
-        n 1x "...Such as two of the girls in this very club, whom I respectfully won't name."
-        n 1s "Kind of ironic that even in my one place of comfort, I can't even have people respect me..."
-        n 1u "...Jeez, now you're making me complain too much!"
-        "{i}(...What did I do?){/i}"
-        mc "For what it's worth, I respect you..."
-        n 1h "Well--"
-        n "I guess thanks..."
-        n 1s "...But it's kind of obvious that you 'respect' Yuri more, so..."
-        n 42c "Whatever... We're done sharing, so you can leave now."
+        call showpoem (poem_n2) from _call_showpoem_16
+        n 2a "Неплохо, правда?"
+        mc "А она на порядок длиннее вчерашней."
+        n 2w "Вчерашняя была короткой, потому что..."
+        n "Я просто разогревалась!"
+        n 2c "Надеюсь, ты не подумал, что это мой максимум."
+        mc "Нет, конечно нет!.."
+        n 2a "В любом случае, она получилась очень незамысловатой."
+        n "Сомневаюсь, что нужно объяснять."
+        n 2g "Полагаю, все согласятся с тем, что автор - невежественный придурок."
+        n "У каждого есть свои необычные увлечения или предосудительные удовольствия."
+        n 5q "Что-то, что люди выставят на смех, если узнают об этом."
+        n 1e "...Но это лишь покажет людей с их тупой стороны!"
+        n "Никого не должно волновать, что у человека на уме, если ему это нравится, и это не мешает остальным."
+        n 1q "Думаю, людям стоит учиться уважать любителей странных вещей."
+        n 1x "...Прямо как двум девушкам из этого самого клуба, на которых я из уважения не покажу пальцем."
+        n 1s "Это типа иронично, что в единственном месте, где я могу чувствовать себя комфортно, даже нет людей, уважающих меня..."
+        n 1u "...Господи, из-за тебя я столько жалуюсь!.."
+        "{i}(...Я-то что не так сделал?){/i}"
+        mc "Но, по крайней мере, я уважаю тебя..."
+        n 1h "Ну--"
+        n "Спасибо, полагаю..."
+        n 1s "...Но это типа заметно, что ты 'уважаешь' Юри больше, так что..."
+        n 42c "Неважно... Мы уже поделились стихами друг с другом, так что можешь идти."
     return
 label ch22_n_end2:
-    call showpoem (poem_n2b, revert_music=False)
+    call showpoem (poem_n2b, revert_music=False) from _call_showpoem_17
     $ style.say_dialogue = style.edited
     n 1g "[player]..."
-    n "Why didn't you come read with me today?"
-    n 1m "I was waiting for you."
-    n "I was waiting for a long time."
-    n "It was the only thing I had to look forward to today."
-    n "Why did you ruin it?"
-    n "Do you like Yuri more?"
-    n 1k "I think you're better off not associating with her."
-    n "Are you listening to me?"
+    n "Почему ты сегодня не пришёл почитать со мной?"
+    n 1m "Я ждала тебя."
+    n "Я о-очень долго тебя ждала."
+    n "Это было единственное, чего я ждала сегодня."
+    n "Почему ты всё испортил?"
+    n "Юри нравится тебе больше?"
+    n 1k "Лучше тебе перестать водиться с ней."
+    n "Ты меня вообще слушаешь?"
     show darkred zorder 5:
         alpha 0.0
         easein 4.0 alpha 1.0
@@ -102,25 +102,25 @@ label ch22_n_end2:
     show n_rects_ghost1 zorder 4
     show n_rects_ghost2 zorder 4
     show n_rects_ghost3 zorder 4
-    n ghost1 "Yuri is a sick freak."
-    n "That should be obvious by now."
-    n "So just play with me instead."
-    n "Okay?"
-    n "You don't hate me, [player], do you?"
-    n "Do you hate me?"
+    n ghost1 "Юри больная на голову."
+    n "Теперь это должно быть очевидно."
+    n "Так поиграй со мной вместо неё."
+    n "Ладно?"
+    n "Ты же не ненавидишь меня, [player]?"
+    n "Ты меня ненавидишь?"
     show natsuki_ghost_blood zorder 3
-    n "Do you want to make me go home crying?"
-    n "The club is the only place I feel safe."
-    n "Don't ruin that for me."
-    n "Don't ruin it."
-    n "Please."
-    n "Just stop talking to Yuri."
-    n "Play with me instead."
-    n "It's all I have..."
-    n "Play with me."
+    n "Хочешь, чтобы я ушла домой в слезах?"
+    n "Этот клуб - единственное место, где я могу чувствовать себя в безопасности."
+    n "Не порть этого, ради меня."
+    n "Просто не испорть этого."
+    n "Прошу."
+    n "Перестань общаться с Юри."
+    n "Лучше поиграй со мной."
+    n "Это всё, что у меня есть..."
+    n "Поиграй со мной."
     stop music
     hide n_rects_ghost3
-    n ghost2 "PLAY WITH ME!!!"
+    n ghost2 "ПОИГРАЙ СО МНОЙ!!!"
     $ style.say_dialogue = style.normal
     $ quick_menu = False
     pause 1
@@ -156,7 +156,7 @@ label ch22_n_end2:
 label ch23_n_end:
     $ natsuki_23 = True
     $ style.say_dialogue = style.normal
-    call showpoem (poem_n23, revert_music=False)
+    call showpoem (poem_n23, revert_music=False) from _call_showpoem_18
     $ renpy.music.stop(channel="music_poem", fadeout=2.0)
     $ style.say_dialogue = style.edited
     show screen tear(8, offtimeMult=1, ontimeMult=10)
@@ -164,30 +164,30 @@ label ch23_n_end:
     stop music
     hide screen tear
     show natsuki ghost_base
-    n "I changed my mind."
-    n "Ignore everything you just read."
-    n "There's no point in trying to do anything."
-    n "It's Yuri's own fault that she's so unlikable."
-    n "Can you hear me, [player]?"
-    n "If you would just spend more time with Monika, all these problems would go away."
-    n "Yuri and I are too messed up for someone as wonderful as you."
-    n "Just think of Monika from now on."
-    n "Just Monika."
+    n "Я передумала."
+    n "Забудь всё, что ты только что прочитал."
+    n "Нет смысла что-либо делать."
+    n "Юри сама виновата в том, что она такая неприятная."
+    n "Ты меня слышишь, [player]?"
+    n "Если ты просто станешь проводить больше времени вместе с Моникой, все эти проблемы уйдут."
+    n "Ни Юри, ни я не подходим для такого замечательного человека, как ты."
+    n "С этого момента думай только о Монике."
+    n "Только о Монике."
     hide natsuki
     $ style.say_dialogue = style.edited
-    "Just Monika."
+    "Только Моника."
     menu:
-        "Just Monika."
-        "Just Monika.":
+        "Только Моника."
+        "Только Моника.":
             pass
     $ style.say_dialogue = style.normal
-    $ renpy.call_screen("dialog", "Just Monika.", ok_action=Return())
+    $ renpy.call_screen("dialog", "Только Моника.", ok_action=Return())
     scene white
     play music t1
     show intro with Dissolve(0.5, alpha=True)
     pause 2.5
     hide intro with Dissolve(0.5, alpha=True)
-    show splash_warning "Just Monika." with Dissolve(0.5, alpha=True)
+    show splash_warning "Только Моника." with Dissolve(0.5, alpha=True)
     pause 1.0
     play music t5
     $ skip_transition = True
@@ -195,10 +195,10 @@ label ch23_n_end:
     return
 
 label ch21_m_end:
-    call showpoem (poem_m21)
+    call showpoem (poem_m21) from _call_showpoem_19
     jump ch1_m_end2
 label ch22_m_end:
-    call showpoem (poem_m22, revert_music=False)
+    call showpoem (poem_m22, revert_music=False) from _call_showpoem_20
     $ currentpos = get_pos(channel="music_poem")
     $ audio.t5c = "<from " + str(currentpos) + " loop 4.444>bgm/5.ogg"
     stop music_poem fadeout 2.0
@@ -207,22 +207,22 @@ label ch22_m_end:
     pause 0.5
     hide screen tear
     play music t5c
-    m 5 "Sorry, I know it's kind of abstract."
-    m "I'm just trying to...um..."
-    m 1r "Well, never mind."
-    m "There's no point in explaining."
-    m 1i "Anyway..."
-    m 3b "Here's Monika's Writing Tip of the Day!"
-    m "Sometimes you'll find yourself facing a difficult decision..."
-    m "When that happens, don't forget to save your game!"
-    m 3k "You never know when...um..."
-    m 3i "...Who am I talking to?"
-    m "Can you hear me?"
-    m 3g "Tell me you can hear me."
-    m "Anything."
-    $ renpy.call_screen("dialog", "Please help me.", ok_action=Return())
-    m 3k "...That's my advice for today!"
-    m "Thanks for listening~"
+    m 5 "Прости, знаю, что это слегка абстрактно..."
+    m "Я просто пыталась... эм..."
+    m 1r "Ну, не важно."
+    m "Нет смысла объяснять."
+    m 1i "Итак..."
+    m 3b "Вот тебе Писательский Совет Дня от Моники."
+    m "Иногда тебе нужно будет принять сложное решение..."
+    m "В таких случаях не забывай сохранять свою игру!"
+    m 3k "Ведь никогда не знаешь, что... эм..."
+    m 3i "...С кем я говорю?"
+    m "Ты меня слышишь?"
+    m 3g "Скажи, что слышишь."
+    m "Хоть что-нибудь."
+    $ renpy.call_screen("dialog", "Пожалуйста, помоги мне.", ok_action=Return())
+    m 3k "...Это мой совет на сегодня!"
+    m "Спасибо за внимание~"
     return
 label ch23_m_end:
     $ quick_menu = False
@@ -241,13 +241,13 @@ label ch23_m_end:
     show monika 1d zorder 11 at i11
     $ quick_menu = True
     $ mouse_visible = True
-    m "Jeez! That really startled me!{fast}"
+    m "Боже мой! Это смогло меня поразить!{fast}"
     window auto
-    m "Um..."
-    m 1m "Well, I guess I kinda messed up at, uh... 'writing' this poem."
-    m "I was just trying to..."
-    m 1i "...Never mind."
-    m "Let's just move on..."
+    m "Эм..."
+    m 1m "Ну, полагаю, я типа накосячила, пока, ну... 'писала' эту поэму."
+    m "Я просто пыталась..."
+    m 1i "...Неважно."
+    m "Давай просто продолжим..."
     stop music
     return
 
@@ -265,88 +265,88 @@ label ch22_n_bad:
 
     if n_poemappeal[0] < 0:
         n 1r "..."
-        n "Yeah, just as I thought..."
+        n "Да. Всё точно так, как я и предполагала..."
         mc "...?"
-        n 2w "[player], come on."
-        n "I'm not stupid."
-        n 2h "I know how much time you've been spending with Yuri..."
-        n "It's obvious that you care more about impressing her than trying to improve your writing."
-        n 2w "To put it bluntly, it's kind of pathetic."
-        n 4h "Why are you even in this club, [player]?"
-        n "Honestly..."
-        n "I thought getting a new member would help everyone get more involved together."
-        n 4s "Not exclude each other even more."
-        n 1u "This is such a stupid activity anyway..."
-        n 12c "...Look, I'm not in a good mood today, and I just really don't feel like talking right now."
-        n "Please go away."
+        n 2w "[player], слушай."
+        n "Я не настолько тупая."
+        n 2h "Я знаю, как много времени ты проводишь с Юри..."
+        n "Очевидно же, что ты больше пытаешь впечатлить её, чем улучшить свои писательские способности."
+        n 2w "Говорю прямо - на это жалко смотреть."
+        n 4h "Зачем ты вообще вступил в этот клуб, [player]?"
+        n "Ну серьёзно..."
+        n "Я думала, что новый член поможет сплотить всех."
+        n 4s "А не отодвинуть нас друг от друга ещё дальше."
+        n 1u "Это всё такая дурацкая деятельность..."
+        n 12c "...Послушай, я сейчас не в лучшем расположении духа, чтобы разговаривать."
+        n "Пожалуйста, уходи."
         $ skip_poem = True
         return
     else:
 
 
-        n 1k "...Hm."
-        n "I liked your last one better."
-        mc "Eh? Really?"
-        n 2c "Well yeah. I can tell you were a little more daring with this one."
-        n "But you're really not good enough for that yet. It fell flat."
-        mc "That may be true, but I just wanted to try something different."
-        mc "I'm still figuring this all out."
+        n 1k "...Хм."
+        n "Твоя прошлая понравилась мне больше."
+        mc "Да? Серьёзно?"
+        n 2c "Угу. Могу сказать, что ты подошёл посмелее к этой поэме."
+        n "Но ты всё ещё недостаточно хорош для этого. Она кажется пустой."
+        mc "Это правда, но я лишь пытался попробовать что-нибудь новое."
+        mc "Всё ещё пытаюсь понять."
         jump ch22_n_med_shared2
 
 label ch22_n_med:
 
     if n_poemappeal[0] < 0:
-        n "...Hm."
-        n 2k "Well, I can admit that it's better than the last one."
-        n "It's nice to see that you're putting in some effort."
-        mc "That's good..."
+        n "...Хм."
+        n 2k "Ну, признаю, что эта куда лучше прошлой."
+        n "Приятно видеть, как ты вкладываешь свои силы."
+        mc "Это хорошо..."
         label ch22_n_med_shared:
-            n 2c "Just make sure you find a little bit of influence from everyone."
-            n "I think you're at least being influenced by Yuri a little bit, aren't you?"
-            n 5q "I mean, I know you've been, like..."
-            n "Spending some time with her, or whatever..."
-            n 1w "But you know, Monika and I are just as good as her!"
-            n 1q "A-At poems, I mean!"
-            n 1h "So you should really try to learn something, or you'll never get better!"
-            n "Here's the one I wrote..."
-            n "I'll make sure you learn something from it."
+            n 2c "Просто убедись в том, что ты берёшь от каждого из нас понемногу."
+            n "По крайней мере, от Юри ты берёшь немного больше опыта."
+            n 5q "Имею в виду, что знаю, как вы..."
+            n "Проводите время вместе, или что там у вас..."
+            n 1w "Но знаешь, мы с Моникой ничуть не хуже её!"
+            n 1q "В т-творчестве, имею в виду!"
+            n 1h "Поэтому тебе стоит учиться и учиться, иначе лучше не станешь!"
+            n "Вот, кстати, что я написала..."
+            n "Прослежу за тем, чтобы ты извлёк из моей поэмы хоть что-нибудь."
             return
 
 
     elif n_poemappeal[0] == 0:
-        n "...Hm."
-        n 2k "Well, it's not really any worse than your last one."
-        n "But I can't really say it's any better, either."
-        mc "Phew..."
-        n 2c "Huh? 'Phew' what?"
-        mc "Ah... Well anything that isn't a trainwreck, I'll take as a win."
-        mc "And I get the feeling you're probably the most critical."
-        n 1p "H-Hey! What makes you--"
-        n 1q "{i}(Wait, maybe that was a compliment...?){/i}"
-        n 4y "A-Ahah! Glad to see someone recognizes my experience!"
-        n "Well then, keep practicing and maybe you'll be as good as me someday!"
-        mc "That's...uh..."
-        "Something tells me Natsuki completely missed the point."
+        n "...Хм."
+        n 2k "Ну, она не хуже, чем твоя предыдущая..."
+        n "Но я и не могу сказать, что она лучше."
+        mc "Фух..."
+        n 2c "А? Что ты имел в виду под своим 'фух'?"
+        mc "А... Ну, так как это не столь ужасно, засчитаем мою победу."
+        mc "И теперь мне кажется, что ты самая критичная из всех."
+        n 1p "Эй! С чего это ты--"
+        n 1q "{i}(Погодите-ка, разве это был не комплимент...?){/i}"
+        n 4y "А-ха-ха! Рада видеть, что хоть кто-то признаёт мой опыт!"
+        n "Ну, тогда продолжай работать над собой, и, возможно, в один день ты станешь на мой уровень!"
+        mc "Это... ну..."
+        "Что-то подсказывает мне, что Нацуки не совсем поняла, что я имел в виду."
         jump ch22_n_med_shared
     else:
 
 
-        n "...Hm."
-        n 2c "Well, it's not terrible."
-        n "But it's pretty disappointing after your last one."
-        n 2s "Then again, if this one was as good as your last one, I would be completely pissed."
-        mc "Well, I guess I wanted to try something a little different this time."
+        n "...Хм."
+        n 2c "Ну, она не ужасна."
+        n "Но разочаровывает, если сравнивать её с предыдущей."
+        n 2s "Опять же, если бы она была столь хорошей, как вчерашняя, я была бы раздосадована."
+        mc "Ну, полагаю, я всего лишь попробовал что-то другое в этот раз."
         label ch22_n_med_shared2:
-            n 2c "Fair enough. You're still new to this, so I wouldn't expect you to find your style right away."
-            n "I mean, everyone in the club writes really differently from each other..."
-            n "Maybe you'll find a little influence from all of us."
-            n 2q "For instance..."
-            n 5q "I noticed that you were spending some time with Yuri today..."
-            n "Not that I care who you spend your time with."
-            n 5w "After all, I was taught never to expect anything from anybody."
-            n 5s "So it's not like I was waiting for you, or anything."
-            n 5h "Still, you should at least look over my poem..."
-            n "You'll probably be able to learn something from it."
+            n 2c "Хорошо. Ты всё ещё новичок в этом, так что я и не рассчитывала на то, что ты найдёшь свой стиль должным образом."
+            n "Я имею в виду, что все в клубе пишут совершенно по-разному..."
+            n "Возможно, ты получил частичку опыта от каждого из нас."
+            n 2q "К примеру..."
+            n 5q "Я заметила, как ты проводил время с Юри сегодня..."
+            n "Не то чтобы мне было дело, с кем ты проводишь время."
+            n 5w "Как-никак, я получила ценный урок - не ожидать от людей чего-либо."
+            n 5s "Не то чтобы я ждала тебя, или типа того."
+            n 5h "Но тебе хотя бы стоит глянуть на то, что я написала..."
+            n "Ты, возможно, сможешь извлечь из неё что-нибудь для себя."
             return
 
 label ch23_n_bad:
@@ -354,41 +354,41 @@ label ch23_n_bad:
         jump ch23_n_ygave
 
     if n_poemappeal[0] < 0 and n_poemappeal[1] < 0:
-        n 5x "I'm not going to read another one of your Yuri suck-up poems."
-        n 5s "But I'm still going to make you read mine."
-        n "There's a reason."
-        n 5x "I really wish I didn't have to do this..."
-        n "But unfortunately I don't have much of a choice."
-        n 5h "Just...read it carefully, okay?"
-        n "Then you can go away."
+        n 5x "Я даже думать не буду о том, чтобы прочитать твою поэму-подлизку к Юри."
+        n 5s "Но я всё ещё хочу, чтобы ты прочитал мою."
+        n "На то есть причина."
+        n 5x "Хотелось бы мне не делать этого..."
+        n "Но, к сожалению, у меня нет выбора."
+        n 5h "Просто... внимательно прочитай её, хорошо?"
+        n "Потом можешь уходить."
         return
 
     elif n_poemappeal[0] < 0 or n_poemappeal[1] < 0:
         n "..."
-        n 2c "...Meh."
-        n "I guess you really haven't learned anything after all."
-        n "Honestly, I don't know why I got my hopes up in the first place."
+        n 2c "...Хмех."
+        n "Полагаю, в итоге, ты вообще ничему не научился."
+        n "Если честно, я не знаю, зачем надеялась на тебя."
         label ch23_n_bad_shared:
-            n 42c "This is clearly Yuri's influence..."
-            n "I didn't realize you were so impressionable."
-            n "Spending all this time with her in the club..."
-            n "Now trying to write like her..."
-            n 1s "This is stupid."
-            n "At least Monika appreciates my writing..."
-            n 1r "...Ugh."
-            n 1q "Okay...I guess I'm going to share my poem with you now."
-            n "I really hate that I have to do this."
-            n "But unfortunately I don't have much of a choice."
-            n 1h "Just...read it carefully, okay?"
-            n "Then you can go away."
+            n 42c "Это всё влияние Юри..."
+            n "Я даже не предполагала, что тебя так легко впечатлить."
+            n "Сначала ты проводил с ней много времени в клубе..."
+            n "Теперь копируешь её стиль письма..."
+            n 1s "Как же это тупо."
+            n "По крайней мере Монике нравится моё творчество..."
+            n 1r "...Эх."
+            n 1q "Ну ладно... Видимо, сейчас мне придётся показать тебе свою поэму."
+            n "Как же не хочется этого делать."
+            n "Но, к сожалению, у меня нет другого выбора."
+            n 1h "Просто... внимательно прочитай её, хорошо?"
+            n "Потом можешь уходить."
             return
     else:
 
         n "..."
-        n 2r "Oh, man."
-        n "This is seriously a step backwards."
-        mc "Eh?"
-        n 2c "I liked your last two way better than this one."
+        n 2r "Ну блин."
+        n "Это серьёзный шаг назад."
+        mc "Ась?"
+        n 2c "Твои последние две были куда лучше этой."
         jump ch23_n_bad_shared
 
 label ch23_n_med:
@@ -399,44 +399,44 @@ label ch23_n_med:
         jump ch23_n_bad
     elif n_poemappeal[1] < 0:
         n "..."
-        n 2k "...This one's alright."
-        mc "Alright?"
-        n "Yeah, it's at least better than yesterday's."
+        n 2k "...Эта ничего так."
+        mc "Ничего?"
+        n "Да, по крайней мере лучше вчерашней."
         label ch23_n_shared:
-            n 2c "I still can't really tell how much you actually care about writing, but either way, you're doing alright."
-            n 4r "Even though you're not really spending time with anyone but Yuri..."
-            n 4h "I still think it's nice to have activities that we all participate in."
-            n 4w "So you better keep working hard!"
-            n "I mean..."
-            n 1h "I know I'm not President or Vice President or anything..."
-            n "But that doesn't mean you can let me down, okay?"
-            n 1q "So, at least read mine too for now."
-            n "But just to be clear..."
-            n 1h "This poem...means a lot to me."
-            n "So read it carefully, okay?"
+            n 2c "По-прежнему не могу сказать, насколько ты заморачиваешься с писательством, но у тебя действительно неплохо выходит."
+            n 4r "Даже несмотря на то, что ты проводишь время с одной лишь Юри..."
+            n 4h "Я всё ещё думаю, что было бы неплохо устроить нечто такое, где мог бы поучаствовать каждый из нас."
+            n 4w "Так что продолжай усердно работать!"
+            n "То есть..."
+            n 1h "Понимаю, что я не вице-президент клуба, или типа того..."
+            n "Но это не значит, что ты можешь меня подвести, ясно?"
+            n 1q "Так что, хотя бы прочитай мою."
+            n "Но если честно..."
+            n 1h "Эта поэма... значит очень много для меня."
+            n "Поэтому читай её внимательно, хорошо?"
             return
     else:
         n "..."
-        n 2k "...This one's alright."
-        mc "Alright?"
-        n "Well, yeah."
-        n "About as good as yesterday's, anyway."
+        n 2k "...А эта ничего такая."
+        mc "Ничего?"
+        n "Ну, да."
+        n "Примерно на уровне вчерашней."
         jump ch23_n_shared
 
 label ch23_n_ygave:
-    n 1h "What?"
-    n "You gave your poem to Yuri?"
-    n 4x "Gross!"
-    n "What is with you two?"
-    n 1s "Hmph..."
-    n "It's not like I wanted to read it anyway."
-    n 1r "It's just pissing me off a little bit that you didn't even think to show me at all."
-    n 1x "...Ugh."
-    n 1q "Okay...I guess I'm going to share my poem with you anyway."
-    n "I really hate that I have to do this."
-    n "But unfortunately I don't have much of a choice."
-    n 1h "Just...read it carefully, okay?"
-    n "Then you can go away."
+    n 1h "Что?"
+    n "Ты отдал свою поэму Юри?"
+    n 4x "Отвратительно!"
+    n "Да что с вами двумя?"
+    n 1s "Хмпф..."
+    n "Всё равно не хотела её читать."
+    n 1r "Просто немного раздражает, что ты даже не подумал показать её мне."
+    n 1x "...Ух."
+    n 1q "Ладно... полагаю, мне в любом случае придётся делиться своей."
+    n "Как же не хочется этого делать."
+    n "Но, к сожалению, у меня нет другого выбора."
+    n 1h "Просто... внимательно прочитай её, хорошо?"
+    n "Потом можешь уходить."
     return
 
 label ch23_n_good:
@@ -455,70 +455,70 @@ label ch22_y_bad:
     jump ch22_y_med
 
 label ch22_y_med:
-    y 2b "I've been waiting for this..."
-    y "Let's see what you've written for today."
+    y 2b "Я ждала этого..."
+    y "Посмотрим, что ты написал сегодня."
     y 3m "..."
-    "Yuri smiles and takes a deep breath."
-    y "I like just holding it."
+    "Юри улыбнулась и сделала глубокий вздох."
+    y "Мне нравится просто держать её в руках."
     mc "...?"
-    y 3p "Ah, I mean--"
-    y "The poem turned out good!"
-    y 3o "It's, ah..."
-    y 2q "...Well, there are some things that you could work on..."
-    y "But that doesn't really matter."
-    y 2s "It feels like anything written by you is a treasure."
-    y 2d "Ahaha..."
-    y 2o "That came out a little awkward..."
-    y "L-Let's move on..."
-    y 2t "Here's the poem I wrote."
-    y "You don't have to like it or anything..."
+    y 3p "А, в смысле--"
+    y "Поэма вышла хорошо!"
+    y 3o "Эм... здесь..."
+    y 2q "...Ну, здесь всё ещё есть вещи, над которыми стоит поработать..."
+    y "Но это уже не важно."
+    y 2s "Мне кажется, что бы ты ни написал, это сокровище."
+    y 2d "Ахаха..."
+    y 2o "Неловко вышло..."
+    y "Д-давай продолжим..."
+    y 2t "Вот поэма, которую я написала."
+    y "Она не должна обязательно понравиться тебе, или вроде того..."
     return
 
 
 label ch22_y_good:
 
     if y_poemappeal[0] < 1:
-        y 2b "I've been waiting for this..."
-        y "Let's see what you've written for today."
+        y 2b "Я ждала этого..."
+        y "Посмотрим, что ты написал на сегодня."
         y 2e "..."
         y "......"
-        "Yuri stares at the poem with a surprised expression on her face."
-        mc "Do you...like it?"
+        "Юри уставилась на поэму с удивлённым выражением лица."
+        mc "Она тебе... нравится?"
         y "[player]..."
-        y "...How did you pick up on this so quickly?"
+        y "...Как ты так быстро разобрался?"
         label ch22_y_good_shared:
-            y 2v "Just yesterday, I was telling you the kind of techniques worth practicing..."
-            mc "Maybe that's why..."
-            mc "You did a good job explaining."
-            mc "I really wanted to try giving it more imagery."
+            y 2v "Ещё только вчера я рассказывала тебе о техниках, которые стоит практиковать..."
+            mc "Наверное в этом и есть причина..."
+            mc "Ты доходчиво объясняешь."
+            mc "Я действительно хотел представить это более образно."
             show yuri 4b zorder 2 at t11
-            "Yuri visibly swallows."
-            "Even her hands appear sweaty."
-            y 4e "A-Ah..."
-            y "That makes me so happy..."
-            y 3y5 "It's so amazing to feel like I'm valued, [player]!"
-            y "Everything that you write is a treasure to me."
-            y 3m "My heart pounds just holding it..."
-            y 3q "Ahaha..."
-            y "I want to write a poem about this feeling..."
-            y 3y6 "Is that bad, [player]?"
-            y "I'm not being weird, right?"
-            y 3s "I-I'm having a harder time than usual at concealing my emotions..."
-            y 3m "I'm kind of embarrassed."
-            y 3y6 "But right now, I just want you to read my poem, too."
-            y 3y5 "Okay?"
+            "Юри заметно сглотнула."
+            "Даже её ладони начали потеть."
+            y 4e "А-ах..."
+            y "Я так счастлива..."
+            y 3y5 "Так здорово чувствовать, что тебя ценят, [player]!"
+            y "Всё, что ты пишешь - сокровище для меня."
+            y 3m "Моё сердце бьётся сильнее, даже когда я просто держу листок в руках..."
+            y 3q "Ахаха..."
+            y "Хочу написать поэму об этом чувстве..."
+            y 3y6 "Разве это плохо, [player]?"
+            y "Я ведь не веду себя странно, правда?"
+            y 3s "Т-теперь мне стало гораздо сложнее скрывать свои эмоции..."
+            y 3m "Я, вроде, смущена."
+            y 3y6 "Но прямо сейчас я очень хочу, чтобы ты прочитал мою поэму."
+            y 3y5 "Ладно?"
             return
     else:
 
-        y 2b "I've been waiting for this..."
-        y "Let's see what you've written for today."
+        y 2b "Я ждала этого..."
+        y "Посмотрим, что ты написал сегодня."
         y 2e "..."
         y "......"
-        "Yuri stares at the poem with a surprised expression on her face."
-        mc "Do you...like it?"
+        "Юри уставилась на поэму с удивлённым выражением лица."
+        mc "Она тебе... нравится?"
         y "[player]..."
-        y 2t "This one might even be better than yesterday's..."
-        y "...How did you even pick up on this so quickly?"
+        y 2t "Эта, пожалуй, даже лучше вчерашней..."
+        y "...Как ты так быстро вник в суть?"
         jump ch22_y_good_shared
 
 label ch23_y_bad:
@@ -528,225 +528,225 @@ label ch23_y_med:
     jump ch23_y_good
 
 label ch23_y_good:
-    y 1d "Finally..."
-    y 3y5 "Ahaha..."
+    y 1d "Наконец-то..."
+    y 3y5 "Ахаха..."
     show yuri 3m
-    "Yuri holds my poem to her face and takes a deep breath."
-    y 3y6 "I love it."
-    y "I love everything about it."
-    y 3y5 "[player], I want to take this home."
-    y "Will you let me keep it?"
-    y "Please?"
-    mc "Sure, I don't care..."
-    y 2y5 "Ahaha."
-    y "You're too nice to me, [player]..."
-    y "I've never met anyone as nice as you."
-    y 2y6 "I could die..."
-    y 3y5 "N-Not really, but--!"
-    y "I just don't know how to describe it."
-    y "It's okay to be feeling this way, right?"
+    "Юри прижала мою поэму к своему лицу и сделала глубокий вдох."
+    y 3y6 "Мне нравится."
+    y "Мне всё в ней нравится."
+    y 3y5 "[player], я хочу взять её к себе домой."
+    y "Можно мне её оставить?"
+    y "Пожалуйста?"
+    mc "Конечно, я не против..."
+    y 2y5 "Ахаха."
+    y "Ты слишком мил со мной, [player]..."
+    y "Никогда не встречала кого-либо столь милого."
+    y 2y6 "Я могу умереть..."
+    y 3y5 "Н-не на самом деле, но всё же--!"
+    y "Я просто не знаю, как описать это."
+    y "Это же нормально -- чувствовать нечто подобное?"
     show yuri:
         "yuri 3y4"
         0.4
         "yuri 3y6"
-    y "It's not bad, right?"
-    "Yuri holds my poem to her chest."
-    y 3m "I'm going to take this home with me and keep it in my room."
-    y "I hope that it makes you feel good when you think about me having it."
+    y "Это ведь не плохо, да?"
+    "Юри прижала мою поэму к своей груди."
+    y 3m "Я хочу забрать её домой и хранить в своей комнате."
+    y "Надеюсь, ты будешь радоваться, вспоминая, что поэма у меня."
     $ style.say_dialogue = style.normal
-    y 3y5 "I'll take good care of it!"
+    y 3y5 "Я хорошо о ней позабочусь!"
     $ style.say_dialogue = style.edited
-    y 3y6 "I'll even touch myself while reading it over and over."
+    y 3y6 "Я даже буду трогать себя, перечитывая её снова и снова."
     $ _history_list.pop()
-    y "I'll give myself paper cuts so your skin oil enters my bloodstream."
+    y "Я порежу себя бумагой, чтобы твои телесные жидкости, проникли в мой кровоток."
     $ _history_list.pop()
-    y 3y1 "Ahahahahaha."
+    y 3y1 "Ахахахаха."
     $ _history_list.pop()
     $ style.say_dialogue = style.normal
-    y 2s "You can have my poem too."
-    y "Besides, after you read it, I know you're really going to want to keep it."
-    y 2y6 "Here, take it. I can't wait any longer."
-    y 2y5 "Hurry! Read it!"
+    y 2s "Ты тоже можешь оставить мою поэму себе."
+    y "Впрочем, когда прочитаешь, ты сам захочешь оставить её."
+    y 2y6 "Вот, держи. Не могу больше ждать."
+    y 2y5 "Ну же! Читай!"
     $ y_gave = True
     return
 
 
 label ch21_m_start:
-    m 1b "Hi, [player]!"
-    m "Having a good time so far?"
-    mc "Ah...yeah."
-    m 1k "Good! Glad to hear it!"
-    m 4a "By the way, since you're new and everything..."
-    m "If you ever have any suggestions for the club, like new activities, or things we can do better..."
-    m 4b "I'm always listening!"
-    m "Don't be afraid to bring things up, okay?"
+    m 1b "Привет, [player]!"
+    m "Хорошо проводишь время?"
+    mc "А... угу."
+    m 1k "Отлично! Рада слышать!"
+    m 4a "Между прочим, так как ты новенький, и всё такое..."
+    m "Если у тебя есть какие-либо предложения для клуба, вроде новых занятий, или вещей, которые мы можем делать лучше..."
+    m 4b "Я всегда слушаю!"
+    m "Не бойся поднимать такие вопросы, хорошо?"
     show monika 4a
-    mc "Alright...I'll keep that in mind."
-    "Of course I'll be afraid to bring things up."
-    "I'm much better off just going with the flow until I'm more settled in."
-    m 1a "Anyway..."
-    m "Want to share your poem with me?"
-    mc "It's kind of embarrassing, but I guess I have to."
-    m 5a "Ahahaha!"
-    m "Don't worry, [player]!"
-    m "We're all a little embarrassed today, you know?"
-    m "But it's that sort of barrier that we'll all learn to get past soon."
-    mc "Yeah, that's true."
-    "I hand Monika my poem."
-    m 2a "...Mhm!"
+    mc "Понятно... Я запомню."
+    "Конечно же, я не собираюсь делать нечто подобное."
+    "Мне гораздо приятнее просто следовать течению до тех пор, пока я не привыкну."
+    m 1a "В любом случае..."
+    m "Хочешь показать мне свою поэму?"
+    mc "Это немного смущает, но, видимо, я должен."
+    m 5a "Ахахаха!"
+    m "Не волнуйся, [player]!"
+    m "Ты ведь знаешь, все мы сегодня немного стесняемся."
+    m "Но это тот барьер, который мы все вместе научимся преодолевать."
+    mc "Да, пожалуй."
+    "Я передал Монике свою поэму."
+    m 2a "...Ммм!"
     $ nextscene = "m2_" + poemwinner[0] + "_" + str(eval(poemwinner[0][0] + "_appeal"))
-    call expression nextscene
+    call expression nextscene from _call_expression_15
 
-    m 1a "Anyway, do you want to read my poem now?"
-    m 1e "Don't worry, I'm not very good..."
-    mc "You sound pretty confident for someone who claims to not be very good."
-    m 1j "Well...that's 'cause I have to sound confident."
-    m 1b "That doesn't mean I always feel that way, you know?"
-    mc "I see..."
-    mc "Well, let's read it, then."
+    m 1a "В любом случае, хочешь теперь прочитать мою?"
+    m 1e "Не бойся, я не совсем хороша в этом..."
+    mc "Ты звучишь довольно уверенной в себе для человека, который заявляет, что не хорош."
+    m 1j "Ну... Это потому что я должна казаться уверенной в себе."
+    m 1b "Это означает, что я не всегда такая, ясно?"
+    mc "Понятно..."
+    mc "Ну, давай тогда прочту."
     return
 
 label ch22_m_start:
     if y_appeal < 2:
-        m 1b "Hi again, [player]!"
-        m "How's the writing going?"
-        mc "Alright, I guess..."
-        m 2k "I'll take that."
-        m 2b "As long as it's not going bad!"
-        m 2a "I'm happy that you're applying yourself."
-        m "Maybe soon you'll come up with a masterpiece!"
-        mc "Ahaha, I wouldn't count on that..."
-        m 2a "You never know!"
-        m "Want to share what you wrote for today?"
-        mc "Sure... Here you go."
-        "I give my poem to Monika."
+        m 1b "И снова здравствуй, [player]!"
+        m "Как продвигается писательство?"
+        mc "Хорошо, наверное..."
+        m 2k "Ну, ладно."
+        m 2b "Главное, чтобы не плохо!"
+        m 2a "Я рада, что ты показываешь себя."
+        m "Возможно, совсем скоро у тебя выйдет шедевр!"
+        mc "Ахаха, я на это даже и не рассчитываю..."
+        m 2a "Кто знает!"
+        m "Хочешь поделиться тем, что ты написал сегодня?"
+        mc "Конечно... держи."
+        "Я передаю свою поэму Монике."
         m "..."
-        m "...Alright!"
+        m "...Ладненько!"
     $ nextscene = "m2_yuri_" + str(eval("y_appeal"))
-    call expression nextscene
+    call expression nextscene from _call_expression_16
 
-    m 1a "But anyway..."
-    m "You want to read my poem now?"
-    m "I like the way this one turned out, so I hope you do too~"
+    m 1a "Но в любом случае..."
+    m "Хочешь теперь прочитать мою?"
+    m "Мне понравилось то, как получилось, так что, надеюсь, тебе тоже~"
     return
 
 label ch23_m_start:
     $ nextscene = "m2_yuri_" + str(eval("y_appeal"))
-    call expression nextscene
+    call expression nextscene from _call_expression_17
     if y_appeal < 3:
-        m 1a "Anyway..."
+        m 1a "В любом случае..."
         if y_gave:
-            m 1m "I guess we won't worry about your poem..."
-            m "Yuri should have at least had the courtesy of letting you finish sharing it before taking it."
-            m 1r "...Well, whatever."
-            m "If it makes her happy, I won't stop her."
-            m 1a "As for mine..."
-        m 1e "I worked really...really hard on this poem, so..."
-        m "I hope that it's, uh, effective."
-        m 1r "Here goes..."
+            m 1m "Думаю, о твоей поэме беспокоиться больше не стоит..."
+            m "Юри стоило бы быть учтивее, и дать тебе поделиться со всеми, прежде чем забирать домой."
+            m 1r "...Ну, неважно."
+            m "Если это делает её счастливее, я не против."
+            m 1a "А насчёт меня..."
+        m 1e "Я работала очень... очень усердно над этой поэмой, так что..."
+        m "Надеюсь, что, эм, она не пропадёт даром."
+        m 1r "Вот..."
         $ persistent.seen_colors_poem = True
     return
 
 
 
 label m2_natsuki_1:
-    m 2b "I like it, [player]!"
-    mc "Really...?"
-    m 2e "It's a lot cuter than I expected."
-    m 2k "Ahahaha!"
-    mc "Oh jeez..."
-    m 1b "No, no!"
-    m "It kind of makes me think of something Natsuki would write."
-    m "And she's a good writer, too."
-    m 5a "So take that as a compliment!"
-    mc "Ahaha..."
-    mc "If you say so."
-    m "Yep!"
-    m 3b "If you're interested in Natsuki, then always keep a snack on you."
-    m "She'll cling to you like a puppy."
-    m 3k "Ahaha!"
-    m 1a "Natsuki's dad doesn't give her lunch money or leave her any food in the house, so she's in a fussy mood pretty often..."
-    m "But sometimes she just loses all of her strength and shuts down."
-    m "Like earlier."
-    m 2d "This is just a guess, but I think she's so small because her malnutrition is interfering with her adolescent growth..."
-    m 2b "...But hey, some guys are into petite girls too, you know?"
-    m 5a "Sorry...just trying to look at the bright side!"
+    m 2b "Мне понравилось, [player]!"
+    mc "Серьёзно...?"
+    m 2e "Она гораздо милее, чем я предполагала."
+    m 2k "Ахахаха!"
+    mc "О, Господи..."
+    m 1b "Нет, нет!"
+    m "Кажется, что нечто подобное могла написать Нацуки."
+    m "И она тоже очень хороший писатель."
+    m 5a "Так что прими это за комплимент!"
+    mc "Ахаха..."
+    mc "Если ты так считаешь."
+    m "Агась!"
+    m 3b "Если ты заинтересован в Нацуки, то всегда храни при себе закуску."
+    m "Она прилипнет к тебе, как собачка."
+    m 3k "Ахаха!"
+    m 1a "Отец Нацуки не даёт ей карманных денег и даже не оставляет еду дома, поэтому она довольно часто в нервном состоянии..."
+    m "Но иногда она просто теряет всю силу и вырубается."
+    m "Как недавно произошло."
+    m 2d "Это просто догадка, но мне кажется, что она такая маленькая из-за того, что её недоедание ведёт к проблемам с ростом..."
+    m 2b "...Но, слушай, многим парням ведь нравятся маленькие девушки, ты знал?"
+    m 5a "Прости... Пытаюсь показать всё с лучшей стороны!"
 
     return
 
 label m2_yuri_1:
-    m 1a "Great job, [player]!"
-    m "I was going 'Ooh' in my head while reading it."
-    m 1j "It's really metaphorical!"
-    m 1a "I'm not sure why, but I didn't expect you to go for something so deep."
-    m 3b "I guess I underestimated you!"
-    mc "It's easiest for me to keep everyone's expectations low."
-    mc "That way, it always counts when I put in some effort."
-    m 5a "Ahaha! That's not very fair!"
-    m "Well, I guess it worked, anyway."
-    m 2a "You know that Yuri likes this kind of writing, right?"
-    m "Writing that's full of imagery and symbolism."
-    m 2d "Sometimes I feel like Yuri's mind is just totally detached from reality."
-    m "I don't mean that like it's a bad thing, though."
-    m 2a "But sometimes I get the impression that she's just totally given up on people."
-    m "She spends so much time in her own head that it's probably a much more interesting place for her..."
-    m 2b "But that's why she gets so happy when you treat her with a lot of kindness."
-    m "I don't think she's used to being indulged like that."
-    m 2j "She must be really starved for social interaction, so don't blame her for coming on a little strongly."
-    m 2d "Like earlier..."
-    m "I think if she gets too stimulated, she ends up withdrawing and looking for alone time."
-    "Suddenly, the door opens."
-    m 2b "Yuri!"
+    m 1a "Отличная работа, [player]!"
+    m "В моей голове проносилось 'ого', пока я читала это."
+    m 1j "Получилось очень многозначительно!"
+    m 1a "Не знаю, почему, но я не ожидала от тебя чего-то столь глубокого."
+    m 3b "Полагаю, я недооценивала тебя!"
+    mc "Мне весьма просто заставить других недооценивать меня."
+    mc "Таким образом, это идёт в плюс, когда я прикладываю усилия."
+    m 5a "Ахаха! Не очень-то честно!"
+    m "Но, как видишь, работает."
+    m 2a "Ты знал, что Юри нравится этот стиль письма?"
+    m "Творения, наполненные образностью и символизмом."
+    m 2d "Иногда мне кажется, что разум Юри полностью отстранён от реальности."
+    m "Однако, я не выставляю это как нечто плохое."
+    m 2a "Но иногда у меня появляется чувство, что она разочаровалась в людях."
+    m "Она проводит столько времени внутри своей головы, что, кажется, там ей куда интересней..."
+    m 2b "Но это объясняет, почему она становится счастливой, когда ты проявляешь к ней доброту."
+    m "Не думаю, что она привыкла к такому."
+    m 2j "Она, должно быть, очень устала от взаимодействий с социумом, так что не вини её за излишнюю строгость."
+    m 2d "Как до этого..."
+    m "Думаю, если её простимулировать, она прекратит тратить время впустую в одиночестве."
+    "Дверь неожиданно распахнулась."
+    m 2b "Юри!"
     show monika 2a
     show yuri 1s zorder 3 at f31
-    y "I'm back..."
-    y "Did I miss anything?"
+    y "Я вернулась..."
+    y "Я ничего не пропустила?"
     show yuri zorder 2 at t31
     show monika zorder 3 at f32
-    m 2a "Not really..."
-    m "Well, we all started sharing our poems with each other."
+    m 2a "Не совсем..."
+    m "Ну, мы уже начали делиться поэмами друг с другом."
     show monika zorder 2 at t32
     show yuri zorder 3 at f31
-    y 2t "Eh?"
-    y "Already?"
-    y 2v "I-I'm sorry for being late..."
+    y 2t "А?"
+    y "Уже?"
+    y 2v "П-простите, что опоздала..."
     show yuri zorder 2 at t31
     show monika zorder 3 at f32
-    m 2j "No need to apologize!"
-    m 2a "We still have plenty of time, so I'm more glad that you took all the time you needed."
+    m 2j "Не стоит!"
+    m 2a "У нас ещё много времени, так что я рада, что ты потратила столько времени, сколько было нужно."
     show monika zorder 2 at t32
     show yuri zorder 3 at f31
-    y 1s "Alright..."
-    y "Thanks, Monika."
-    y "I suppose I should go get my poem now."
+    y 1s "Хорошо..."
+    y "Спасибо, Моника."
+    y "Полагаю, теперь я должна достать свою поэму."
     show yuri zorder 1 at thide
     hide yuri
     $ y_ranaway = False
     return
 
 label m2_yuri_2:
-    m 1i "[player], I think you saw something earlier that you weren't supposed to see."
-    m "I didn't want to have to tell you this, but I don't think I have a choice."
-    m 1r "It's getting kind of dangerous for you to spend so much time with Yuri."
-    m 1i "I don't know why, but she seems pretty easily excitable when she's around you..."
-    m 3d "Which shouldn't be a problem in itself."
-    m "But when Yuri gets too excited, she finds a place to hide and starts cutting herself with a pocket knife."
-    m 2e "Isn't that kind of messed up?"
-    m "She even brings a different one to school every day, like she has a collection or something..."
-    m 2d "I mean, it's definitely not because she's depressed or anything like that!"
-    m "I think she just gets some kind of high from it."
-    m 2m "It might even be, like, a sexual thing..."
-    m 1i "But the point is, you've kind of been enabling her."
-    m 1d "I'm not saying it's your fault, though!"
-    m 1a "But I guess that's why I had to explain it all to you..."
-    m "So I think if you keep your distance, that would probably be best for her."
-    m 5 "While you're at it, don't be shy to spend a little more time with me..."
-    m "To put it lightly, I at least have it together in the head...and I know how to treat my club members."
+    m 1i "[player], думаю, ты только что увидел то, что не должен был видеть."
+    m "Я не хотела рассказывать тебе это, но, видимо, у меня нет выбора."
+    m 1r "Становится опасно для тебя проводить столько времени вместе с Юри."
+    m 1i "Не знаю почему, но она становится легковозбудимой, будучи рядом с тобой..."
+    m 3d "Что по сути своей не должно быть проблемой."
+    m "Но когда Юри становится слишком возбуждённой, она находит место, где спрятаться, и начинает резать себя карманным ножом."
+    m 2e "Это всё портит, так?"
+    m "Она даже приносит каждый день разные ножи, будто у неё есть коллекция, или типа того..."
+    m 2d "Имею в виду, это не потому, что она в депрессии, или вроде того!"
+    m "Я думаю, она просто получает от этого какое-то удовольствие."
+    m 2m "Знаешь, это может быть даже чем-то вроде сексуального возбуждения..."
+    m 1i "Но причина в том, что ты это позволяешь ей."
+    m 1d "Я не хочу сказать, что это твоя вина!"
+    m 1a "Но, полагаю, поэтому мне и пришлось рассказать тебе всё..."
+    m "Поэтому, я считаю, если ты будешь сохранять дистанцию, для неё это будет лучший вариант."
+    m 5 "И раз уж мы об этом заговорили, не стесняйся проводить больше времени со мной..."
+    m "Мягко говоря, у меня хотя бы всё в порядке с головой... и я понимаю, как надо относиться к членам клуба."
     return
 
 label m2_yuri_3:
     stop music
-    m 1i "Don't say I didn't warn you, [player]."
+    m 1i "И не говори, что я не предупреждала тебя, [player]."
     $ skip_poem = True
     return
 # Decompiled by unrpyc: https://github.com/CensoredUsername/unrpyc

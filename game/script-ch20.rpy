@@ -11,23 +11,23 @@ label ch20_main:
     play music t2
 
 label ch20_main2:
-    "It's an ordinary school day, like any other."
-    "Mornings are usually the worst, being surrounded by couples and friend groups walking to school together."
-    "Meanwhile, I've always walked to school alone."
-    "I always tell myself it's about time I meet some girls or something like that..."
-    "But I have no motivation to join any clubs."
-    "I'm perfectly content just getting by on the average while spending my free time on games and anime."
-    "There's always the anime club, but it's not like there would be any girls in it anyway..."
+    "Это обычный учебный день, как и любой другой."
+    "Утро -- это обычно самое плохое время, быть окруженным парочками и группами друзей, идущими в школу вместе."
+    "В то же время, я всегда шёл в школу один."
+    "Я постоянно говорил себе, что сейчас самое время начать встречаться с девочками или что-то вроде того..."
+    "Но у меня нет мотивации вступать в какой-либо из клубов."
+    "Я счастлив, просто проводя своё свободное время как обычные люди, играя в игры и смотря аниме."
+    "Всегда есть аниме клуб, но, в любом случае, не то чтобы там были хоть какие-то девушки..."
 
     scene bg class_day
     with wipeleft_scene
 
-    "The school day is as ordinary as ever, and it's over before I know it."
-    "After I pack up my things, I stare blankly at the wall, looking for an ounce of motivation."
-    mc "Clubs..."
-    "There really aren't any that interest me."
-    "Besides, most of them would probably be way too demanding for me to want to deal with."
-    "I guess I have no choice but to start with the anime club..."
+    "Этот день в школе был таким же обычным, как и всегда, и закончился он прежде, чем я опомнился."
+    "После того, как я упаковал свои вещи, я уставился в стену, пытаясь найти хоть каплю мотивации."
+    mc "Клубы..."
+    "Нет ни одного, который бы правда интересовал меня."
+    "К тому же, большинство из них, наверняка, будут слишком требовательными ко мне, и я не захочу с этим мириться."
+    "Похоже, у меня нет выбора, кроме как начать с аниме клуба..."
 
     $ m_name = "???"
 
@@ -42,33 +42,33 @@ label ch20_main2:
     hide screen tear
     window show(None)
     show monika 1 zorder 2 at t11
-    mc "...Monika?"
-    $ m_name = "Monika"
-    m 1b "Oh my goodness, I totally didn't expect to see you here!"
-    m 5 "It's been a while, right?"
-    mc "Ah..."
-    mc "Yeah, it has."
-    "Monika smiles sweetly."
-    "We do know each other - well, we rarely talked, but we were in the same class last year."
-    "Monika was probably the most popular girl in class - smart, beautiful, athletic."
-    "Basically, completely out of my league."
-    "So, having her smile at me so genuinely feels a little..."
-    mc "What did you come in here for, anyway?"
-    m 1a "Oh, I've just been looking for some supplies to use for my club."
-    m 1d "Do you know if there's any construction paper in here?"
-    m "Or markers?"
-    mc "I guess you could check the closet."
-    mc "...You're in the debate club, right?"
-    m 5 "Ahaha, about that..."
-    m "I actually quit the debate club."
-    mc "Really? You quit?"
-    m "Yeah..."
-    m 2e "To be honest, I can't stand all of the politics around the major clubs."
-    m "It feels like nothing but arguing about the budget and publicity and how to prepare for events..."
-    m "I'd much rather take something I personally enjoy and make something special out of it."
-    mc "In that case, what club did you decide to join?"
-    m 1b "Actually, I'm starting a new one!"
-    m "A literature club!{nw}"
+    mc "...Моника?"
+    $ m_name = "Моника"
+    m 1b "О боже мой, я совсем не ожидала увидеть тебя здесь!"
+    m 5 "Прошло много времени, верно?"
+    mc "Ах..."
+    mc "Да, и правда."
+    "Моника мило улыбается."
+    "Мы знаем друг друга -- ну, мы редко разговаривали, но в прошлом году мы были в одном классе."
+    "Умная, красивая, спортивная -- Моника была, пожалуй, самой популярной девушкой в классе."
+    "В общем, абсолютно не мой уровень."
+    "Поэтому её искренняя улыбка заставляет меня чувствовать себя немного..."
+    mc "В любом случае, зачем ты пришла сюда?"
+    m 1a "Ох, я просто искала материалы для своего клуба."
+    m 1d "Не знаешь, есть ли здесь цветной картон?"
+    m "Или маркеры?"
+    mc "Думаю, ты можешь посмотреть в шкафу."
+    mc "...Ты в клубе дебатов, верно?"
+    m 5 "Ахаха, насчёт этого..."
+    m "На самом деле я покинула клуб дебатов."
+    mc "Серьёзно? Ты забросила его?"
+    m "Да..."
+    m 2e "Честно говоря, я терпеть не могу все эти интриги вокруг больших клубов."
+    m "Такое ощущение, словно в них нет ничего, кроме споров о бюджете и работы на публику, а также подготовки к мероприятиям..."
+    m "Я лучше займусь тем, чем буду наслаждаться лично я, и сделаю из этого нечто особенное."
+    mc "В таком случае, к какому клубу ты решила присоединиться?"
+    m 1b "На самом деле, я создала новый клуб!"
+    m "Литературный Клуб!{nw}"
     show screen tear(20, 0.1, 0.1, 0, 40)
     window hide(None)
     play sound "sfx/s_kill_glitch1.ogg"
@@ -76,53 +76,53 @@ label ch20_main2:
     stop sound
     hide screen tear
     window show(None)
-    m "A literature club!{fast}"
+    m "Литературный Клуб!{fast}"
     window auto
-    mc "Literature...?"
-    "That sounds kind of...dull?"
-    mc "How many members do you have so far?"
-    m 5 "Um..."
-    m "Ahaha..."
-    m "It's kind of embarrassing, but there are only three of us so far."
-    m "It's really hard to find new members for something that sounds so boring..."
-    mc "Well, I can see that..."
-    m 3d "But it's really not boring at all, you know!"
-    m "Literature can be anything. Reading, writing, poetry..."
-    m 3e "I mean, one of my members even keeps her manga collection in the clubroom..."
-    mc "Wait...really?"
-    m 2k "Yeah, it's funny, right?"
-    m 2e "She always insists that manga is literature, too."
-    m "I mean, she's not wrong, I guess..."
-    m "And besides, a member's a member, right?"
-    "...Did Monika say \"she\"?"
-    "Hmm..."
-    m 1a "Hey, [player]..."
-    m "By any chance...are you still looking for a club to join?"
-    mc "Ah--"
-    mc "I mean, I guess so, but..."
-    m "In that case..."
-    m 5 "Is there any chance you could do me a big favor?"
-    m "I won't ask you to join, but..."
-    m "If you could at the very least visit my club, it would make me really happy."
-    m "Please?"
-    mc "Um..."
-    "Well, I guess I have no reason to refuse..."
-    "Besides, how could I ever refuse someone like Monika?"
-    mc "Sure, I guess I could check it out."
-    m 1k "Aah, awesome!"
-    m 1b "You're really sweet, [player], you know that?"
-    mc "I-It's nothing, really..."
-    m 1a "Shall we go, then?"
-    m "I'll look for the materials another time - you're more important."
+    mc "Литература...?"
+    "Это звучит немного... скучно?"
+    mc "И сколько человек уже в твоём клубе?"
+    m 5 "Эм..."
+    m "Ахаха..."
+    m "Это немного неловко, но пока что нас только трое."
+    m "Очень сложно найти новых участников для чего-то, что звучит так скучно..."
+    mc "Ну, я могу это понять..."
+    m 3d "Но знаешь, это совершенно не скучно!"
+    m "Литература может быть чем угодно. Чтением, писательством, поэзией..."
+    m 3e "Например, одна из моих подопечных даже держит свою коллекцию манги в клубной комнате..."
+    mc "Стоп... серьёзно?"
+    m 2k "Да, правда забавно?"
+    m 2e "Она всегда уверяет, что манга -- это тоже литература!"
+    m "То есть, она не ошибается, я думаю..."
+    m "И к тому же, даже такой, всё равно участник, верно?"
+    "...Моника сказала \"она\"?"
+    "Хмм..."
+    m 1a "Эй, [player]..."
+    m "Есть ли шанс... что ты всё ещё ищешь, к какому бы клубу присоединиться?"
+    mc "Ах--"
+    mc "То есть, наверное, так, но..."
+    m "В таком случае..."
+    m 5 "Есть ли шанс, что ты можешь сделать мне большое одолжение?"
+    m "Я не прошу тебя присоединиться, но..."
+    m "Если бы ты мог хотя бы посетить мой клуб, это бы сделало меня очень счастливой."
+    m "Пожалуйста?"
+    mc "Эм..."
+    "Ну, похоже, у меня нет причин отказывать..."
+    "К тому же, как я вообще могу отказать кому-то, вроде Моники?"
+    mc "Конечно, думаю, я могу заглянуть."
+    m 1k "А-ах, замечательно!"
+    m 1b "Ты очень милый, [player], ты знал это?"
+    mc "Э-это пустяки, правда..."
+    m 1a "Тогда пойдём?"
+    m "Я поищу материалы в другой раз -- ты намного важней."
 
     stop music fadeout 2.0
 
     scene bg corridor
     with wipeleft_scene
 
-    "And thus, today marks the day I sold my soul to Monika and her irresistible smile."
-    "I timidly follow Monika across the school and upstairs - a section of the school I rarely visit, being generally used for third-year classes and activities."
-    "Monika, full of energy, swings open the classroom door."
+    "Итак, сегодня знаменуется день, когда я продал свою душу Монике и её неотразимой улыбке."
+    "Я робко следовал за Моникой через школу и вверх по лестнице -- в часть школы, которую я редко посещал, используемую в основном третьегодками и для мероприятий."
+    "Моника, полная энергии, распахивает дверь классной комнаты."
 
     scene bg club_day2
     with wipeleft
@@ -132,357 +132,357 @@ label ch20_main2:
         show monika g1 at l31
     else:
         show monika 3b at l31
-    m "I'm back~!"
-    m "And I brought a guest with me!"
+    m "Я вернулась~!"
+    m "И привела с собой гостя!"
     show yuri 2t zorder 2 at t33
     if not config.skipping:
         show screen invert(0.15, 0.3)
-    y "Eh?"
-    y "A...a guest?"
+    y "Э-э?"
+    y "Г-гостя?"
     show natsuki 4c zorder 2 at t32
-    n "Seriously? You brought a boy?"
-    n "Way to kill the atmosphere."
+    n "Серьёзно? Ты привела парня?"
+    n "Отличный способ убить атмосферу."
     show monika 3m zorder 3 at f31
-    m "Don't be mean, Natsuki..."
-    m 3b "...But anyway, welcome to the club, [player]!"
+    m "Не будь грубой, Нацуки..."
+    m 3b "...Но в любом случае, добро пожаловать в клуб, [player]!"
     show monika 3a zorder 2 at t31
     mc "..."
-    "All words escape me in this situation."
-    "This club..."
-    "{i}...is full of incredibly cute girls!!{/i}"
+    "В такой ситуации я потерял дар речи."
+    "Этот клуб..."
+    "{i}...полон невероятно миленьких девушек!!{/i}"
 
     show natsuki zorder 3 at f32
-    n 5c "So, let me guess..."
-    n "You're Monika's boyfriend, right?"
+    n 5c "Так, давай я угадаю..."
+    n "Ты -- парень Моники, верно?"
     show natsuki zorder 2 at t32
-    mc "Wha--"
-    mc "No, I'm not!"
+    mc "Что--"
+    mc "Нет, это не так!"
     show yuri zorder 3 at f33
-    y 2l "Natsuki..."
-    $ n_name = 'Natsuki'
-    "The girl with the sour attitude, whose name is apparently Natsuki, is one I don't recognize."
-    "Her small figure makes me think she's probably a first-year."
+    y 2l "Нацуки..."
+    $ n_name = 'Нацуки'
+    "Девочку с грубым поведением, чье имя, видимо, Нацуки, я не узнаю."
+    "Судя по её маленькой фигуре, она, скорее всего, первогодка."
 
     show yuri zorder 2 at t33
     show monika zorder 3 at f31
-    m 2l "A-Anyway, this is Natsuki, energetic as usual..."
-    m 2b "And this is Yuri, the Vice President!"
-    $ y_name = 'Yuri'
+    m 2l "Т-так или иначе, это -- Нацуки, как всегда энергична..."
+    m 2b "И это -- Юри, наш вице-президент!"
+    $ y_name = 'Юри'
     show monika 2a zorder 2 at t31
     show yuri zorder 3 at f33
-    y 4 "I-It's nice to meet you..."
-    "Yuri, who appears comparably more mature and timid, seems to have a hard time keeping up with someone like Natsuki."
+    y 4 "Р-рада познакомиться..."
+    "Похоже, наиболее взрослой и робкой среди всех Юри приходится тяжело с кем-то вроде Нацуки."
     show yuri zorder 2 at t33
-    mc "Yeah... It's nice to meet both of you."
+    mc "Эх... Что ж, приятно познакомиться с вами обеими."
     show monika zorder 3 at f31
-    m 1a "So, I ran into [player] in a classroom, and he decided to come check out the club."
-    m "Isn't that great?"
+    m 1a "Итак, [player] попался мне в классной комнате и решил зайти взглянуть на наш клуб."
+    m "Разве это не здорово?"
     show monika zorder 2 at t31
     show natsuki zorder 3 at f32
-    n 4e "Wait! Monika!"
-    n "Didn't I tell you to let me know in advance before you brought anyone new?"
-    n 4q "I was going to...well, you know..."
+    n 4e "Стоп! Моника!"
+    n "Разве я не говорила тебе заранее сообщать мне, прежде чем приводить кого-нибудь нового?"
+    n 4q "Я собиралась... ну, ты знаешь..."
     show natsuki zorder 2 at t32
     show monika zorder 3 at f31
-    m 1e "Sorry, sorry!"
-    m "I didn't forget that, but I just happened to run into him."
+    m 1e "Извини, извини!"
+    m "Я не забыла об этом, но просто так случилось, что я столкнулась с ним.."
     show monika zorder 2 at t31
     show yuri zorder 3 at f33
-    y 1a "In that case, I should at least make some tea, right?"
+    y 1a "В таком случае, я должна хотя бы сделать чай, да?"
     show yuri zorder 2 at t33
     show monika zorder 3 at f31
-    m 1b "Yeah, that would be great!"
-    m "Why don't you come sit down, [player]?"
+    m 1b "Да, было бы замечательно!"
+    m "Почему бы тебе не присесть, [player]?"
     hide monika
     hide natsuki
     hide yuri
     with wipeleft
-    "The girls have a few desks arranged to form a table."
-    "Yuri walks to the corner of the room and opens the closet."
-    "Meanwhile, Monika and Natsuki sit across from each other."
-    "Still feeling awkward, I take a seat next to Monika."
+    "Девушки сдвинули несколько парт, чтобы составить из них стол."
+    "Юри отошла в угол комнаты и открыла шкаф."
+    "Тем временем Моника и Нацуки сели напротив друг друга."
+    "Всё ещё чувствуя себя неловко, я сел рядом с Моникой."
     show monika 1a zorder 2 at t11
-    m "So, I know you didn't really plan on coming here..."
-    m "But we'll make sure you feel right at home, okay?"
-    m 1j "As president of the Literature Club, it's my duty to make the club fun and exciting for everyone!"
-    mc "I'm surprised there aren't more people in the club yet."
-    mc "It must be hard to start a new club."
-    m 3b "You could put it that way."
-    m "Not many people are very interested in putting out all the effort to start something brand new..."
-    m "Especially when it's something that doesn't grab your attention, like literature."
-    m "You have to work hard to convince people that you're both fun and worthwhile."
-    m "But it makes school events, like the festival, that much more important."
-    m 2k "I'm confident that we can all really grow this club before we graduate!"
-    m "Right, Natsuki?"
+    m "Итак, я знаю, что ты не планировал заходить к нам..."
+    m "Но мы позаботимся о том, чтобы ты чувствовал себя как дома, хорошо?"
+    m 1j "Как президент Литературного Клуба, я обязана сделать клуб веселым и интересным для каждого!"
+    mc "Я удивлён, что в клубе пока что не так много людей."
+    mc "Должно быть, тяжело создавать новый клуб."
+    m 3b "Можно и так сказать."
+    m "Не так много людей заинтересованы в прикладывании усилий, чтобы привнести что-то новое..."
+    m "Особенно когда это что-то не особо привлекающее внимание, как литература."
+    m "Нужно очень постараться, чтобы убедить людей в том, что это интересно и стоит того."
+    m "Но, благодаря этому, такие школьные мероприятия, как фестиваль, например, становятся гораздо важнее."
+    m 2k "Я уверена, что мы все действительно сможем развить этот клуб до того, как выпустимся!"
+    m "Верно, Нацуки?"
     show monika zorder 2 at t22
     show natsuki 4q zorder 2 at t21
-    n "Well..."
-    n "...I guess."
-    "Natsuki reluctantly agrees."
-    "Such different girls, all interested in the same goal..."
-    "Monika must have worked really hard just to find these two."
-    "Yuri returns to the table, carrying a tea set."
-    "She carefully places a teacup in front of each of us before setting down the teapot in the middle."
+    n "Ну..."
+    n "...Пожалуй."
+    "Нацуки неохотно согласилась."
+    "Такие разные девушки, но все заинтересованы в одной цели..."
+    "Моника, должно быть, очень постаралась, чтобы просто найти этих двоих."
+    "Юри вернулась к столу, принеся сервиз."
+    "Она осторожно расставила чашки перед каждым из нас, прежде чем поставить чайник посередине."
     show natsuki zorder 1 at thide
     show monika zorder 1 at thide
     hide natsuki
     hide monika
     show yuri 1a zorder 2 at t21
-    mc "You keep a whole tea set in this classroom?"
-    y "Don't worry, the teachers gave us permission."
-    y "After all, doesn't a hot cup of tea help you enjoy a good book?"
-    mc "Ah... I-I guess..."
+    mc "Вы что, целый чайный сервиз в этой комнате храните?"
+    y "Не переживай, учителя дали нам разрешение."
+    y "В конце концов, разве не горячая кружка чая лучше всего помогает насладиться хорошей книгой?"
+    mc "Ээ... н-наверное..."
     show monika 4a zorder 3 at f22
-    m "Ehehe, don't let yourself get intimidated, Yuri's just trying to impress you."
+    m "Эхехе, не пугайся, Юри просто старается впечатлить тебя."
     show monika zorder 2 at t22
     show yuri at hf21
-    y 3n "Eh?! T-That's not..."
-    "Insulted, Yuri looks away."
-    y 4b "I meant that, you know..."
+    y 3n "Ээ?! Э-это не..."
+    "Юри обиженно отвернулась."
+    y 4b "Я хотела сказать, на самом деле..."
     show yuri zorder 2 at t21
-    mc "I believe you."
-    mc "Well, tea and reading might not be a pastime for me, but I at least enjoy tea."
+    mc "Я тебе верю."
+    mc "Хоть чтение с чаепитием и не совсем моё хобби, но я, по крайней мере, смогу насладиться чаем."
     show yuri zorder 3 at f21
-    y 2u "I'm glad..."
+    y 2u "Я рада..."
     show yuri zorder 2 at t21
-    "Yuri faintly smiles to herself in relief."
+    "Юри с облегчением улыбнулась."
     show monika zorder 1 at thide
     hide monika
     show yuri 1a zorder 2 at t32
-    y "So, [player], what kinds of things do you like to read?"
-    mc "Well... Ah..."
-    "Considering how little I've read these past few years, I don't really have a good way of answering that."
-    mc "...Manga..."
-    "I mutter quietly to myself, half-joking."
+    y "Итак, [player], что ты любишь читать?"
+    mc "Нуу... эм..."
+    "Учитывая то, как мало я прочитал за последние пару лет, я не могу ответить на этот вопрос."
+    mc "...Мангу..."
+    "Бормочу я сам себе, полушутя."
     show natsuki 1c zorder 2 at t41
-    "Natsuki's head suddenly perks up."
-    "It looks like she wants to say something, but she keeps quiet."
+    "Нацуки резко поднимает голову."
+    "Это выглядит так, будто она что-то хочет сказать, но молчит."
     show natsuki zorder 1 at thide
     hide natsuki
-    y 3u "N-Not much of a reader, I guess..."
-    mc "...Well, that can change..."
-    "What am I saying?"
-    "I spoke without thinking after seeing Yuri's sad smile."
-    mc "Anyway, what about you, Yuri?"
-    y 1l "Well, let's see..."
-    "Yuri traces the rim of her teacup with her finger."
-    y 1a "My favorites are usually novels that build deep and complex fantasy worlds."
-    y "The level of creativity and craftsmanship behind them is amazing to me."
-    y 1f "And telling a good story in such a foreign world is equally impressive."
-    "Yuri goes on, clearly passionate about her reading."
-    "She seemed so reserved and timid since the moment I walked in, but it's obvious by the way her eyes light up that she finds her comfort in the world of books, not people."
-    y 2m "But you know, I like a lot of things."
-    y "Stories with deep psychological elements usually immerse me as well."
-    y 2a "Isn't it amazing how a writer can so deliberately take advantage of your own lack of imagination to completely throw you for a loop?"
-    y "Anyway, I've been reading a lot of horror lately..."
-    mc "Ah, I read a horror book once..."
-    "I desperately grasp something I can relate to at the minimal level."
-    "At this rate, Yuri might as well be having a conversation with a rock."
+    y 3u "Н-не такой уж и читатель, полагаю..."
+    mc "...Нуу, это может измениться..."
+    "Что я несу?"
+    "Я сказал не подумав, после того как увидел грустную улыбку Юри."
+    mc "Кстати, а что насчёт тебя, Юри?"
+    y 1l "Что ж, если подумать..."
+    "Юри провела пальцем по краю своей чашки."
+    y 1a "Больше всего мне нравятся романы с проработанным и целостным фантастическим миром."
+    y "Уровень мастерства и креативности, сокрытый в нём, поражает меня."
+    y 1f "И способность рассказать хорошую историю в настолько чужом мире в равной степени впечатляет."
+    "Юри продолжает говорить, похоже, она очень страстно относится к чтению."
+    "Она казалась такой скромной и замкнутой, когда я пришёл, но с уверенностью можно сказать, по тому, как загорелись её глаза, что ей комфортнее среди книг, не людей."
+    y 2m "Но знаешь, мне нравятся и многие другие вещи."
+    y "Истории с глубокой психологией частенько заставляют меня нырнуть в них с головой."
+    y 2a "Разве не удивительно то, как писатель может воспользоваться нашим собственным отсутствием воображения, чтобы выбить нас из колеи?"
+    y "Но так или иначе, в последнее время я прочитала немало ужастиков..."
+    mc "О, я однажды читал ужастик..."
+    "Я в отчаянии хватаюсь за что-то, о чём знаю хоть немного."
+    "При таком раскладе, Юри могла бы с таким же успехом вести диалог с камнем."
     show monika 1j zorder 3 at f33
-    m "Ahaha. I'd expect that from you, Yuri."
-    m 1a "It suits your personality."
+    m "Ахаха. Я ожидала такого от тебя, Юри."
+    m 1a "Это подходит твоему характеру."
     show monika zorder 2 at t33
     show yuri zorder 3 at f32
-    y 1a "Oh, is that so?"
-    y "Really, if a story makes me think, or takes me to another world, then I really can't put it down."
-    y "Surreal horror is often very successful at changing the way you look at the world, if only for a brief moment."
+    y 1a "Ох, это так?"
+    y "Но если история заставляет меня задуматься, или затягивает меня в другой мир, тогда я действительно не могу оторваться."
+    y "Сюрреалистичному хоррору частенько лучше всего удается заставить читателя задуматься о собственном взгляде на мир, пусть и на короткое время."
     show yuri zorder 2 at t32
     show natsuki 5q zorder 3 at f31
-    n "Ugh, I hate horror..."
+    n "Угх, ненавижу ужастики..."
     show natsuki zorder 2 at t31
     show yuri zorder 3 at f32
-    y 1f "Oh? Why's that?"
+    y 1f "Ох? Почему?"
     show yuri zorder 2 at t32
     show natsuki zorder 3 at f31
-    n 5c "Well, I just..."
-    "Natsuki's eyes dart over to me for a split second."
-    n 5q "Never mind."
+    n 5c "Нуу, я просто..."
+    "Нацуки на долю секунды стрельнула в меня глазами."
+    n 5q "Не важно."
     show natsuki zorder 2 at t31
     show monika zorder 3 at f33
-    m 1a "That's right, you usually like to write about cute things, don't you, Natsuki?"
+    m 1a "И правда, ты ведь обычно пишешь о более миленьких вещах, не так ли, Нацуки?"
     show monika zorder 2 at t33
     show natsuki 1o zorder 3 at f31
-    n "W-What?"
-    n "What gives you that idea?"
+    n "Ч-Что?"
+    n "Почему ты так подумала?"
     show natsuki zorder 2 at t31
     show monika zorder 3 at f33
-    m 3b "You left a piece of scrap paper behind last club meeting."
-    m "It looked like you were working on a poem called--"
+    m 3b "Ты оставила кусок смятой бумаги после последнего собрания клуба."
+    m "Похоже на то, что ты работаешь над поэмой под названием--"
     show monika zorder 2 at t33
     show natsuki 1p zorder 3 at f31
-    n "Don't say it out loud!!"
-    n "And give that back!"
+    n "Не говори об этом вслух!!"
+    n "И верни мне!"
     show natsuki zorder 2 at t31
     show monika zorder 3 at f33
-    m 1j "Fine, fine~"
+    m 1j "Хорошо, хорошо~"
     show monika 1a zorder 2 at t33
-    mc "Natsuki, you write your own poems?"
+    mc "Нацуки, ты пишешь свои собственные поэмы?"
     show natsuki zorder 3 at f31
-    n 1c "Eh? Well, I guess sometimes."
-    n "Why do you care?"
+    n 1c "Э-э? Ну, пожалуй, иногда."
+    n "Тебе какое дело?"
     show natsuki zorder 2 at t31
-    mc "I think that's impressive."
-    mc "Why don't you share them sometime?"
+    mc "Я считаю, что это впечатляюще."
+    mc "Почему бы тебе не показать нам как-нибудь?"
     show natsuki zorder 3 at f31
-    n 5q "N-No!"
-    "Natsuki averts her eyes."
-    n "You wouldn't...like them..."
+    n 5q "Н-нет!"
+    "Нацуки отвела взгляд."
+    n "Они тебе... не понравятся..."
     show natsuki zorder 2 at t31
-    mc "Ah...not a very confident writer yet?"
+    mc "Аа... ещё не очень уверенный писатель?"
     show yuri zorder 3 at f32
-    y 2f "I understand how Natsuki feels."
-    y "Sharing that level of writing takes more than just confidence."
-    y 2k "The truest form of writing is writing to oneself."
-    y "You must be willing to open up to your readers, exposing your vulnerabilities and showing even the deepest reaches of your heart."
+    y "Я понимаю, что чувствует Нацуки."
+    y "Чтобы делиться при таком опыте письма, нужно куда больше, чем просто уверенность."
+    y 2k "Истинная форма писательства -- это когда пишешь для себя самого."
+    y "Нужно хотеть открыться своим читателям, обнажать свои уязвимости и показать им даже самые далекие горизонты своего сердца."
     show yuri zorder 2 at t32
     show monika 2a zorder 3 at f33
-    m "Do you have writing experience too, Yuri?"
-    m "Maybe if you share some of your work, you can set an example and help Natsuki feel comfortable enough to share hers."
+    m "У тебя тоже есть писательский опыт, Юри?"
+    m "Может, если ты поделишься некоторыми своими работами, то сможешь подать пример и помочь Нацуки почувствовать себя более уверенно, чтобы поделиться своими."
     show yuri at s32
     y 3o "..."
-    mc "I guess it's the same for Yuri..."
-    "We all sit in silence for a moment."
+    mc "Похоже, с Юри та же проблема..."
+    "Некоторое время мы сидим молча."
     show monika zorder 3 at f33
-    m 5a "Hey, I just got an idea!"
-    m "How about this?"
+    m 5a "Ладно!"
+    m "Ребята, у меня есть идея~"
     show monika zorder 2 at t33
     show natsuki 2k zorder 3 at f31
     show yuri 3e zorder 3 at f32
     ny "...?"
-    "Natsuki and Yuri look quizzically at Monika."
+    "Нацуки и Юри с недоумением смотрят на Монику."
     show natsuki zorder 2 at t31
     show yuri zorder 2 at t32
     show monika zorder 3 at f33
-    m 2b "Let's all go home and write a poem of our own!"
-    m "Then, next time we meet, we'll all share them with each other."
-    m "That way, everyone is even!"
+    m 2b "Давайте все пойдём домой и напишем наши собственные поэмы!"
+    m "И тогда, когда встретимся в следующий раз, мы все друг с другом ими поделимся."
+    m "В таком случае все будут равны!"
     show monika 2a zorder 2 at t33
     show natsuki zorder 3 at f31
-    n 5q "U-Um..."
+    n 5q "Э-эм..."
     show natsuki zorder 2 at t31
     show yuri 3v zorder 3 at f32
     y "..."
     show yuri zorder 2 at t32
     show monika 2m zorder 3 at f33
-    m "Ah..."
-    m "I mean, I thought it was a good idea..."
+    m "Ах..."
+    m "То есть, я думала, это будет хорошей идеей..."
     show monika zorder 2 at t33
     show yuri zorder 3 at f32
-    y 2l "Well..."
-    y "...I think you're right, Monika."
-    y 2f "We should probably start finding activities for all of us to participate in together."
-    y 2h "I did decide to take on the responsibility of Vice President, after all..."
-    y "I need to do my best to nurture the club as well as its members."
-    y 2a "Besides, now that we have a new member..."
-    y "It seems like a good step for us to take."
-    y "Do you agree as well, [player]?"
+    y 2l "Ну..."
+    y "...Я думаю, ты права, Моника."
+    y 2f "Возможно, нам стоит начать искать, чем нам всем заняться, чтобы практиковаться вместе."
+    y 2h "Я, в конце концов, решила взять на себя ответственность вице-президента..."
+    y "Я должна сделать всё, что смогу, чтобы поддержать как клуб, так и его участников."
+    y 2a "К тому же теперь, когда у нас есть новенький..."
+    y "Мне кажется, что это хороший шаг для нас."
+    y "Ты согласен, [player]?"
     show yuri zorder 2 at t32
-    mc "Hold on...there's still one problem."
+    mc "Погодите... всё ещё осталась одна проблема."
     show monika zorder 3 at f33
-    m 1d "Eh? What's that?"
-    "Now that we've reached the most important topic, I bluntly come forth with what's been on my mind the entire time."
+    m 1d "Мм? Какая?"
+    "Теперь, когда мы вернулись к изначальному вопросу о моём вступлении в клуб, я выпалил всё то, что занимало мои мысли всё это время."
     show monika zorder 2 at t33
-    mc "I never said I would join this club!"
-    mc "Monika may have convinced me to stop by, but I never made any decision."
-    mc "I still have other clubs to look at, and...um..."
+    mc "Я не говорил, что вступлю в этот клуб!"
+    mc "Моника, может, убедила меня заглянуть сюда, но я ещё не принимал какого-либо решения."
+    mc "У меня ещё остались другие клубы, которые я могу посмотреть, и... эм..."
     show monika 1g
     show natsuki 4g
     show yuri 2e
-    "I lose my train of thought."
-    "All three girls stare back at me with dejected eyes."
+    "Я потерял ход мыслей."
+    "Все три девушки смотрели на меня подавленными взглядами."
     show monika at s33
-    m 1p "B-But..."
+    m 1p "Н-но..."
     show yuri at s32
-    y 2v "I'm sorry, I thought..."
+    y 2v "Извини, я считала..."
     show natsuki at s31
-    n 5s "Hmph."
-    mc "Eh...?"
-    "The girls exchange glances before Monika turns back to me."
+    n 5s "Хмпф."
+    mc "Э-э...?"
+    "Девушки обмениваются взглядами, прежде чем Моника оборачивается ко мне."
     show monika zorder 3 at f33
-    m 1m "I...guess I need to tell you the truth, [player]."
-    m "The thing is..."
-    m 1p "...We don't have enough members yet to form an official club."
-    m "We need four..."
-    m "And I've been trying really, really hard to find new members."
-    m "And if we don't find one more before the festival..."
+    m 1m "Я... думаю, мне стоит сказать тебе правду, [player]."
+    m "Дело в том, что..."
+    m 1p "...У нас пока что недостаточно участников, чтобы сделать официальный клуб."
+    m "Нам нужно четыре..."
+    m "И мы старались очень, очень сильно, чтобы найти новых участников."
+    m "И если мы не найдём ещё одного до фестиваля..."
     show monika zorder 2 at t33
     mc "..."
-    "I...I'm defenseless against these girls."
-    "How am I supposed to make a clear-headed decision when it's like this?"
-    "I would feel terrible for letting everyone down in this situation..."
-    "And besides, the club itself seems pretty relaxed..."
-    "So, if writing poems is the price I need to pay in order to spend every day with these beautiful girls..."
-    mc "...Right."
-    mc "Okay, I've decided, then."
-    mc "I'll join the Literature Club."
+    "Я... я беззащитен против этих девушек."
+    "И как я должен принимать взвешенное решение в такой ситуации?"
+    "Я буду чувствовать себя ужасно, если подведу всех сейчас..."
+    "И к тому же, сам клуб выглядит довольно расслабляющим..."
+    "Ладно, если написание поэмы -- это цена, которую нужно заплатить, чтобы проводить дни в компании этих красивых девушек..."
+    mc "...Хорошо."
+    mc "Ладно, тогда я решил."
+    mc "Я вступлю в Литературный Клуб."
     show monika 1e zorder 2 at t33
     show yuri 3f zorder 2 at t32
     show natsuki 1k zorder 2 at t31
-    "One by one, the girls' eyes light up."
+    "Поочередно в глазах девчат зажигается огонёк."
     show monika zorder 3 at f33
-    m "Oh my goodness, really?"
-    m "Do you really mean that, [player]?"
+    m "О боже мой, правда?"
+    m "Ты это серьёзно, [player]?"
     show monika zorder 2 at t33
-    mc "Yeah..."
-    mc "It could be fun, right?"
+    mc "Да..."
+    mc "Это может быть весело, верно?"
     show yuri zorder 3 at f32
-    y 1m "You really did scare me for a moment..."
+    y 1m "Ты и правда напугал меня на мгновение..."
     show yuri zorder 2 at t32
     show natsuki zorder 3 at f31
-    n 5q "I mean, if you really just left after all this, I would be super pissed."
+    n 5q "Я хочу сказать, что, если бы ты правда просто ушёл после всего, я бы супер-разозлилась."
     show natsuki zorder 2 at t31
     show monika zorder 3 at f33
-    m "[player], I'm so happy..."
-    m 1k "We can become an official club now!"
-    m 1e "Thank you so much for this. You're really amazing."
-    m "I'll do everything I can to give you a great time, okay?"
+    m "[player], я так счастлива..."
+    m 1k "Теперь мы можем стать официальным клубом!"
+    m 1e "Спасибо тебе огромное за это. Ты правда замечательный."
+    m "Я сделаю всё, что смогу, чтобы ты отлично провёл время, хорошо?"
     show monika zorder 2 at t33
-    mc "Ah...thanks, I guess."
+    mc "Ох... спасибо, наверное."
     show yuri zorder 1 at thide
     show natsuki zorder 1 at thide
     show monika zorder 2 at t11
     hide yuri
     hide natsuki
-    m 3b "Okay, everyone!"
-    m "I think with that, we can officially end today's meeting on a good note."
-    m "Everyone remember tonight's assignment:"
-    m "Write a poem to bring to the next meeting, so we can all share!"
-    "Monika looks over at me once more."
-    m 1a "[player], I look forward to seeing how you express yourself."
+    m 3b "Ладно, все!"
+    m "Думаю, что на такой хорошей ноте мы можем официально закончить сегодняшнее собрание."
+    m "Все, запомните сегодняшнее задание:"
+    m "Написать поэму и принести её на следующую встречу, чтобы мы все могли ими поделиться!"
+    "Моника ещё раз взглянула на меня."
+    m 1a "[player], мне не терпится увидеть, как ты себя покажешь."
     show monika 5 at hop
-    m "Ehehe~"
-    mc "Y-Yeah..."
+    m "Эхехе~"
+    mc "Д-да..."
     show monika zorder 1 at thide
     hide monika
-    "Can I really impress the class star Monika with my mediocre writing skills?"
-    "I already feel the anxiety welling up inside me."
-    "Meanwhile, the girls continue to chit-chat as Yuri cleans up the tea set."
-    mc "I guess I'll be on my way, then..."
+    "Смогу ли я действительно произвести впечатление на звезду класса -- Монику моим посредственным навыком писательства?"
+    "Я уже ощущаю нарастающее чувство тревоги."
+    "Между тем, девушки продолжают болтать, пока Юри убирает еду со стола."
+    mc "Тогда, думаю, я пойду..."
     show monika 5a zorder 2 at t11
-    m "Okay!"
-    m "I'll see you tomorrow, then."
-    m "I can't wait!"
+    m "Хорошо!"
+    m "Тогда увидимся завтра."
+    m "Не могу дождаться!"
 
     scene bg residential_day
     with wipeleft_scene
 
-    "With that, I depart the clubroom and make my way home."
-    "The whole way, my mind wanders back and forth between the three girls:"
+    "На этом я покинул клубную комнату и пошёл домой."
+    "Всю дорогу мои мысли вращались вокруг этих трёх девушек:"
     show natsuki 4a zorder 2 at t31
-    "Natsuki,"
+    "Нацуки,"
     show yuri 1a zorder 2 at t32
-    "Yuri,"
+    "Юри,"
     show monika 1a zorder 2 at t33
-    "and, of course, Monika."
-    "Will I really be happy spending every day after school in a literature club?"
-    "Perhaps I'll have the chance to grow closer to one of these girls..."
+    "и, разумеется, Моники."
+    "Действительно ли я буду счастлив, оставаясь каждый день после школы в Литературном Клубе?"
+    "Возможно, у меня будет шанс сблизиться с одной из этих девушек..."
     hide natsuki
     hide yuri
     hide monika
     with wipeleft
-    "Alright!"
-    "I'll just need to make the most of my circumstances, and I'm sure good fortune will find me."
-    "And I guess that starts with writing a poem tonight..."
+    "Ладно!"
+    "Мне просто нужно извлечь максимум из сложившихся обстоятельств, и тогда, я уверен, удача будет мне благоволить."
+    "И начну, пожалуй, с написания поэмы сегодня вечером..."
 
     stop music fadeout 2.0
     scene black with dissolve_scene_full
@@ -490,9 +490,9 @@ label ch20_main2:
     $ config.allow_skipping = False
     $ allow_skipping = False
 
-    call screen confirm("You have unlocked a special poem.\nWould you like to read it?", Return(True), Return(False))
+    call screen confirm("Вы разблокировали особую поэму.\nХотите прочесть её?", Return(True), Return(False))
     if _return:
-        call expression "poem_special_" + str(persistent.special_poems[0])
+        call expression "poem_special_" + str(persistent.special_poems[0]) from _call_expression_22
     else:
         pass
 
