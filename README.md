@@ -1,21 +1,22 @@
-# Doki Doki Literature Club! для Android
+# <p align="center">Doki Doki Literature Club! for Android</p>
+
+### [EN | [RU](README_RU.md)]
 [![Latest release](https://github-release-version.herokuapp.com/github/saber-nyan/ddlc-android/release.svg?style=flat)](https://github.com/saber-nyan/ddlc-android/releases/latest)<br/>
 ![Screenshot](https://i.imgur.com/yxQ2oNV.jpg)
-**ВНИМАНИЕ: в репозитории могут присутствовать спойлеры! Даже в названиях файлов!**
+**ATTENTION: This repo can contain spoilers! Even in file names!**
 
-Мои попытки портировать "[Doki Doki Literature Club!](https://vndb.org/v21905)" на Android.
+My attempts to port "[Doki Doki Literature Club!](https://vndb.org/v21905)" to Android.
 
-Для клонирования репозитория необходим [git-lfs](https://github.com/git-lfs/git-lfs/wiki/Installation).
+The license of the original game is not specified, but developer [is against](http://teamsalvato.com/ip-guidelines/)
+(see 'Fan Games' section) porting the game to other platforms.
 
-Понятия не имею, что у игры за лицензия... но разработчики, вроде бы, не против.
-
-*Спасибо, [Ren`Py](https://github.com/renpy/renpy), [unrpa](https://github.com/Lattyware/unrpa), [unrpyc](https://github.com/CensoredUsername/unrpyc)!*
+*Thanks, [Ren`Py](https://github.com/renpy/renpy), [unrpa](https://github.com/Lattyware/unrpa), [unrpyc](https://github.com/CensoredUsername/unrpyc)!*
 ## TODO
-- [x] Распаковать, декомпилировать, проверить работу
-- [x] Пофиксить поэму
-- [x] Пофиксить интересные вещи, связанные с `*.chr`-файлами (**spoilers!**)
-- [x] Пофиксить диалоговое окно (глючит на каждом устройстве. Нашел [причины](boxes_sizing.txt)!)
-- [x] Собрать тест
-- [ ] Решить все Issues **и**...
-- [ ] ...полностью прочитать ВН, поймать баги и вылеты
-- [ ] Собрать релиз
+- [x] Extract, decompile
+- [x] Fix poem game
+- [ ] Fix `*.chr`-files (**spoilers!**)
+- [x] Fix dialogbox (bug [reasons](boxes_sizing.txt), in russian)
+- [x] Test build
+- [ ] Resolve all Issues **and**...
+- [ ] ...completely read VN, catch all bugs and crashes
+- [ ] Release build
