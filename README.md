@@ -5,6 +5,8 @@
 ![Screenshot](https://i.imgur.com/yxQ2oNV.jpg)
 **ATTENTION: This repo can contain spoilers! Even in file names!**
 
+You can download .APK [here](https://github.com/saber-nyan/ddlc-android/releases/latest).
+
 My attempts to port "[Doki Doki Literature Club!](https://vndb.org/v21905)" to Android.
 
 The license of the original game is not specified, but developer [is against](http://teamsalvato.com/ip-guidelines/)
