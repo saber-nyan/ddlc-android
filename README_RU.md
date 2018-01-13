@@ -7,6 +7,8 @@
 
 .APK можно скачать [здесь](https://github.com/saber-nyan/ddlc-android/releases/latest).
 
+**Перед созданием Issue прочитайте [FAQ](https://github.com/saber-nyan/ddlc-android/wiki/FAQ-RU)!**
+
 Мои попытки портировать "[Doki Doki Literature Club!](https://vndb.org/v21905)" на Android.
 
 Понятия не имею, что у игры за лицензия... но разработчики [против](http://teamsalvato.com/ip-guidelines/)
