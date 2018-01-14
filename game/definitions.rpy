@@ -20,6 +20,11 @@ init python:
     def delete_all_saves():
         for savegame in renpy.list_saved_games(fast=True):
             renpy.unlink_save(savegame)
+    def check_if_exist(name):
+        try:
+            return getattr(persistent, name) == "restored"
+        except:
+            return True
     def delete_character(name):  # TO!DONE: character fix!
         setattr(persistent, name, "deleted")
         renpy.save_persistent()
