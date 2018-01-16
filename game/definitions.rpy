@@ -1,5 +1,5 @@
 define persistent.demo = False
-define persistent.steam = True
+define persistent.steam = False
 define config.developer = True  # FIXME: set to False b4 release
 
 python early:
