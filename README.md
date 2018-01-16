@@ -18,7 +18,7 @@ The license of the original game is not specified, but developer [is against](ht
 ## TODO
 - [x] Extract, decompile
 - [x] Fix poem game
-- [ ] Fix `*.chr`-files (**spoilers!**)
+- [x] Fix `*.chr`-files (kawaii menu, thanks to [@AlexAzumi](https://github.com/AlexAzumi)! See [#16](https://github.com/saber-nyan/ddlc-android/pull/16))
 - [x] Fix dialogbox (bug [reasons](boxes_sizing.txt), in russian)
 - [x] Test build
 - [ ] Resolve all Issues **and**...

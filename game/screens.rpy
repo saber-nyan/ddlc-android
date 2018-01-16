@@ -1,14 +1,3 @@
-
-
-
-
-
-
-
-
-
-
-
 init -1 style default:
     font gui.default_font
     size gui.text_size
@@ -471,7 +460,9 @@ init -501 screen navigation():
                     textbutton _("Main Menu") action NullAction()
 
             textbutton _("Settings") action [ShowMenu("preferences"), SensitiveIf(renpy.get_screen("preferences") == None)]
-
+            
+            #Added by AlexAzumi
+            textbutton _("Characters") action [ShowMenu("characters"), SensitiveIf(renpy.get_screen("characters") == None)]
 
 
             if renpy.variant("pc"):
@@ -917,14 +908,42 @@ init -1 style slot_button_text:
     color "#666"
     outlines []
 
+#Added by AlexAzumi
+init -501 screen characters() tag menu:
+    use game_menu(_("Files"), scroll ="viewport"):
+        vbox:
+            style_prefix "navigation"
+            xoffset 50
+            frame:
+                xpadding 10
+                ypadding 10
+                xalign 1
+                yalign 1
+                vbox:
+                    label "Characters":
+                        xalign 0.5
+                        text_size 50
+                    null height 10
+                    textbutton "Restore all characters":
+                        action [Function(restore_all_characters), Show(screen="dialog", message="All characters have been restored", ok_action=Hide("dialog"))]
+                    null height 5
+                    
+                    textbutton "Delete Monika":
+                        action [Function(delete_character, "monika"), Show(screen="dialog", message="Monika has been deleted", ok_action=Hide("dialog"))]
+                    null height 5
+                    
+                    textbutton "Delete Natsuki":
+                        action [Function(delete_character, "natsuki"), Show(screen="dialog", message="Natsuki has been deleted", ok_action=Hide("dialog"))]
+                    null height 5
+                    
+                    textbutton "Delete Sayori":
+                        action [Function(delete_character, "sayori"), Show(screen="dialog", message="Sayori has been deleted", ok_action=Hide("dialog"))]
+                    null height 5
+                    
+                    textbutton "Delete Yuri":
+                        action [Function(delete_character, "yuri"), Show(screen="dialog", message="Yuri has been deleted", ok_action=Hide("dialog"))]
 
-
-
-
-
-
-
-
+    
 init -501 screen preferences() tag menu:
 
 

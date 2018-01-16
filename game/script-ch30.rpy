@@ -310,9 +310,8 @@ label ch30_main2:
     m "And you wouldn't believe how easy it was to delete Natsuki and Yuri."
     m "I mean, there's a folder called 'characters' right in the game directory..."
     m "It kind of freaked me out, how easy it was."
-    if persistent.steam:
-        m "Well, you're playing on Steam, so it was actually a bit more difficult..."
-        m "To get to the game directory, I had to go into the game's properties and find the 'Browse Local Files' button..."
+    m "Well, you're playing on Android, so it was actually a bit less difficult..."
+    m "I had to go to 'Settings' and find the 'Characters' button..."  # TODOne: monika fix
     elif renpy.macintosh:
         m "Well, you're on a Mac, so it was actually a bit more difficult..."
         m "To go into the game directory, you have to right-click the app and click 'Show Package Contents'."
@@ -802,8 +801,7 @@ label ch30_reload_2:
     m "There's nothing wrong with my character file, right?"
     m "Maybe you should make a backup of it or something..."
     m "I'm pretty sure you can find it in the folder called [basedir]/characters."
-    if persistent.steam:
-        m "Well, you're playing on Steam, so you can just go into the game's properties and find the 'Browse Local Files' button."
+    m "Well, you're playing on Android, so you can just go to 'Settings' and find the 'Characters' button."  # TODOne: monika fix
     elif renpy.macintosh:
         m "Since you're on a Mac, you have to right-click the app and select 'Show Package Contents' to find the game folder."
         m "It's in the 'Resources' folder, or 'autorun' folder, or something..."
@@ -825,8 +823,7 @@ label ch30_reload_4:
     m "I missed you."
     m "Were you making sure my character file was okay for me?"
     m "It's in [basedir]/characters."
-    if persistent.steam:
-        m "Well, you're playing on Steam, so you can just go into the game's properties and find the 'Browse Local Files' button."
+    m "Well, you're playing on Android, so you can just go to 'Settings' and find the 'Characters' button."  # TODOne: monika fix
     elif renpy.macintosh:
         m "Since you're on a Mac, you have to right-click the app and select 'Show Package Contents' to find the game folder."
         m "It's in the 'Resources' folder, or 'autorun' folder, or something..."

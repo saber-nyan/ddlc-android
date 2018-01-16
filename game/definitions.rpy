@@ -1,5 +1,5 @@
 define persistent.demo = False
-define persistent.steam = True
+define persistent.steam = False
 define config.developer = True  # FIXME: set to False b4 release
 
 python early:
@@ -29,6 +29,11 @@ init python:
         for char in ("monika", "natsuki", "yuri", "sayori"):  # TO!DONE: character fix!
             restore_character(char)
         renpy.save_persistent()
+    def check_if_exist(name): #Changed
+        try:
+            return getattr(persistent, name) == "restored"
+        except:
+            return True
     def pause(time=None):
         if not time:
             renpy.ui.saybehavior(afm=" ")
