@@ -29,13 +29,11 @@ init python:
         for char in ("monika", "natsuki", "yuri", "sayori"):  # TO!DONE: character fix!
             restore_character(char)
         renpy.save_persistent()
-    def check_if_exist(name):
-        return {
-            'monika': persistent.monika is None or persistent.monika == "restored",
-            'natsuki': persistent.natsuki is None or persistent.natsuki == "restored",
-            'sayori': persistent.sayori is None or persistent.sayori == "restored",
-            'yuri': persistent.yuri is None or persistent.yuri == "restored",
-        }[name]
+    def check_if_exist(name): #Changed
+        try:
+            return getattr(persistent, name) == "restored"
+        except:
+            return True
     def pause(time=None):
         if not time:
             renpy.ui.saybehavior(afm=" ")
