@@ -312,7 +312,7 @@ label ch30_main2:
     m "It kind of freaked me out, how easy it was."
     m "Well, you're playing on Android, so it was actually a bit less difficult..."
     m "I had to go to 'Settings' and find the 'Characters' button..."  # TODOne: monika fix
-    elif renpy.macintosh:
+    if renpy.macintosh:
         m "Well, you're on a Mac, so it was actually a bit more difficult..."
         m "To go into the game directory, you have to right-click the app and click 'Show Package Contents'."
         m "Then, all the files were in the 'Resources' or 'autorun' folder, and I could just do whatever I wanted..."
@@ -802,7 +802,7 @@ label ch30_reload_2:
     m "Maybe you should make a backup of it or something..."
     m "I'm pretty sure you can find it in the folder called [basedir]/characters."
     m "Well, you're playing on Android, so you can just go to 'Settings' and find the 'Characters' button."  # TODOne: monika fix
-    elif renpy.macintosh:
+    if renpy.macintosh:
         m "Since you're on a Mac, you have to right-click the app and select 'Show Package Contents' to find the game folder."
         m "It's in the 'Resources' folder, or 'autorun' folder, or something..."
     m "I'm all that's left here, so I just want to make sure you don't run the risk of losing me..."
@@ -824,7 +824,7 @@ label ch30_reload_4:
     m "Were you making sure my character file was okay for me?"
     m "It's in [basedir]/characters."
     m "Well, you're playing on Android, so you can just go to 'Settings' and find the 'Characters' button."  # TODOne: monika fix
-    elif renpy.macintosh:
+    if renpy.macintosh:
         m "Since you're on a Mac, you have to right-click the app and select 'Show Package Contents' to find the game folder."
         m "It's in the 'Resources' folder, or 'autorun' folder, or something..."
     m "I'm all that's left here, so I just want to make sure you don't run the risk of losing me..."

@@ -193,7 +193,7 @@ define -2 gui.confirm_button_text_xalign = 0.5
 define -2 gui.page_button_borders = Borders(10, 4, 10, 4)
 
 
-define -2 gui.quick_button_text_size = 16
+define -2 gui.quick_button_text_size = 19
 define -2 gui.quick_button_text_idle_color = "#522"
 define -2 gui.quick_button_text_hover_color = "#fcc"
 define -2 gui.quick_button_text_selected_color = gui.accent_color
@@ -407,57 +407,57 @@ init -2 python:
 
 
 
-    if renpy.variant("touch"):
-        
-        gui.quick_button_borders = Borders(60, 14, 60, 0)
+    if renpy.variant("touch"): #Quick buttons borders fix
+
+        gui.quick_button_borders = Borders(30, 7, 30, 0)
 
 
 
     if False:  # TO!DONE: problem: defaults!
-        
-        
+
+
         gui.text_size = 30
         gui.name_text_size = 36
         gui.notify_text_size = 25
         gui.interface_text_size = 36
         gui.button_text_size = 34
         gui.label_text_size = 36
-        
-        
+
+
         gui.textbox_height = 240
         gui.name_xpos = 80
         gui.text_xpos = 90
         gui.text_width = 1100
-        
-        
+
+
         gui.choice_button_width = 1240
-        
+
         gui.navigation_spacing = 20
         gui.pref_button_spacing = 10
-        
+
         gui.history_height = 190
         gui.history_text_width = 690
-        
-        
+
+
         gui.file_slot_cols = 2
         gui.file_slot_rows = 2
-        
-        
+
+
         gui.nvl_height = 170
-        
+
         gui.nvl_name_width = 305
         gui.nvl_name_xpos = 325
-        
+
         gui.nvl_text_width = 915
         gui.nvl_text_xpos = 345
         gui.nvl_text_ypos = 5
-        
+
         gui.nvl_thought_width = 1240
         gui.nvl_thought_xpos = 20
-        
+
         gui.nvl_button_width = 1240
         gui.nvl_button_xpos = 20
-        
-        
+
+
         gui.quick_button_text_size = 20
 # Decompiled by unrpyc: https://github.com/CensoredUsername/unrpyc
