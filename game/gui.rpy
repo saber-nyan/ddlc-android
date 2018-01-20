@@ -409,7 +409,7 @@ init -2 python:
 
     if renpy.variant("touch"): #Quick buttons borders fix
 
-        gui.quick_button_borders = Borders(30, 7, 30, 0)
+        gui.quick_button_borders = Borders(18, 7, 20, 0)
 
 
 
