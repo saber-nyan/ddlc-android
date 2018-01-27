@@ -1,7 +1,7 @@
 # <p align="center">Doki Doki Literature Club! для Android</p>
 
 ### [[EN](README.md) | RU]
-[![Latest release](https://github-release-version.herokuapp.com/github/saber-nyan/ddlc-android/release.svg?style=flat)](https://github.com/saber-nyan/ddlc-android/releases/latest)<br/>
+[![Latest release](https://github-release-version.herokuapp.com/github/saber-nyan/ddlc-android/release.svg?style=flat)](https://github.com/saber-nyan/ddlc-android/releases/latest) [![Say Thanks!](https://img.shields.io/badge/Say%20Thanks-desu~-1EAEDB.svg)](https://saythanks.io/to/saber-nyan)<br/>
 ![Screenshot](https://i.imgur.com/yxQ2oNV.jpg)
 **ВНИМАНИЕ: в репозитории могут присутствовать спойлеры! Даже в названиях файлов!**
 
