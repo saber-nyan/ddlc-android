@@ -286,9 +286,11 @@ label ch5_main:
         xpos 0.1 ypos 0.05
     show fake_exception2 zorder 2:
         xpos 0.1 ypos 0.15
-    python:
-        try: sys.modules['renpy.error'].report_exception("Oh jeez...I didn't break anything, did I? Hold on a sec, I can probably fix this...I think...\nActually, you know what? This would probably be a lot easier if I just deleted her. She's the one who's making this so difficult. Ahaha! Well, here's goes nothing.", False)
-        except: pass
+    # At autoload, RenPy re-scans the entire script and somehow executes some expressions.
+    # After commenting out this block, the game should be correctly re-loaded.
+    #python:  # TO!DONE: finally fixes #1
+    #    try: sys.modules['renpy.error'].report_exception("Oh jeez...I didn't break anything, did I? Hold on a sec, I can probably fix this...I think...\nActually, you know what? This would probably be a lot easier if I just deleted her. She's the one who's making this so difficult. Ahaha! Well, here's goes nothing.", False)
+    #    except: pass
     pause 6.0
 
 
