@@ -11,7 +11,7 @@
 
 Мои попытки портировать "[Doki Doki Literature Club!](https://vndb.org/v21905)" на Android.
 
-**[Ветка](https://github.com/saber-nyan/ddlc-android/tree/ru-translation) готовящегося порта русификатора от [SUN-TEAM](https://github.com/saber-nyan/ddlc-android/tree/ru-translation)!**
+**[Ветка](https://github.com/saber-nyan/ddlc-android/tree/ru-translation) готовящегося порта русификатора от [SUN-TEAM](https://vk.com/wall-101862768_5388)!**
 
 Понятия не имею, что у игры за лицензия... но разработчики [против](http://teamsalvato.com/ip-guidelines/)
 (см. секцию 'Fan Games').
