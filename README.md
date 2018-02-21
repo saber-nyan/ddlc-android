@@ -16,7 +16,7 @@
 *Спасибо, [Ren`Py](https://github.com/renpy/renpy), [unrpa](https://github.com/Lattyware/unrpa), [unrpyc](https://github.com/CensoredUsername/unrpyc)!*
 ## TODO
 - [x] Распаковать, декомпилировать, проверить работу
-- [ ] Пофиксить поэму
+- [x] Пофиксить поэму
 - [ ] Пофиксить интересные вещи, связанные с `*.chr`-файлами (няшное меню, спасибо [@AlexAzumi](https://github.com/AlexAzumi)! См. [#16](https://github.com/saber-nyan/ddlc-android/pull/16))
 - [ ] Пофиксить диалоговое окно
 - [ ] Собрать тест
