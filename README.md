@@ -1,26 +1,25 @@
-# <p align="center">Doki Doki Literature Club! for Android</p>
+# <p align="center">Doki Doki Literature Club! для Android</p>
 
-### [EN | [RU](README_RU.md)]
 [![Latest release](https://github-release-version.herokuapp.com/github/saber-nyan/ddlc-android/release.svg?style=flat)](https://github.com/saber-nyan/ddlc-android/releases/latest) [![Say Thanks!](https://img.shields.io/badge/Say%20Thanks-desu~-1EAEDB.svg)](https://saythanks.io/to/saber-nyan)<br/>
 ![Screenshot](https://i.imgur.com/yxQ2oNV.jpg)
-**ATTENTION: This repo can contain spoilers! Even in file names!**
+**ВНИМАНИЕ: в репозитории могут присутствовать спойлеры! Даже в названиях файлов!**
 
-You can download .APK [here](https://github.com/saber-nyan/ddlc-android/releases/latest).
+.APK можно скачать [здесь](https://github.com/saber-nyan/ddlc-android/releases/latest).
 
-**Before creating Issue, read the [FAQ](https://github.com/saber-nyan/ddlc-android/wiki/FAQ-EN)!**
+**Перед созданием Issue прочитайте [FAQ](https://github.com/saber-nyan/ddlc-android/wiki/FAQ-RU)!**
 
-My attempts to port "[Doki Doki Literature Club!](https://vndb.org/v21905)" to Android.
+Мои попытки портировать "[Doki Doki Literature Club!](https://vndb.org/v21905)" на Android, с русификатором от [SUN-TEAM](https://vk.com/wall-101862768_5388).
 
-The license of the original game is not specified, but developer [is against](http://teamsalvato.com/ip-guidelines/)
-(see 'Fan Games' section) porting the game to other platforms.
+Понятия не имею, что у игры за лицензия... но разработчики [против](http://teamsalvato.com/ip-guidelines/)
+(см. секцию 'Fan Games').
 
-*Thanks, [Ren`Py](https://github.com/renpy/renpy), [unrpa](https://github.com/Lattyware/unrpa), [unrpyc](https://github.com/CensoredUsername/unrpyc)!*
+*Спасибо, [Ren`Py](https://github.com/renpy/renpy), [unrpa](https://github.com/Lattyware/unrpa), [unrpyc](https://github.com/CensoredUsername/unrpyc)!*
 ## TODO
-- [x] Extract, decompile
-- [ ] Fix poem game
-- [ ] Fix `*.chr`-files (kawaii menu, thanks to [@AlexAzumi](https://github.com/AlexAzumi)! See [#16](https://github.com/saber-nyan/ddlc-android/pull/16))
-- [ ] Fix dialogbox
-- [ ] Test build
-- [ ] Resolve all Issues **and**...
-- [ ] ...completely read VN, catch all bugs and crashes
-- [ ] Release build
+- [x] Распаковать, декомпилировать, проверить работу
+- [ ] Пофиксить поэму
+- [ ] Пофиксить интересные вещи, связанные с `*.chr`-файлами (няшное меню, спасибо [@AlexAzumi](https://github.com/AlexAzumi)! См. [#16](https://github.com/saber-nyan/ddlc-android/pull/16))
+- [ ] Пофиксить диалоговое окно
+- [ ] Собрать тест
+- [ ] Решить все Issues **и**...
+- [ ] ...полностью прочитать ВН, поймать баги и вылеты
+- [ ] Собрать релиз
