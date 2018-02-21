@@ -17,10 +17,10 @@ The license of the original game is not specified, but developer [is against](ht
 *Thanks, [Ren`Py](https://github.com/renpy/renpy), [unrpa](https://github.com/Lattyware/unrpa), [unrpyc](https://github.com/CensoredUsername/unrpyc)!*
 ## TODO
 - [x] Extract, decompile
-- [x] Fix poem game
-- [x] Fix `*.chr`-files (kawaii menu, thanks to [@AlexAzumi](https://github.com/AlexAzumi)! See [#16](https://github.com/saber-nyan/ddlc-android/pull/16))
-- [x] Fix dialogbox (bug [reasons](boxes_sizing.txt), in russian)
-- [x] Test build
+- [ ] Fix poem game
+- [ ] Fix `*.chr`-files (kawaii menu, thanks to [@AlexAzumi](https://github.com/AlexAzumi)! See [#16](https://github.com/saber-nyan/ddlc-android/pull/16))
+- [ ] Fix dialogbox
+- [ ] Test build
 - [ ] Resolve all Issues **and**...
 - [ ] ...completely read VN, catch all bugs and crashes
 - [ ] Release build
