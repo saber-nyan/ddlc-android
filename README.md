@@ -11,6 +11,8 @@ You can download .APK [here](https://github.com/saber-nyan/ddlc-android/releases
 
 My attempts to port "[Doki Doki Literature Club!](https://vndb.org/v21905)" to Android.
 
+**[Ветка](https://github.com/saber-nyan/ddlc-android/tree/ru-translation) готовящегося порта русификатора от [SUN-TEAM](https://github.com/saber-nyan/ddlc-android/tree/ru-translation)!**
+
 The license of the original game is not specified, but developer [is against](http://teamsalvato.com/ip-guidelines/)
 (see 'Fan Games' section) porting the game to other platforms.
 

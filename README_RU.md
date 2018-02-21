@@ -5,11 +5,13 @@
 ![Screenshot](https://i.imgur.com/yxQ2oNV.jpg)
 **ВНИМАНИЕ: в репозитории могут присутствовать спойлеры! Даже в названиях файлов!**
 
-.APK можно скачать [здесь](https://github.com/saber-nyan/ddlc-android/releases/latest).
+.APK можно скачать [здесь](https://github.com/saber-nyan/ddlc-android/releases/latest); пока что только английская версия.
 
 **Перед созданием Issue прочитайте [FAQ](https://github.com/saber-nyan/ddlc-android/wiki/FAQ-RU)!**
 
 Мои попытки портировать "[Doki Doki Literature Club!](https://vndb.org/v21905)" на Android.
+
+**[Ветка](https://github.com/saber-nyan/ddlc-android/tree/ru-translation) готовящегося порта русификатора от [SUN-TEAM](https://github.com/saber-nyan/ddlc-android/tree/ru-translation)!**
 
 Понятия не имею, что у игры за лицензия... но разработчики [против](http://teamsalvato.com/ip-guidelines/)
 (см. секцию 'Fan Games').
